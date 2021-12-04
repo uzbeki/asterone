@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterone</title>
+
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <!-- fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Open+Sans&display=swap" rel="stylesheet"> -->
+
+    <!-- Swiper -->
+    <!-- <link rel="stylesheet" href="./assets/img/"> -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" defer>
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <section class="left">
+                <div class="phone">
+                    <!-- <span class="material-icons">call</span> -->
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+817038331513">070-3833-1513</a>
+                </div>
+                <div class="email">
+                    <!-- <span class="material-icons-outlined">email</span> -->
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:contact@asterone.co.jp">contact@asterone.co.jp</a>
+                </div>
+            </section>
+            <section class="right">
+                <div class="working-hours">
+                    <!-- <span class="material-icons-outlined">schedule</span> -->
+                    <i class="far fa-clock"></i>
+                    <span>
+                        <span>Mon-Fri:</span>
+                    <span>9:00-18:00</span>
+                    </span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-line"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="bottom">
+            <div class="brand-logo">
+                <img src="./assets/img/SVG/logo.svg" alt="">
+                <a href="index.html">
+                    <h3>ASTER<span>ONE</span></h3>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./pages/about.html">会社について</a></li>
+                    <li><a href="./pages/services/services.html">サービス</a></li>
+                    <li><a href="./pages/team.html">チーム</a></li>
+                    <li><a href="./pages/recruitment/recruitment.html">採用情報</a></li>
+                    <li><a href="./pages/contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="content">
+                <h1>あなたの夢に色を付ける</h1>
+                <p>ソフトウェア開発及び情報技術サービス業を通してお客様に安心・信頼・満足感をご提供できるよう社員一人一人が創造性と豊かな感性を育み笑顔で共感しあえる幸せな社会の実現にお役に立てるよう新しい価値とサービスを提供し続けていきます。
+                </p>
+                <!-- <a href="#" class="btn">お問合せ</a> -->
+                <a href="./pages/contact.html" class=" btn ">
+                    <span class="circle " aria-hidden="true ">
+                        <!-- <i class="fas fa-angle-right icon arrow "></i> -->
+                        <span class="icon arrow "></span>
+                    </span>
+                    <span class="button-text ">お問合せ</span>
+                </a>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news-container">
+                <div class="intro-title">
+                    <p>What's new</p>
+                    <h2>お知らせ</h2>
+                    <div class="arrow">
+                        <img src="./assets/img/news/arrow.png" alt="Pointing arrow">
+                    </div>
+                </div>
+                <div class="swiper1 swiper">
+                    <ul id="news-content" class="swiper-wrapper">
+                        <a href="#pobi" class="swiper-slide">
+                            <div>
+                                <img src="./assets/img/news/pobi.jpg" alt="Pobi">
+                            </div>
+                            <div>
+                                <h3>自転車アプリpobiを開催しました。日本語のテキストばらばら。</h3>
+                                <p date="2021-12-10"><i class="fas fa-clock"></i>2021年12月10日</p>
+                            </div>
+                        </a>
+                        <a href="#hiring" class="swiper-slide">
+                            <div>
+                                <img src="./assets/img/news/hiring.jpg" alt="We are hiring">
+                            </div>
+                            <div>
+                                <h3>2022年度の採用を開始いたしました。詳細は採用情報ページへ。</h3>
+                                <p date="2021-08-01"><i class="fas fa-clock"></i>2021年08月01日</p>
+                            </div>
+                        </a>
+                        <a href="#grant" class="swiper-slide">
+                            <div>
+                                <img src="./assets/img/news/grant.jpg" alt="We are hiring">
+                            </div>
+                            <div>
+                                <h3>静岡県から補助金をいただくようになりました。</h3>
+                                <p date="2021-08-01"><i class="fas fa-clock"></i>2021年07月01日</p>
+                            </div>
+                        </a>
+                        <a href="#welcome" class="swiper-slide">
+                            <div>
+                                <img src="./assets/img/news/welcome.jpg" alt="We are hiring">
+                            </div>
+                            <div>
+                                <h3>新入社員4名本日から入社させていただきました。</h3>
+                                <p date="2021-04-01"><i class="fas fa-clock"></i>2021年04月01日</p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="services full-page ">
+            <div class="intro">
+                <div class="intro-title">
+                    <p>Services</p>
+                    <h2>サービスの紹介</h2>
+                </div>
+                <div class="intro-description ">
+                    <p>いいからさっき盗ったモノを、カバンの中から出しなさい。 いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。 「はい」と「いいえ」しか言わない人と会話を続けるのは難しい。 ６ヵ月靴を買っていない。新しいのを買ってよい頃だ。 信用して」と彼は言った。 ７月の天候はだいたい暑い。 インクで書かなければだめですか。 10分だけ付き合おう。 あなたは人を単に貧しいからといって見下してはならない。 社長さんの車種と色は？</p>
+                </div>
+            </div>
+            <ul class="circles">
+                <li>
+                    <div>
+                        <img src="./assets/img/services/top/webdev.jpg" alt="" srcset="">
+                    </div>
+                    <h3>WEB</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita.</p>
+                    <span class="ripple"></span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/services/top/mobileapp.jpg" alt="" srcset="">
+                    </div>
+                    <h3>モバイル</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita.</p>
+                    <span class="ripple"></span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/services/top/embedded.jpg" alt="" srcset="">
+                    </div>
+                    <h3>組み込み</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita.</p>
+                    <span class="ripple"></span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/services/top/softwaredev.jpg" alt="" srcset="">
+                    </div>
+                    <h3>組み込み</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita.</p>
+                    <span class="ripple"></span>
+                </li>
+            </ul>
+        </section>
+        <section class="partners full-page ">
+            <div class="intro ">
+                <div class="intro-title ">
+                    <p>Our Partners</p>
+                    <!-- 取引先企業 -->
+                    <h2>顧客組織</h2>
+                </div>
+                <div class="intro-description ">
+                    <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
+                    </p>
+                </div>
+            </div>
+
+            <div class="slider-container ">
+                <div class="slider ">
+                    <ul class="slider-track ">
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/devicep.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/earth.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/hamahoto.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/shizudai.gif " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/yamaha.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+
+                        <!-- Dummy content -->
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/devicep.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/earth.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/hamahoto.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/shizudai.gif " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/yamaha.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider reverse ">
+                    <ul class="slider-track ">
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/devicep.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/earth.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/hamahoto.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/shizudai.gif " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/yamaha.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+
+                        <!-- Dummy content -->
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/devicep.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/earth.png " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/hamahoto.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/shizudai.gif " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                        <li class="slide ">
+                            <a href="# " target="_blank ">
+                                <img src="./assets/img/clients/yamaha.svg " alt=" " srcset=" ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials full-page ">
+            <div class="intro ">
+                <div class="intro-title ">
+                    <p>Our Clients' Voices</p>
+                    <h2>お客様の声</h2>
+                </div>
+                <div class="intro-description ">
+                    <p>お客様の満足度と信頼関係を築くためには、お客様とのコミュニケーションを一緒にして、お客様が満足しているかどうかを確認し、お客様にそれに対して良いものを提供することで、お客様が満足しているかどうかを確認することができます。
+                    </p>
+                </div>
+            </div>
+            <div class="testimonials-container swiper swiper2">
+                <ul class="testimonial-cards swiper-wrapper ">
+                    <li class="testimonial swiper-slide ">
+                        <div class="content ">
+                            <div class="icon ">
+                                <i class="fas fa-quote-right "></i>
+                            </div>
+                            <p>Web広告を実施してから資料訴求が日で2～3倍に増え、分析結果なども共有してもらえて助かっています。今まで新聞折込、ポスティング、フリーペーパーなどがメインだったので、こんな結果を得られるとは思いませんでした。
+                            </p>
+                        </div>
+                        <div class="author ">
+                            <div class="author-img ">
+                                <img src="./assets/img/avatars/1.jpg " alt=" " srcset=" ">
+                            </div>
+                            <h4 class="author-title ">山田太郎</h4>
+                            <p class="author-occupation ">(株)ヤマハ代表者</p>
+                        </div>
+                    </li>
+                    <li class="testimonial swiper-slide ">
+                        <div class="content ">
+                            <div class="icon ">
+                                <i class="fas fa-quote-right "></i>
+                            </div>
+                            <p>最初にご指摘いただいた改善案が具体的で自信もあるように感じたので任せてみたいと思いました。その結果、昨年と比べてコストを抑えつつ異常値とも思えるような入塾数を更新し、成果には満足しています。
+                            </p>
+                        </div>
+                        <div class="author ">
+                            <div class="author-img ">
+                                <img src="./assets/img/avatars/2.jpg " alt=" " srcset=" ">
+                            </div>
+                            <h4 class="author-title ">鈴木西谷</h4>
+                            <p class="author-occupation ">(株)ハマホトマネージャー</p>
+                        </div>
+                    </li>
+                    <li class="testimonial swiper-slide ">
+                        <div class="content ">
+                            <div class="icon ">
+                                <i class="fas fa-quote-right "></i>
+                            </div>
+                            <p>リスティング広告自体、大手の会社しか出せないと思っていたくらいで、予算も少額から始められるなんて知りませんでした。それに出稿してすぐにここまで反応があるとは思わなかったです。成果には満足しています。
+                            </p>
+                        </div>
+                        <div class="author ">
+                            <div class="author-img ">
+                                <img src="./assets/img/avatars/3.jpg " alt=" " srcset=" ">
+                            </div>
+                            <h4 class="author-title ">秀明佐藤</h4>
+                            <p class="author-occupation ">静大先生</p>
+                        </div>
+                    </li>
+                    <li class="testimonial swiper-slide ">
+                        <div class="content ">
+                            <div class="icon ">
+                                <i class="fas fa-quote-right "></i>
+                            </div>
+                            <p>自社でリスティング広告の実施を検討していました。ただ日々の業務が忙しい上に、一から勉強するには奥が深そうと思いハタフルさんへ依頼しました。初月から反応があり、過去最高のお問合せ数を更新しました。
+                            </p>
+                        </div>
+                        <div class="author ">
+                            <div class="author-img ">
+                                <img src="./assets/img/avatars/4.jpg " alt=" " srcset=" ">
+                            </div>
+                            <h4 class="author-title ">渡辺弘明</h4>
+                            <p class="author-occupation ">(株)豊田エンジニア</p>
+                        </div>
+                    </li>
+                    <li class="testimonial swiper-slide ">
+                        <div class="content ">
+                            <div class="icon ">
+                                <i class="fas fa-quote-right "></i>
+                            </div>
+                            <p>打ち合わせでの提案の多さ、スピード感のある対応が良かったです。依頼した結果、就活サイトへのアクセス数が一昨年に比べ約120％増加しました。「アスタワンさんにお願いして間違ってなかったな」と実感しています。
+                            </p>
+                        </div>
+                        <div class="author ">
+                            <div class="author-img ">
+                                <img src="./assets/img/avatars/5.jpg " alt=" " srcset=" ">
+                            </div>
+                            <h4 class="author-title ">奥田田中</h4>
+                            <p class="author-occupation ">(株)アースCEO</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="sec about-us ">
+                <h2>事業内容</h2>
+                <p>ソフトウェア開発及び情報技術サービス業を通して お客様に安心・信頼・満足感をご提供できるよう 社員一人一人が創造性と豊かな感性を育み 笑顔で共感しあえる幸せな社会の実現にお役に立てるよう 新しい価値とサービスを提供し続けていきます.。
+                </p>
+                <ul class="sci ">
+                    <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
+                    <li><a href="# "><i class="fab fa-twitter "></i></a></li>
+                    <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
+                    <li><a href="# "><i class="fab fa-line "></i></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quick-links ">
+                <h2>クイックリンク</h2>
+                <ul>
+                    <li><a href="# ">採用情報</a></li>
+                    <li><a href="# ">サービス</a></li>
+                    <li><a href="# ">ポートフォリオ</a></li>
+                    <li><a href="# ">会社について</a></li>
+                    <li><a href="# ">FAQ</a></li>
+                    <li><a href="# ">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <div class="sec contact ">
+                <h2>お問合せ</h2>
+                <ul class="info ">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt "></i></span>
+                        <span>本社: <br> 〒435-0042 <br>
+                            静岡県浜松市東区篠ケ瀬町1368-2</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt "></i></span>
+                        <p> <a href="# ">070-3833-1513</a><br>
+                            <a href="# ">053-488-4427</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope "></i></span>
+                        <p><a href="# ">asterone@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-text ">
+            <p>Copyright <i class="far fa-copyright "></i> 2021 ASTERONE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/swiper.min.js "></script>
+    <script>
+        const swiper1 = new Swiper('.swiper1', {
+            // direction: 'horizontal',
+            // loop: true,
+            // loopedSlides: 8,
+            grabCursor: true,
+            // centeredSlides: true,
+            slidesPerView: 'auto',
+            // slidesPerView: 3,
+            spaceBetween: 50,
+            // speed: 1000,
+            // autoplay: {
+            //     delay: 3000,
+            // },
+        })
+        const swiper2 = new Swiper('.swiper2', {
+            // direction: 'horizontal',
+            loop: true,
+            // loopedSlides: 8,
+            grabCursor: true,
+            // centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            speed: 1000,
+            autoplay: {
+                delay: 3000,
+            },
+        })
+    </script>
+</body>
+
+</html>
+
+
+<!-- Slider main container -->
+<!-- <div class="swiper "> -->
+<!-- Additional required wrapper -->
+<!-- <div class="swiper-wrapper "> -->
+<!-- Slides -->
+<!-- <div class=">Slide 1</div>
+            <div class=">Slide 2</div>
+        <div class=">Slide 3</div>
+            </div> -->
+<!-- If we need pagination -->
+<!-- <div class="swiper-pagination"></div> -->
+
+<!-- If we need navigation buttons -->
+<!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+<!-- If we need scrollbar -->
+<!-- <div class="swiper-scrollbar"></div> -->
+<!-- </div> -->="swiper"> -->
+<!-- Additional required wrapper -->
+<!-- <div class="swiper-wrapper"> -->
+<!-- Slides -->
+<!-- <div class=">Slide 1</div>
+        <div class=">Slide 2</div>
+        <div class=">Slide 3</div>
+    </div> -->
+<!-- If we need pagination -->
+<!-- <div class="swiper-pagination"></div> -->
+
+<!-- If we need navigation buttons -->
+<!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+<!-- If we need scrollbar -->
+<!-- <div class="swiper-scrollbar"></div> -->
+<!-- </div> -->
