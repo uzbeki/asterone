@@ -1,3 +1,8 @@
+* {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 body {
     display: grid;
     grid-template-rows: var(--header-height) auto 300px;
@@ -59,28 +64,32 @@ header .bottom {
     align-items: center;
     margin: 0 auto;
     background: #fff;
-    padding: 20px var(--content-start);
+    padding: 0 var(--content-start);
 }
 
-header .bottom .brand-logo {
+header .bottom .brand-logo,
+footer.brand-logo {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
     gap: 5px;
 }
 
-header .bottom .brand-logo img {
+header .bottom .brand-logo img,
+footer.brand-logo img {
     width: 30px;
     height: auto;
 }
 
-header .bottom .brand-logo h3 {
+header .bottom .brand-logo h3,
+footer.brand-logo h3 {
     color: var(--asterone-black);
     font-weight: 900;
     /* font-size: 1.5em; */
 }
 
-header .bottom .brand-logo h3 span {
+header .bottom .brand-logo h3 span,
+footer.brand-logo h3 span {
     color: var(--asterone-yellow);
 }
 
@@ -282,9 +291,6 @@ main section.full-page {
 /* main section.news-line */
 
 section.news {
-    /* padding: 6rem 0; */
-    /* margin: 6rem 0; */
-    height: 18rem;
     position: relative;
 }
 
@@ -297,7 +303,8 @@ section.news .news-container {
     gap: 4rem;
     background-color: var(--navbar-black);
     position: absolute;
-    top: -40%;
+    top: -50%;
+    transform: translateY(-50%);
     box-shadow: 5px 20px 10px rgb(0 0 0 / 6%);
 }
 
@@ -325,7 +332,6 @@ section.news .news-container .intro-title .arrow img {
 }
 
 #news-content {
-    /* margin: 0 var(--content-start); */
     display: flex;
     gap: 2em;
 }
@@ -388,6 +394,7 @@ section.services .circles {
 
 section.services .circles li {
     max-width: 400px;
+    cursor: pointer;
 }
 
 section.services .circles li img {
@@ -399,7 +406,8 @@ section.services .circles li img {
 .intro {
     display: grid;
     grid-template-columns: 40% 60%;
-    /* gap: 2em; */
+    gap: 2em;
+    padding: 4em;
     align-items: center;
 }
 
@@ -846,6 +854,80 @@ section.testimonials .swiper .swiper-slide {
 }
 
 
+/* main section our-team */
+
+div.team-img {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: 40%;
+}
+
+div.team-img img {
+    width: 65vw;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    box-shadow: 1px 8px 10px;
+}
+
+
+/* section message-ceo */
+
+section.message-ceo {
+    padding: 4em var(--content-start);
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+div.container-card {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    height: 93vh;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 1px 2px 15px 8px rgb(0 0 0 / 10%);
+}
+
+div.message {
+    text-align: center;
+    padding: var(--content-start);
+    background-color: white;
+    height: 93vh;
+}
+
+div.message h3 {
+    font-size: 2em;
+    color: var(--asterone-yellow);
+    padding-bottom: 2rem;
+}
+
+div.message p {
+    line-height: 2;
+    color: var(--asterone-black);
+}
+
+div.message span {
+    color: var(--asterone-black);
+    position: absolute;
+}
+
+div.img-ceo img {
+    width: 35vw;
+    height: 93vh;
+}
+
+a.up-arrow i {
+    position: relative;
+    right: -50%;
+    cursor: pointer;
+    font-size: 2.5em;
+    color: var(--asterone-yellow);
+}
+
+
 /* Footer */
 
 footer {
@@ -875,6 +957,10 @@ footer .container .sec.about-us {
     width: 22%;
 }
 
+footer .container .sec.about-us p {
+    line-height: 2;
+}
+
 footer .container h2 {
     position: relative;
     color: var(--asterone-yellow);
@@ -883,14 +969,23 @@ footer .container h2 {
     width: fit-content;
 }
 
-footer .container h2::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    border-bottom: 2px dashed var(--asterone-yellow);
-    /* background: var(--asterone-yellow); */
+div.brand-logo {
+    display: flex;
+    gap: 6px;
+    padding: 1rem;
+}
+
+div.brand-logo img {
+    width: 30px;
+    height: auto;
+}
+
+div.brand-logo h3 {
+    color: #fff;
+}
+
+div.brand-logo h3 span {
+    color: var(--asterone-yellow);
 }
 
 footer p {
@@ -898,7 +993,7 @@ footer p {
 }
 
 .sci {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
 }
 
@@ -910,7 +1005,7 @@ footer p {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: var(--asterone-yellow);
+    background: var(--asterone-black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -920,31 +1015,25 @@ footer p {
 }
 
 .sci li a:hover {
-    background: #f5f5f5;
+    background: #999;
 }
 
 .sci li a .fab {
-    color: var(--asterone-black);
+    color: var(--asterone-yellow);
     font-size: 20px;
 }
 
-.quick-links {
-    position: relative;
+div.links {
+    margin-top: 25px;
 }
 
-.quick-links ul li {
-    list-style: none;
-}
-
-.quick-links ul li a {
+div.links li {
     color: #999;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
+    padding-bottom: 1rem;
 }
 
-.quick-links ul li a:hover {
-    color: #fff;
+div.links li a:hover {
+    color: var(--asterone-yellow);
 }
 
 .contact {
@@ -977,7 +1066,7 @@ footer p {
 }
 
 .contact .info li a:hover {
-    color: #fff;
+    color: var(--asterone-yellow);
 }
 
 .copyright-text {
@@ -1012,4 +1101,10 @@ flex-direction: column;
     .copyright-text {
         padding: 8px 40px;
     }
+}
+
+section.our-team svg {
+    z-index: -1;
+    position: absolute;
+    opacity: 70%;
 }
