@@ -1,0 +1,44 @@
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1442' height='561' preserveAspectRatio='none' viewBox='0 0 1442 561'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3cpath d='M-55.99 -18.8 a37.19 37.19 0 1 0 74.38 0 a37.19 37.19 0 1 0 -74.38 0z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-40.23 -34.58 a5.65 5.65 0 1 0 11.3 0 a5.65 5.65 0 1 0 -11.3 0z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-60.53 -14.27 a46.26 46.26 0 1 0 92.52 0 a46.26 46.26 0 1 0 -92.52 0z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1397.816%2c167.176C1434.331%2c169.266%2c1471.714%2c152.894%2c1489.02%2c120.672C1505.625%2c89.755%2c1494.065%2c52.918%2c1475.013%2c23.446C1457.792%2c-3.194%2c1429.507%2c-21.792%2c1397.816%2c-20.418C1368.125%2c-19.131%2c1346.082%2c3.831%2c1331.403%2c29.672C1316.945%2c55.122%2c1310.332%2c84.818%2c1323.062%2c111.175C1337.575%2c141.224%2c1364.501%2c165.269%2c1397.816%2c167.176' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1217.89 37.11 a149.02 149.02 0 1 0 298.04 0 a149.02 149.02 0 1 0 -298.04 0z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1255.6798870601565 33.138680657802134L1352.2128012980377 171.0019697116394 1490.0760903518749 74.46905547375826 1393.5431761139937-63.394233580078996z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M171.75006133912228 569.0058758013433L125.36029435512124 407.22553237492434-36.4200490712978 453.61529935892537 9.96971791270326 615.3956427853444z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M76.78516788471134 374.2989899365962L-59.372392268592336 473.2232478974194 39.55186569223089 609.3808080507231 175.70942584553455 510.45655008989985z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-34.07993938460153 601.6061452679694L134.11753680271227 595.7325599729384 128.24395150768123 427.5350837856246-39.95352467963256 433.4086690806556z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1245.7 458.1 a93.4 93.4 0 1 0 186.8 0 a93.4 93.4 0 1 0 -186.8 0z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1287.634726591732 416.42155040916265L1296.4428680274195 584.4909011083574 1464.5122187266143 575.6827596726699 1455.7040772909268 407.6134089734751z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1506.697173159974 451.1176334049972L1349.5755873804949 390.80430749652317 1289.2622614720208 547.9258932760022 1446.3838472515 608.2392191844763z' fill='rgba(211%2c 117%2c 14%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1442' height='561' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    min-height: 40vh;
+    min-width: 40vw;
+    padding: 1rem;
+    margin: 4% 0;
+    border: 1px solid #eee;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#container div.sitemap {
+    width: 40vw;
+}
+
+#container div.sitemap h1 {
+    text-align: center;
+    color: var(--asterone-yellow);
+    padding: 2rem;
+}
+
+div.sitemap-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+div.sitemap-links ul {
+    text-align: start;
+}
+
+div.sitemap-links p {
+    color: var(--asterone-black);
+    font-weight: bold;
+}
+
+div.sitemap-links p:hover {
+    color: var(--asterone-yellow);
+}

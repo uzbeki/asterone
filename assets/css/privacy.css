@@ -4,12 +4,11 @@ body {
     padding: 0;
 }
 
-main {
-    padding: 1.5rem;
+main#main {
+    padding: 3rem;
     max-width: 50vw;
     border-radius: 5px;
     margin: 3rem auto;
-    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -35,7 +34,7 @@ main div.intro-title h1 {
 }
 
 main div.privacy p {
-    padding: 3em;
+    padding: 3em 0;
     line-height: 2;
     color: var(--asterone-black);
 }
@@ -66,13 +65,14 @@ main div.list ul li:last-child {
 main p.disclaimer {
     color: var(--asterone-black);
     text-align: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 main div.name-of-ceo {
     text-align: end;
     justify-self: end;
     color: var(--asterone-black);
+    padding: 1.5rem;
 }
 
 main div.name-of-ceo p {
@@ -81,5 +81,5 @@ main div.name-of-ceo p {
 
 main div.name-of-ceo P:last-child {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
 }
