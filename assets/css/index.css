@@ -376,8 +376,6 @@ section.news .news-container .intro-title .arrow img {
     max-width: 20rem;
 }
 
-#news-content div h3 {}
-
 #news-content div p {
     font-size: smaller;
     color: var(--asterone-yellow);
@@ -428,14 +426,9 @@ section.services .circles li img {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 2em;
-    padding: 4em;
+    padding: 4em var(--content-start);
     align-items: center;
 }
-
-
-/* main section.services .intro .intro-title { */
-
-.intro .intro-title {}
 
 
 /* main section.services .intro .intro-title h2 { */
@@ -815,8 +808,6 @@ section.testimonials ul.testimonial-cards .testimonial .content p {
     opacity: 0.8;
 }
 
-section.testimonials ul.testimonial-cards .testimonial .author {}
-
 section.testimonials ul.testimonial-cards .testimonial .author .author-img {
     display: grid;
     place-content: center;
@@ -877,20 +868,76 @@ section.testimonials .swiper .swiper-slide {
 
 /* main section our-team */
 
-div.team-img {
+#info {
+    padding: 2rem 0;
+  }
+  
+  .row {
+    display: flex;
+    place-content: center;
+    justify-self: center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-top: 3rem;
-    margin-left: 40%;
-}
-
-div.team-img img {
-    width: 65vw;
-    height: 100%;
-    display: grid;
-    align-items: center;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .team-cards {
+    display: inline-block;
+    width: 50%;
+    padding: 4rem 1rem 7rem 1rem;
+    background-color: teal;
     position: relative;
-    box-shadow: 1px 8px 10px;
-}
+  }
+  .team-cards:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid var(--navbar-black);
+    border-left: 20px solid var(--navbar-black);
+    border-right: 20px solid var(--asterone-yellow);
+    border-top: 20px solid var(--asterone-yellow);
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  .team-cards:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid var(--navbar-black);
+    border-right: 40px solid var(--navbar-black);
+    border-left: 40px solid var(--asterone-yellow);
+    border-bottom: 40px solid var(--asterone-yellow);
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  .team-cards:nth-of-type(1) {
+    margin-right: 9%;
+  }
+  .team-cards h2 {
+    color: var(--asterone-yellow);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .team-cards p {
+    color: #fff;
+    line-height: 140%;
+  }
+
+
+
+
 
 
 /* section message-ceo */

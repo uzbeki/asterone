@@ -1,4 +1,4 @@
-main > section {
+main section.contact-form, section.container-box {
     min-height: 100vh;
     margin: 0 var(--content-start);
 }
@@ -42,7 +42,9 @@ section.container-box > div .icon-container {
     position: relative;
     height: 4rem;
     width: 4rem;
-    background-image: linear-gradient(50deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%);
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    /* background-image: linear-gradient(50deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%); */
     display: grid;
     place-content: center;
     margin: 0 auto;
@@ -81,7 +83,9 @@ section.container-box > div i {
     left: 0;
     width: 100%;
     height: 0;
-    background: linear-gradient(60deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%);
+    background-color: #ef5734;
+    background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+    /* background: linear-gradient(60deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%); */
     /* opacity: 1; */
     transition: all 0.8s ease-in-out;
     z-index: 1;
@@ -114,7 +118,9 @@ form {
     border-radius: var(--border-radius);
     padding: 2rem;
     max-width: 50rem;
-    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -181,7 +187,7 @@ input[type="checkbox"] + label {
     color: #fff;
     font-weight: 700;
     font-size: 15px;
-    background-color: #222;
+    background-color: #ef5734;
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -199,7 +205,7 @@ input[type="checkbox"] + label {
     top: 0;
     height: 490%;
     width: 140%;
-    background: #78c7d2;
+    background: var(--asterone-yellow);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -212,18 +218,13 @@ input[type="checkbox"] + label {
 }
 
 
-section.accsess-map {
+main > section.accsess-map {
     margin: 0;
 }
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 500px;
+
+#gmap_canvas {
     width: 100vw;
-}
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 500px;
-    width: 100vw;
+    height: 600px;
+    margin-top: 10%;
+    background-color: teal;
 }

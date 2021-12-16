@@ -1,0 +1,143 @@
+section.first-card {
+    display: grid;
+    justify-content: right;
+    margin: 0 6rem;
+}
+section.second-card-section {
+    display: grid;
+    justify-content: left;
+    margin: 0 6rem;
+}
+section.third-card-section {
+    display: grid;
+    justify-content: right;
+    margin: 0 10rem;
+}
+section.third-card-section span.s2 {
+    font-weight: 800;
+    position: absolute;
+    bottom: -160%;
+    right: 10%;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #3c4447;
+    opacity: 10%;
+}
+span.s1 {
+    position: absolute;
+    /* top: 20%; */
+    left: 6%;
+    font-size: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3c4447;
+    opacity: 10%;
+}
+
+span.s2 {
+    font-weight: 800;
+    position: absolute;
+    bottom: -50%;
+    right: 6%;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #3c4447;
+    opacity: 10%;
+}
+span {
+    font-weight: bold;
+}
+
+/* The card */
+.card {
+    position: relative;
+    height: 450px;
+    width: 900px;
+    margin: 200px auto;
+    background-color: #fff;
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Image on the left side */
+.thumbnail {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    height: 320px;
+    width: 530px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*object-fit: cover;*/
+/*object-position: center;*/
+img.left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.right {
+    margin-left: 590px;
+    margin-right: 20px;
+}
+
+div.right h1 {
+    padding-top: 15px;
+    font-size: 2rem;
+    color: var(--asterone-yellow);
+}
+.separator {
+    margin-top: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+div.right p {
+    text-align: start;
+    line-height: 1.5;
+    color: #4b4b4b;
+}
+
+/* DATE of release*/
+h5.small-title {
+    position: absolute;
+    left: 15%;
+    bottom: -0px;
+    font-size: 4rem;
+    color: #c3c3c3;
+}
+
+h6 {
+    position: absolute;
+    left: 3%;
+    bottom: -0;
+    font-size: 4rem;
+    color: #c3c3c3;
+}
+section.second-card-section h5.small-title {
+    position: absolute;
+    left: 19%;
+    bottom: -0px;
+    font-size: 4rem;
+    color: #c3c3c3;
+}
+section.third-card-section h5.small-title {
+    position: absolute;
+    left: 19%;
+    bottom: -0px;
+    font-size: 4rem;
+    color: #c3c3c3;
+}

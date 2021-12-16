@@ -1,0 +1,206 @@
+/* main {
+    display: flex;
+    justify-content: center;
+}
+ */
+section.about-company {
+    background-image: url("https://asterone.co.jp/img/outline/main_photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+}
+
+section.about-company > img {
+    align-items: center;
+    width: 110%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+section.about-company > div {
+    display: grid;
+    align-items: center;
+    justify-self: flex-end;
+    padding: 2em;
+    margin: 2em;
+    width: 30%;
+    background-color: var(--asterone-black);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+
+}
+section.about-company > div p {
+    line-height: 2;
+    padding: 1em;
+    color: var(--asterone-yellow);
+}
+
+
+
+section.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+}
+
+.infocardContainer {
+    display: flex;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 100px;
+    background: rgb(241, 225, 0);
+    background: linear-gradient(121deg, #c59700fb 13%, rgb(253, 224, 61) 100%);
+    transition: all 500ms ease-in;
+    transition-delay: 1s;
+    margin: auto;
+    margin-top: 100px;
+    --margin-top: 100px;
+    overflow: hidden;
+  }
+  .infocardContainer:hover {
+    width: 500px;
+    border-radius: 100px 10px 100px 100px;
+    transition: all 1s ease-out;
+  }
+  .infocardContainer p{
+      overflow: hidden;
+  }
+  .infocardContainer div {
+    flex-shrink: 1;
+    width: 100%;
+    --background-color: green;
+  }
+  .infocardContainer div * {
+    display: flex;
+    --flex: inherit;
+    overflow: hidden;
+    text-overflow: hidden;
+    --background-color: rgba(255, 153, 0, 0.774);
+    color: white;
+    white-space: nowrap;
+    width: 0;
+    height: auto;
+    transition: all 450ms ease-in;
+    transition-delay: 1s;
+  }
+  .infocardContainer:hover div *{
+    display: flex;
+    visibility: visible;
+    transition: all 1s ease-out;
+    transition-delay: 500ms;
+    width: 100%;
+    height: auto;
+  }
+  
+  .infocardContainer #main, .infocardContainer #main h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--asterone-yellow);
+    display: contents;
+  }
+  /* .infocardContainer #main h1{
+    height: 180px;
+    width: 180px;
+    transition: none;
+    display: float;
+    position: relative;
+    border: 10px solid rgb(255, 255, 255);
+  } */
+  .infocardContainer #textbois {
+    position: relative;
+    padding: 2em 0;
+  }
+  .infocardContainer #textbois #hotlinks {
+    max-width: 60%;
+    max-height: 30px;
+    position:absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13px;
+  }
+  .infocardContainer #textbois #hotlinks * {
+    background-color: white;
+    max-width: 30px;
+    --margin: 0 1px 0 1px;
+    border-radius: 25px;
+  }
+ 
+
+  section.company-data {
+     min-height: 100vh;
+  }
+  .container1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .container1 h2 {
+    font-size: 2em;
+    color: var(--asterone-yellow);
+    margin: 2em;
+    text-align: center;
+  }
+  
+  .responsive-table li{
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .table-header {
+      background-color: #95A5A6;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: var(--asterone-black);
+    }
+    .col-3 {
+      flex-basis: 25%;
+    }
+    .col-4 {
+      flex-basis: 25%;
+    }
+    
+    @media all and (max-width: 767px) {
+      .table-header {
+        display: none;
+      }
+      .table-row{
+        
+      }
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .col {
+        display: flex;
+        padding: 10px 0;
+        
+      }
+  }
