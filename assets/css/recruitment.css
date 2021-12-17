@@ -103,3 +103,8 @@ div.sidenav a:hover {
         
       }
   }
+
+  section.facilities h1{
+      color: var(--asterone-yellow);
+      font-size: 2em;
+  }
