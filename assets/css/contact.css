@@ -228,3 +228,6 @@ main > section.accsess-map {
     margin-top: 10%;
     background-color: teal;
 }
+div.mapouter {
+    height: 750px;
+}
