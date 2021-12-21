@@ -16,7 +16,7 @@
         <!-- Swiper -->
         <!-- <link rel="stylesheet" href="./assets/img/"> -->
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" defer>
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/index.css">
 
@@ -75,12 +75,12 @@
         <!-- ************* Main ************* -->
         <main>
             <!-- ************* Hero Banner ************* -->
-            <section class="banner">
-                <div class="content">
+            <section class="banner" data-aos="fade-down">
+                <div class="content" data-aos="fade-up" data-aos-delay="650" data-aos-easing="ease-out-back">
                     <h1>あなたの夢に色を付ける</h1>
                     <p>ソフトウェア開発及び情報技術サービス業を通してお客様に安心・信頼・満足感をご提供できるよう社員一人一人が創造性と豊かな感性を育み笑顔で共感しあえる幸せな社会の実現にお役に立てるよう新しい価値とサービスを提供し続けていきます。
                     </p>
-                    <a href="./pages/contact.html" class="btn">
+                    <a href="./pages/contact.html" class="btn" data-aos="fade-right" data-aos-delay="1300" data-aos-easing="ease-in-out-cubic">
                         <span class="circle" aria-hidden="true ">
                             <span class="icon arrow "></span>
                         </span>
@@ -90,7 +90,7 @@
             </section>
 
             <!-- ************* News ************* -->
-            <section class="news">
+            <section class="news" data-aos="fade-up">
                 <div class="news-container">
                     <div class="intro-title">
                         <p>What's new</p>
@@ -144,7 +144,7 @@
 
             <!-- ************* Services ************* -->
             <section class="services full-page ">
-                <div class="intro">
+                <div class="intro" data-aos-delay="1000" data-aos="fade-down">
                     <div class="intro-title">
                         <p>Services</p>
                         <h2>サービスの紹介</h2>
@@ -156,7 +156,7 @@
                 </div>
 
                 <ul class="service-list">
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="500">
                         <div class='service__img'>
                             <img src="./assets/img/services/top/webdev.jpg" alt="" srcset="">
                         </div>
@@ -166,7 +166,7 @@
                             <span class="ripple"></span>
                         </div>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="800">
                         <div class='service__img'>
                             <img src="./assets/img/services/top/mobileapp.jpg" alt="" srcset="">
                         </div>
@@ -176,7 +176,7 @@
                             <span class="ripple"></span>
                         </div>
                     </li>
-                    <li>
+                    <li data-aos="fade-down" data-aos-delay="600">
                         <div class='service__img'>
                             <img src="./assets/img/services/top/embedded.jpg" alt="" srcset="">
                         </div>
@@ -186,7 +186,7 @@
                             <span class="ripple"></span>
                         </div>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="1000">
                         <div class='service__img'>
                             <img src="./assets/img/services/top/softwaredev.jpg" alt="" srcset="">
                         </div>
@@ -202,7 +202,7 @@
 
             <!-- ************* Partners ************* -->
             <section class="partners full-page ">
-                <div class="intro ">
+                <div class="intro " data-aos-delay="500" data-aos="fade-down">
                     <div class="intro-title ">
                         <p>Our Partners</p>
                         <!-- 取引先企業 -->
@@ -215,7 +215,7 @@
                 </div>
 
                 <div class="slider-container ">
-                    <div class="slider ">
+                    <div class="slider " data-aos="zoom-in-left">
                         <ul class="slider-track ">
                             <li class="slide ">
                                 <a href="# " target="_blank ">
@@ -271,7 +271,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="slider reverse ">
+                    <div class="slider reverse " data-aos="zoom-in-right">
                         <ul class="slider-track ">
                             <li class="slide ">
                                 <a href="# " target="_blank ">
@@ -332,7 +332,7 @@
 
             <!-- ************* Testimonials ************* -->
             <section class="testimonials full-page ">
-                <div class="intro ">
+                <div class="intro " data-aos-delay="100" data-aos="fade-down">
                     <div class="intro-title ">
                         <p>Our Clients' Voices</p>
                         <h2>お客様の声</h2>
@@ -344,7 +344,7 @@
                 </div>
                 <div class="testimonials-container swiper swiper2">
                     <ul class="testimonial-cards swiper-wrapper ">
-                        <li class="testimonial swiper-slide ">
+                        <li class="testimonial swiper-slide " data-aos-delay="900" data-aos="fade-down">
                             <div class="content ">
                                 <div class="icon ">
                                     <i class="fas fa-quote-right "></i>
@@ -360,7 +360,7 @@
                                 <p class="author-occupation ">(株)ヤマハ代表者</p>
                             </div>
                         </li>
-                        <li class="testimonial swiper-slide ">
+                        <li class="testimonial swiper-slide " data-aos-delay="500" data-aos="fade-up">
                             <div class="content ">
                                 <div class="icon ">
                                     <i class="fas fa-quote-right "></i>
@@ -376,7 +376,7 @@
                                 <p class="author-occupation ">(株)ハマホトマネージャー</p>
                             </div>
                         </li>
-                        <li class="testimonial swiper-slide ">
+                        <li class="testimonial swiper-slide " data-aos-delay="1000" data-aos="fade-left">
                             <div class="content ">
                                 <div class="icon ">
                                     <i class="fas fa-quote-right "></i>
@@ -392,7 +392,7 @@
                                 <p class="author-occupation ">静大先生</p>
                             </div>
                         </li>
-                        <li class="testimonial swiper-slide ">
+                        <li class="testimonial swiper-slide " data-aos-delay="1200" data-aos="fade-right">
                             <div class="content ">
                                 <div class="icon ">
                                     <i class="fas fa-quote-right "></i>
@@ -408,7 +408,7 @@
                                 <p class="author-occupation ">(株)豊田エンジニア</p>
                             </div>
                         </li>
-                        <li class="testimonial swiper-slide ">
+                        <li class="testimonial swiper-slide " data-aos-delay="1400" data-aos="fade-in">
                             <div class="content ">
                                 <div class="icon ">
                                     <i class="fas fa-quote-right "></i>
@@ -431,28 +431,27 @@
             <!-- ************* Team ************* -->
             <section class="our-team full-page" id="team">
                 <div class="intro">
-                    <div class="intro-title">
+                    <div class="intro-title" data-aos-delay="100" data-aos="fade-down">
                         <p>Our Team</p>
                         <h2>チームの紹介</h2>
                     </div>
-                    <div class="intro-description ">
+                    <div class="intro-description " data-aos-delay="100" data-aos="fade-up">
                         <p>いよいよという時に言葉が出ない。 そちら様のお電話番号をいただけますか。 雨が降っている。
                             「これはとてもおもしろそうだね」とひろしが言います。「アスタワンさんにお願いして間違ってなかったな」と実感しています。申し訳ないけど長居できないんですよ。
                         </p>
                     </div>
                 </div>
-                <div class="team__content">
+                <div class="team__content" data-aos-delay="800" data-aos="zoom-in">
                     <video muted autoplay preload='auto'>
                         <source src="./assets/video/we-are2.mp4" type="video/mp4">
-                        <p>Your browser doesn't support HTML5 video. Here is a <a href="./assets/video/we-are2.mp4">link
-                                to the video</a> instead.</p>
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="./assets/video/we-are2.mp4">link to the video</a> instead.</p>
                     </video>
                 </div>
             </section>
 
             <!-- ************* CEO Message ************* -->
-            <section class="message-ceo full-page">
-                <div class="container-card">
+            <section class="message-ceo full-page" >
+                <div class="container-card" data-aos="fade-up">
                     <div class="message">
                         <h3>社長からのメッセージ</h3>
                         <p>インフレを抑制しようとして金融政策に偏重すると、金融、したがって景気を必要以上に締め付けることになりかねない。 ８時にヒースロー空港に到着する予定です。
@@ -464,7 +463,7 @@
                         <img src="./assets/img/ceo-img.jpg" alt="">
                     </div>
                 </div>
-                <div class="backdrop">
+                <div class="backdrop" data-aos="slide-right" data-aos-delay="1000">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
                         <defs>
                             <style>
@@ -475,7 +474,6 @@
                                 .triangle {
                                     fill: #fff;
                                 }
-
                             </style>
                         </defs>
                         <g id="Layer_2" data-name="Layer 2">
@@ -492,7 +490,7 @@
                         <defs>
                             <style>
                                 .cls-1 {
-                                    fill: rgb(235, 235, 235);
+                                    fill: rgb(240, 240, 240);
                                 }
 
                                 .cls-2 {
@@ -518,9 +516,9 @@
         </main>
 
         <!-- ************* Footer ************* -->
-        <footer>
+        <footer data-aos="fade-up">
             <div class="container ">
-                <div class="sec about-us ">
+                <div class="sec about-us " data-aos-delay="1000" data-aos="fade-right">
                     <div class="brand-logo">
                         <img src="./assets/img/SVG/logo.svg" alt="">
                         <a href="index.html">
@@ -535,7 +533,7 @@
                         <li><a href="# "><i class="fab fa-line "></i></i></a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links" data-aos-delay="500" data-aos="fade-up">
                     <ul>
                         <li>
                             <a href="./pages/sustainability.html">サステナビリティ</a>
@@ -554,7 +552,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sec contact ">
+                <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
                     <h2>お問合せ</h2>
                     <ul class="info ">
                         <li>
@@ -582,6 +580,7 @@
 
         <!-- ************* Scripts ************* -->
         <script src="./js/swiper.min.js "></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             const swiper1 = new Swiper('.swiper1', {
                 // direction: 'horizontal',
@@ -610,45 +609,43 @@
                     delay: 3000,
                 },
             })
+
+            // if window is scrolled for more than 200px, show #goTop button
+            window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 700, // values from 0 to 3000, with step 50ms
+                easing: 'ease-in-out', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: true, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
         </script>
     </body>
 
 </html>
-
-
-<!-- Slider main container -->
-<!-- <div class="swiper "> -->
-<!-- Additional required wrapper -->
-<!-- <div class="swiper-wrapper "> -->
-<!-- Slides -->
-<!-- <div class=">Slide 1</div>
-            <div class=">Slide 2</div>
-        <div class=">Slide 3</div>
-            </div> -->
-<!-- If we need pagination -->
-<!-- <div class="swiper-pagination"></div> -->
-
-<!-- If we need navigation buttons -->
-<!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-
-<!-- If we need scrollbar -->
-<!-- <div class="swiper-scrollbar"></div> -->
-<!-- </div> ="swiper"> -->
-<!-- Additional required wrapper -->
-<!-- <div class="swiper-wrapper"> -->
-<!-- Slides -->
-<!-- <div class=">Slide 1</div>
-        <div class=">Slide 2</div>
-        <div class=">Slide 3</div>
-    </div> -->
-<!-- If we need pagination -->
-<!-- <div class="swiper-pagination"></div> -->
-
-<!-- If we need navigation buttons -->
-<!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-
-<!-- If we need scrollbar -->
-<!-- <div class="swiper-scrollbar"></div> -->
-<!-- </div> -->

@@ -11,3 +11,10 @@
  - site map(needs some changes)
  - contact page(needs to add google map and some styles)
  - service page(half done)
+
+
+
+team introducc
+1. どうやって動画を取るかのplan
+2. create schedule
+3. 

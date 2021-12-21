@@ -1,42 +1,37 @@
-/* main {
-    display: flex;
-    justify-content: center;
-}
- */
 section.about-company {
-    background-image: url("https://asterone.co.jp/img/outline/main_photo.jpg");
+    background-image: url("../img/about/company_building.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
+    place-content: center;
     height: 100vh;
-    align-items: center;
     position: relative;
     background-size: cover;
 }
 
-section.about-company > img {
+/* section.about-company > img {
     align-items: center;
     width: 110%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
+} */
 section.about-company > div {
-    display: grid;
-    align-items: center;
-    justify-self: flex-end;
-    padding: 2em;
-    margin: 2em;
-    width: 30%;
-    background-color: var(--asterone-black);
-    backdrop-filter: blur(2px);
-    border-radius: 5px;
-
+  padding: 2em;
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  color: var(--header-bg);
+  font-size: 3rem;
 }
-section.about-company > div p {
+
+section.about-company .emphasis {
+  color: var(--asterone-yellow);
+  font-size: 4rem;
+}
+/* section.about-company > div p {
     line-height: 2;
     padding: 1em;
     color: var(--asterone-yellow);
-}
+} */
 
 
 

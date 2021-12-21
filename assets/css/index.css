@@ -749,12 +749,13 @@ div.img-ceo img {
     right: 0;
     /* transform: translateX(50%); */
     transition: all 0.5s ease-in-out;
-    animation: rotate-backdrop 15s linear infinite;
+    animation: rotate-backdrop 20s linear infinite;
 }
 .backdrop svg{
     width: 15rem;
 }
 .bg-element {
+    z-index: -1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -763,7 +764,7 @@ div.img-ceo img {
     /* animation: rotate-backdrop 15s ease infinite; */
 }
 .bg-element svg{
-    width: 20rem;
+    width: 40rem;
 }
 
 @keyframes rotate-backdrop {
@@ -789,17 +790,12 @@ div.img-ceo img {
     font-size: 1.3rem;
     padding: 1rem 1.3rem;
     box-shadow: 1px 2px 15px 8px rgb(0 0 0 / 10%);
-
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    /* transform: translateY(2rem); */
-}
-#goTop i{
-    /* color: var(--asterone-black); */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(2rem);
 }
 
 /* Footer */
-
 footer {
     position: relative;
     width: 100%;

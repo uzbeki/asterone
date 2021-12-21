@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="test.css">
+        <title>Circles</title>
+    </head>
+
+    <body>
+        <ul class='circles'></ul>
+        <!-- <ul class='circles'> -->
+            <!-- <li class="circle">
+                <h3>会社名</h3>
+                <p>株式会社アスタワン ASTERONE Co. Ltd.</p>
+            </li>
+            <li class="circle">
+                <h3>設立</h3>
+                <p>2013年（平成25年）5月1日</p>
+            </li>
+
+            <li class="circle">
+                <h3>資本金</h3>
+                <p>10,000,000円</p>
+            </li>
+            <li class="circle">
+                <h3>代表者</h3>
+                <p>代表取締役社長 久米 幹夫</p>
+            </li>
+            <li class="circle">
+                <h3>従業員数</h3>
+                <p>26名</p>
+            </li>
+            <li class="circle">
+                <h3>免許</h3>
+                <p>労働者派遣事業 派 22-300618</p>
+            </li>
+            <li class="circle">
+                <h3>本社</h3>
+                <p> 〒435-0042
+                    静岡県浜松市東区篠ケ瀬町1368-2
+                </p>
+            </li>
+            <li class="circle">
+                <h3>本社電話番号</h3>
+                <p> TEL.053-488-4427
+                    FAX.053-488-4437</p>
+            </li>
+            <li class="circle">
+                <h3>東京オフィス</h3>
+                <p> 〒171-0014
+                    東京都豊島区池袋3丁目 60-5
+                    フェイヴァーフィールド池袋 401</p>
+            </li>
+            <li class="circle">
+                <h3>東京オフィス電話番号</h3>
+                <p> TEL.03-5843-3913
+                    FAX.03-5843-3914</p>
+            </li> -->
+        <!-- </ul> -->
+        <p></p>
+    </body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        const data = [
+            {
+                name: '会社名',
+                value: '株式会社アスタワン ASTERONE Co. Ltd.'
+            },
+            {
+                name: '設立',
+                value: '2013年（平成25年）5月1日'
+            },
+            {
+                name: '資本金',
+                value: '10,000,000円'
+            },
+            {
+                name: '代表者',
+                value: '代表取締役社長 久米 幹夫'
+            },
+            {
+                name: '従業員数',
+                value: '26名'
+            },
+            {
+                name: '免許',
+                value: '労働者派遣事業 派 22-300618'
+            },
+            {
+                name: '本社',
+                value: '〒435-0042 静岡県浜松市東区篠ケ瀬町1368-2'
+            },
+            {
+                name: '本社電話番号',
+                value: 'TEL.053-488-4427 FAX.053-488-4437'
+            },
+            {
+                name: '東京オフィス',
+                value: '〒171-0014 東京都豊島区池袋3丁目 60-5 フェイヴァーフィールド池袋 401'
+            },
+            {
+                name: '東京オフィス電話番号',
+                value: 'TEL.03-5843-3913 FAX.03-5843-3914'
+            },
+            
+        ]
+        // const circles = d3.selectAll('.circle').data(data)
+        const circles = d3.select('.circles')
+            .selectAll('li')    
+            .data(data)
+            .enter()
+            .append('li')
+            .attr('class', 'circle')
+            .append('h3')
+            .text(d => d.name)
+            
+
+    </script>
+
+</html>
