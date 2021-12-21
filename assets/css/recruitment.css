@@ -1,0 +1,110 @@
+
+
+section.catch-phrase {
+    padding: 0 var(--content-start);
+}
+section.catch-phrase h1 {
+    color: var(--asterone-black);
+    width: 40%;
+    line-height: 2;
+    transition: ease-in-out 0.3s;
+}
+section.catch-phrase h1:hover {
+    transform: scale(1.1);
+    color: var(--asterone-yellow);
+}
+
+div.sidenav{
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 1rem;
+    background-color: var(--header-bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+div.sidenav a {
+    padding: 1rem 2rem 1rem 3rem;
+    font-size: 1.3rem;
+    color: var(--asterone-black);
+    display: block;
+}
+div.sidenav a:hover {
+    color: var(--asterone-yellow);
+}
+
+.container1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .container1 h2 {
+    font-size: 2em;
+    color: var(--asterone-yellow);
+    margin: 2em;
+    text-align: center;
+  }
+  
+  .responsive-table li{
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .table-header {
+      background-color: #95A5A6;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: var(--asterone-black);
+    }
+    .col-3 {
+      flex-basis: 25%;
+    }
+    .col-4 {
+      flex-basis: 25%;
+    }
+    
+    @media all and (max-width: 767px) {
+      .table-header {
+        display: none;
+      }
+      .table-row{
+        
+      }
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .col {
+        display: flex;
+        padding: 10px 0;
+        
+      }
+  }
+
+  section.facilities h1{
+      color: var(--asterone-yellow);
+      font-size: 2em;
+  }

@@ -6,7 +6,9 @@ div.team-card {
     gap: 1rem;
     width: 100%;
 }
-
+section.team {
+    padding: 0 var(--content-start);
+}
 
 figure.fancy-card {
     font-family: "Raleway", Arial, sans-serif;
