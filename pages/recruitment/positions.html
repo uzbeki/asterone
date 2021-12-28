@@ -66,14 +66,107 @@
     <!-- ========= Main ======== -->
     <main>
         <section class="positions-section full-page">
+          <div class="whole-card-container">
             <div class="sidenav">
                 <a href="../recruitment/flow.html">採用フロー</a>
                 <a href="../recruitment/positions.html">採用ポジション</a>
                 <a href="../recruitment/form.html">採用フォーム</a>
                 <a href="https://job.mynavi.jp/22/pc/search/corp238111/outline.html">マイナビ</a>
               </div>
+              <div class="container">
+                <div class="parent">
+                  <div class="wave-card">
+                    
+                    <div class="wave-card-shape bubblies"></div>
+                    <div class="wave-card-shape"></div>
+                    <div class="wave-card-shape"></div>
+              
+                    <h1 class="wave-card-title">システムエンジニア</h1>
+                    <small class="wave-card-subtitle">System Engineer</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="parent">
+                  <div class="wave-card">
+                    
+                    <div class="wave-card-shape2"></div>
+                    <div class="wave-card-shape2"></div>
+                    <div class="wave-card-shape2"></div>
+              
+                    <h1 class="wave-card-title">バックエンド開発者</h1>
+                    <small class="wave-card-subtitle">Backend Developer</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="parent">
+                  <div class="wave-card">
+                    
+                    <div class="wave-card-shape3"></div>
+                    <div class="wave-card-shape3"></div>
+                    <div class="wave-card-shape3"></div>
+              
+                    <h1 class="wave-card-title">フロントエンド開発者</h1>
+                    <small class="wave-card-subtitle">Front end Developer</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="parent">
+                  <div class="wave-card">
+                    
+                    <div class="wave-card-shape4"></div>
+                    <div class="wave-card-shape4"></div>
+                    <div class="wave-card-shape4"></div>
+              
+                    <h1 class="wave-card-title">フルスタック開発者</h1>
+                    <small class="wave-card-subtitle">Fullstack Developer</small>
+                  </div>
+                </div>
+              </div>
+          </div>
+      <button class="bubbly-button">今すぐ応募</button>
         </section>
+
+        <section class="about-job">
+            <h1 class="about-job-title">仕事内容</h1>
+            <div class="content">
+              <p>お客様から依頼を受けた案件に対して、設計、開発、評価を行っていただきます。
+                また新しいアイディアを発想し実現に向けて企画、開発を行っていただきます。お客様から依頼を受けた案件に対して、設計、開発、評価を行っていただきます。お客様から依頼を受けた案件に対して、設計、開発、評価を行っていただきます。</p>
+            </div>
+            <div class="img">
+               <img src="../../assets/img/about_job.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="smth-section full-page"></section>
     </main>
+
+     <!-- =========  Script ========= -->
+
+     <script>
+     var animateButton = function(e) {
+
+     e.preventDefault;
+      //reset animation
+     e.target.classList.remove('animate');
+
+     e.target.classList.add('animate');
+     setTimeout(function(){
+     e.target.classList.remove('animate');
+    },700);
+};
+
+    var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+    for (var i = 0; i < bubblyButtons.length; i++) {
+    bubblyButtons[i].addEventListener('click', animateButton, false);
+    }
+     </script>
      <!-- ========= Footer ========== -->
  <footer>
     <div class="container ">
