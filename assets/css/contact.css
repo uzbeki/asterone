@@ -85,8 +85,6 @@ section.container-box > div i {
     height: 0;
     background-color: var(--asterone-yellow);
     background-image: linear-gradient(315deg, var(--asterone-yellow-darker) 0%, #ffcc2f 74%);
-    /* background: linear-gradient(60deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%); */
-    /* opacity: 1; */
     transition: all 0.8s ease-in-out;
     z-index: 1;
 }
@@ -102,10 +100,6 @@ section.container-box > div i {
 .box:hover .icon-container {
     box-shadow: 0px 0px 42px 0px rgb(0 0 0 / 22%);
     /* background: transparent; */
-}
-
-.box:hover {
-    /* color: white; */
 }
 
 /* ================ CONTACT FORM ================ */

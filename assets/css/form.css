@@ -1,0 +1,142 @@
+
+div.sidenav{
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 1rem;
+  background-color: var(--header-bg);
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+div.sidenav a {
+  padding: 1rem 2rem 1rem 3rem;
+  font-size: 1.3rem;
+  color: var(--asterone-black);
+  display: block;
+}
+div.sidenav a:hover {
+  color: var(--asterone-yellow);
+}
+.info p {
+    text-align:center;
+    color: #999;
+    text-transform:none;
+    font-weight:600;
+    font-size:15px;
+    margin-top:2px
+  }
+  
+  form h1 {
+    font-size: 18px;
+    background: var(--asterone-yellow-darker);
+    color: rgb(255, 255, 255);
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none; 
+    text-align:left
+  }
+  
+  form {
+    border-radius: 5px;
+    max-width:700px;
+    width:100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  p span {
+    color: var(--asterone-yellow);
+  }
+  
+  p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color:#333;
+  }
+  
+  h1 {
+    text-align:center; 
+    color: #666;
+    text-shadow: 1px 1px 0px #FFF;
+    margin:50px 0px 0px 0px
+  }
+  
+  input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  a {
+    text-decoration:inherit
+  }
+  
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px; 
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  .form-group {
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+  
+  i {
+    color:#555;
+  }
+  
+  .contentform {
+    padding: 40px 30px;
+  }
+  
+  .bouton-contact{
+    background-color: var(--asterone-yellow-darker);
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border:0;
+    padding: 17px 25px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .leftcontact {
+    width:49.5%; 
+    float:left;
+    border-right: 1px dotted #CCC;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 0px;
+  }
+  
+  .rightcontact {
+    width:49.5%;
+    float:right;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+  }

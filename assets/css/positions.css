@@ -1,0 +1,21 @@
+
+
+div.sidenav{
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 1rem;
+    background-color: var(--header-bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+div.sidenav a {
+    padding: 1rem 2rem 1rem 3rem;
+    font-size: 1.3rem;
+    color: var(--asterone-black);
+    display: block;
+}
+div.sidenav a:hover {
+    color: var(--asterone-yellow);
+}
