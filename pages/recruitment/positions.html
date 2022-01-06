@@ -129,7 +129,12 @@
                 </div>
               </div>
           </div>
-      <button class="bubbly-button">今すぐ応募</button>
+     
+          <a class="fill-button" href="./form.html">
+            <span class="fill-button-hover">		
+              <span class="fill-button-text">今すぐ応募</span>
+            </span>
+          </a>
         </section>
 
         <section class="about-job">
@@ -143,30 +148,28 @@
             </div>
         </section>
 
-        <section class="smth-section full-page"></section>
+        <section class="employment-record full-page">
+            <h1>採用実績</h1>
+            <div class="employment-record-container">
+                <div class="employment-record-card-left">
+                    <h2>採用実績（学校）</h2>
+                    <h3>大学</h3>
+                    <p>静岡大学、同志社大学、立命館アジア太平洋大学、愛知大学</p>
+                    <h3>短大・高専・専門学校</h3>
+                    <p>浜松情報専門学校、大原簿記情報医療専門学校浜松校</p>
+                </div>
+                <div class="employment-record-card-right">
+                    <h2>採用実績（人数）</h2>
+                    <h3 class="years">2019年 2020年 2021年</h3>
+                    <p>大学 ― 2名 2名</p>
+                    <p>専門卒 ― 2名 2名</p>
+                    <p>高卒 1名 ― ―</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-     <!-- =========  Script ========= -->
-
-     <script>
-     var animateButton = function(e) {
-
-     e.preventDefault;
-      //reset animation
-     e.target.classList.remove('animate');
-
-     e.target.classList.add('animate');
-     setTimeout(function(){
-     e.target.classList.remove('animate');
-    },700);
-};
-
-    var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-    for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-    }
-     </script>
+  
      <!-- ========= Footer ========== -->
  <footer>
     <div class="container ">
