@@ -56,8 +56,8 @@ section.middle-section {}
 div.flex-div {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   display: flex;
+  place-content: center;
   gap: 2rem;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 1em;
