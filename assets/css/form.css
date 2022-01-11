@@ -16,7 +16,7 @@ div.sidenav a {
   display: block;
 }
 div.sidenav a:hover {
-  color: var(--asterone-yellow);
+  color: var(--primary);
 }
 .info p {
     text-align:center;
@@ -29,7 +29,7 @@ div.sidenav a:hover {
   
   form h1 {
     font-size: 18px;
-    background: var(--asterone-yellow-darker);
+    background: var(--primary-dark);
     color: rgb(255, 255, 255);
     padding: 22px 25px;
     border-radius: 5px 5px 0px 0px;
@@ -48,7 +48,7 @@ div.sidenav a:hover {
   }
   
   p span {
-    color: var(--asterone-yellow);
+    color: var(--primary);
   }
   
   p {
@@ -114,7 +114,7 @@ div.sidenav a:hover {
   }
   
   .bouton-contact{
-    background-color: var(--asterone-yellow-darker);
+    background-color: var(--primary-dark);
     color: #FFF;
     text-align: center;
     width: 100%;

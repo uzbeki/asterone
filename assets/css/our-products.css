@@ -98,7 +98,7 @@ img.left {
 div.right h1 {
     padding-top: 15px;
     font-size: 2rem;
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 .separator {
     margin-top: 10px;

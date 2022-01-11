@@ -1,5 +1,5 @@
 ::selection {
-    background: var(--asterone-yellow);
+    background: var(--primary);
     color: var(--asterone-black);
 }
 
@@ -15,18 +15,25 @@ body {
     grid-template-rows: auto 1fr auto;
     /* gap: 1em; */
     min-height: 100vh;
-    --asterone-yellow: hsl(43, 93%, 58%);
-    --asterone-yellow-darker: hsl(43, 93%, 40%);
-    --asterone-yellow-dark: hsl(43, 93%, 30%);
-    --asterone-yellow-lighter: hsl(43, 93%, 70%);
-    --asterone-black: hsl(9, 23%, 11%);
-    --asterone-black-lighter: hsl(9, 23%, 21%);
-    --asterone-black-light: hsl(9, 23%, 31%);
+    --asterone-yellow: #ffcc00;
+    --asterone-black: #0d0d0d;
+
     --navbar-black: #252628;
     --light-gray: #bbb;
-    /* #f7f7f7 */
+
+    --primary: var(--asterone-yellow);
+    --secondary-blue: #199DFF;
+    --secondary-blue-bg: hsl(206, 80%, 95%);
+    --secondary-violet: #8B19FF;
+    --secondary-violet-bg: hsl(270, 100%, 85%);
+    --primary-dark: #FF9E0D;
+    --primary-light: #FEFF0D;
+
     --white: #fff;
+    --black: var(--asterone-black);
+    --black-light: hsl(0, 0%, 25%);
     --header-bg: #f2f2f2;
+    
     /* sizes */
     --header-height: 100px;
     --footer-height: 200px;
@@ -111,7 +118,7 @@ footer .brand-logo h3 {
 }
 
 .brand-logo h3 span {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 header .bottom nav ul {
@@ -127,7 +134,7 @@ header .bottom nav ul li.active {}
 
 header .bottom nav ul li::after {
     content: "";
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary);
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -223,7 +230,8 @@ section.banner .content a.btn .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: linear-gradient(to right, var(--asterone-yellow-darker) 0%, var(--asterone-yellow) 100%);
+    /* background: linear-gradient(to right, var(--primary-dark) 0%, var(--primary) 100%); */
+    background: var(--secondary-blue);
     border-radius: 1.625rem;
 }
 
@@ -315,7 +323,7 @@ section.news .news-container .intro-title {
 section.news .news-container .intro-title h2 {
     font-size: 2em;
     font-weight: 900;
-    color: var(--asterone-yellow-lighter);
+    color: var(--primary-light);
 }
 
 section.news .news-container .intro-title .arrow {
@@ -354,7 +362,7 @@ section.news .news-container .intro-title .arrow img {
 
 #news-content div p {
     font-size: smaller;
-    color: var(--asterone-yellow-lighter);
+    color: var(--primary-light);
     margin-top: .5rem;
 }
 
@@ -383,7 +391,7 @@ section.services {
 
 .intro .intro-title h2 {
     font-size: 2em;
-    color: var(--asterone-yellow);
+    color: var(--secondary-blue);
     font-weight: 700;
 }
 
@@ -429,7 +437,9 @@ section.services .service-list li {
     object-fit: cover;
 }
 
-
+.service__content h3 {
+    color: var(--primary-dark);
+}
 
 /* ************* Partners ************* */
 section.partners {
@@ -571,7 +581,7 @@ section.testimonials ul.testimonial-cards {}
     height: 60px;
     margin: 0 auto;
     padding: 4px;
-    border: 1px dashed var(--asterone-yellow);
+    border: 1px dashed var(--primary);
     border-radius: 100%;
     margin-bottom: 15px;
     position: relative;
@@ -585,14 +595,14 @@ section.testimonials ul.testimonial-cards {}
     display: grid;
     place-content: center;
     border-radius: 100%;
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary-dark);
 }
 
 .testimonial .content .icon::before,
 .testimonial .content .icon::after {
     content: "";
     position: absolute;
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary-dark);
     height: 3px;
     width: 60px;
     top: 50%;
@@ -720,12 +730,12 @@ div.message {
 
 div.message h3 {
     font-size: 2rem;
-    color: var(--asterone-yellow);
+    color: var(--secondary-blue);
 }
 
 div.message p {
     line-height: 2;
-    color: var(--asterone-black);
+    color: var(--black);
 }
 
 div.message .signature {
@@ -784,9 +794,9 @@ div.img-ceo img {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
-    background: linear-gradient(to right, var(--asterone-yellow) 0%, var(--asterone-yellow-lighter) 100%);
-    /* background: linear-gradient(to right, var(--asterone-yellow-darker) 0%, var(--asterone-yellow) 100%); */
-    color: var(--asterone-black);
+    /* background: linear-gradient(to right, var(--primary) 0%, var(--primary-light) 100%); */
+    background: var(--primary);
+    color: var(--black);
     font-size: 1.3rem;
     padding: 1rem 1.3rem;
     box-shadow: 1px 2px 15px 8px rgb(0 0 0 / 10%);
@@ -829,7 +839,7 @@ footer .container .sec.about-us p {
 
 footer .container h2 {
     position: relative;
-    color: var(--asterone-yellow);
+    color: var(--primary);
     font-weight: 500;
     margin-bottom: 15px;
     width: fit-content;
@@ -866,7 +876,7 @@ footer p {
 }
 
 .sci li a .fab {
-    color: var(--asterone-yellow);
+    color: var(--primary);
     font-size: 20px;
 }
 
@@ -880,7 +890,7 @@ div.links li {
 }
 
 div.links li a:hover {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 .contact {
@@ -913,7 +923,7 @@ div.links li a:hover {
 }
 
 .contact .info li a:hover {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 .copyright-text {

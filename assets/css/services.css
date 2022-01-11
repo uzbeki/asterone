@@ -50,7 +50,7 @@ section.services .cards li.card .card-content .card-icon {
 
 section.services .cards li.card .card-content .card-icon i {
     font-size: 1.5em;
-    color: var(--asterone-yellow);
+    color: var(--primary);
     transition: all 0.3s ease-in-out;
 }
 
@@ -94,7 +94,7 @@ section.services .cards li.card .card-footer::after {
     position: absolute;
     width: 300px;
     height: 100px;
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary);
     opacity: 80%;
     transform: rotate(-55deg);
     left: 160px;
@@ -116,7 +116,7 @@ section.services .cards li.card:hover .card-image img {
 }
 
 section.services .cards li.card:hover .card-footer {
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary);
 }
 
 section.services .cards li.card:hover .card-footer p,
@@ -125,7 +125,7 @@ section.services .cards li.card:hover .card-content i {
 }
 
 section.services .cards li.card:hover .card-footer i {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 section.services .cards li.card:hover .card-footer::after {

@@ -1,12 +1,12 @@
 section.about-company {
-    background-image: url("../img/about/company_building.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    position: relative;
-    background-size: cover;
+  background-image: url("../img/about/company_building.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+  height: calc(100vh - var(--header-height));
+  position: relative;
+  background-size: cover;
 }
 
 /* section.about-company > img {
@@ -15,90 +15,205 @@ section.about-company {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 } */
-section.about-company > div {
-  padding: 2em;
+section.about-company .description {
+  padding: .5rem;
   backdrop-filter: blur(8px);
   border-radius: 1rem;
   color: var(--header-bg);
+  /* min-width: 100vw; */
+}
+
+.description h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 section.about-company .emphasis {
-  color: var(--asterone-yellow);
+  color: var(--primary);
   font-size: 4rem;
+  display: inline-block;
+  width: 12rem;
 }
+
+/* Rotating text styles */
+.word {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translate(-50%, -10%);
+}
+
+.letter {
+  display: inline-block;
+  /* position: absolute; */
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+.about-company .info {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  animation: move_around 25s ease-in-out infinite;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info.left {
+  left: 8%;
+  top: 8%;
+  animation-direction: reverse;
+}
+
+.info.right {
+  right: 10%;
+  bottom: 10%;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+}
+
+.info.top {
+  right: 20%;
+  top: 10%;
+  animation-delay: .5s;
+}
+
+
+
+.info.bottom {
+  left: 30%;
+  bottom: 10%;
+  animation-delay: 1s;
+  animation-direction: normal;
+}
+
+@keyframes move_around {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(2rem, -2rem);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(1rem, 2rem);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 /* section.about-company > div p {
     line-height: 2;
     padding: 1em;
-    color: var(--asterone-yellow);
+    color: var(--primary);
 } */
 
 
 
 section.mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
 }
 
+
+
 .infocardContainer {
-    display: flex;
-    height: 40vh;
-    width: 30vw;
-    border-radius: 100px;
-    background: rgb(241, 225, 0);
-    background: linear-gradient(121deg, #c59700fb 13%, rgb(253, 224, 61) 100%);
-    transition: all 500ms ease-in;
-    transition-delay: 1s;
-    margin: auto;
-    margin-top: 100px;
-    --margin-top: 100px;
-    overflow: hidden;
-  }
-  .infocardContainer:hover {
-    width: 500px;
-    border-radius: 100px 10px 100px 100px;
-    transition: all 1s ease-out;
-  }
-  .infocardContainer p{
-      overflow: hidden;
-  }
-  .infocardContainer div {
-    flex-shrink: 1;
-    width: 100%;
-    --background-color: green;
-  }
-  .infocardContainer div * {
-    display: flex;
-    --flex: inherit;
-    overflow: hidden;
-    text-overflow: hidden;
-    --background-color: rgba(255, 153, 0, 0.774);
-    color: white;
-    white-space: nowrap;
-    width: 0;
-    height: auto;
-    transition: all 450ms ease-in;
-    transition-delay: 1s;
-  }
-  .infocardContainer:hover div *{
-    display: flex;
-    visibility: visible;
-    transition: all 1s ease-out;
-    transition-delay: 500ms;
-    width: 100%;
-    height: auto;
-  }
-  
-  .infocardContainer #main, .infocardContainer #main h1{
-    text-align: center;
-    font-size: 2em;
-    color: var(--asterone-yellow);
-    display: contents;
-  }
-  /* .infocardContainer #main h1{
+  display: flex;
+  height: 40vh;
+  width: 30vw;
+  border-radius: 100px;
+  background: rgb(241, 225, 0);
+  background: linear-gradient(121deg, #c59700fb 13%, rgb(253, 224, 61) 100%);
+  transition: all 500ms ease-in;
+  transition-delay: 1s;
+  margin: auto;
+  margin-top: 100px;
+  --margin-top: 100px;
+  overflow: hidden;
+}
+
+.infocardContainer:hover {
+  width: 500px;
+  border-radius: 100px 10px 100px 100px;
+  transition: all 1s ease-out;
+}
+
+.infocardContainer p {
+  overflow: hidden;
+}
+
+.infocardContainer div {
+  flex-shrink: 1;
+  width: 100%;
+  --background-color: green;
+}
+
+.infocardContainer div * {
+  display: flex;
+  --flex: inherit;
+  overflow: hidden;
+  text-overflow: hidden;
+  --background-color: rgba(255, 153, 0, 0.774);
+  color: white;
+  white-space: nowrap;
+  width: 0;
+  height: auto;
+  transition: all 450ms ease-in;
+  transition-delay: 1s;
+}
+
+.infocardContainer:hover div * {
+  display: flex;
+  visibility: visible;
+  transition: all 1s ease-out;
+  transition-delay: 500ms;
+  width: 100%;
+  height: auto;
+}
+
+.infocardContainer #main,
+.infocardContainer #main h1 {
+  text-align: center;
+  font-size: 2em;
+  color: var(--primary);
+  display: contents;
+}
+
+/* .infocardContainer #main h1{
     height: 180px;
     width: 180px;
     transition: none;
@@ -106,96 +221,196 @@ section.mission {
     position: relative;
     border: 10px solid rgb(255, 255, 255);
   } */
-  .infocardContainer #textbois {
-    position: relative;
-    padding: 2em 0;
-  }
-  .infocardContainer #textbois #hotlinks {
-    max-width: 60%;
-    max-height: 30px;
-    position:absolute;
-    bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 13px;
-  }
-  .infocardContainer #textbois #hotlinks * {
-    background-color: white;
-    max-width: 30px;
-    --margin: 0 1px 0 1px;
-    border-radius: 25px;
-  }
- 
+.infocardContainer #textbois {
+  position: relative;
+  padding: 2em 0;
+}
 
-  section.company-data {
-     min-height: 100vh;
+.infocardContainer #textbois #hotlinks {
+  max-width: 60%;
+  max-height: 30px;
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 13px;
+}
+
+.infocardContainer #textbois #hotlinks * {
+  background-color: white;
+  max-width: 30px;
+  --margin: 0 1px 0 1px;
+  border-radius: 25px;
+}
+
+
+section.value1 {
+  flex-direction: row;
+  /* flex-wrap: wrap-reverse; */
+  justify-content: space-between;
+  gap: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 var(--content-start);
+  position: relative;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-80%, -20%);
+  z-index: -1;
+}
+
+.about {
+  width: 40rem;
+  padding: 2rem;
+}
+
+.vision {
+  width: 50%;
+}
+
+.vision img {
+  max-width: 80%;
+
+}
+
+.full-page .title {
+  padding: 0 2rem;
+
+}
+
+.about h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin: 1rem 0;
+  /* text-shadow: 1px 1px rgba(0, 0, 0, 0.03); */
+}
+
+.about h2 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.about p,
+.about li {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+}
+
+.about li {
+  list-style: circle inside;
+}
+
+/*** Company data ****/
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--asterone-black);
+}
+
+.container h2 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin: 2rem;
+  text-align: center;
+}
+
+.responsive-table li.row {
+  /* border-radius: 13px; */
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+.row:hover,
+.row:focus {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.col-1 {
+  flex-basis: 10%;
+}
+
+.col-2 {
+  flex-basis: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--asterone-black);
+}
+
+/* .col-3 {
+  flex-basis: 25%;
+} */
+
+.col-4 {
+  flex-basis: 70%;
+}
+
+.address-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-flow: wrap; */
+  gap: 1rem;
+}
+
+.address {
+  margin-bottom: 1rem;
+}
+
+.tel-fax {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tel-fax i {
+  margin-right: .5rem;
+}
+
+address a {
+  color: var(--black-light);
+}
+
+
+@media all and (max-width: 767px) {
+  .responsive-table li.row {
+    padding: 1rem;
   }
-  .container1 {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .container1 h2 {
-    font-size: 2em;
-    color: var(--asterone-yellow);
-    margin: 2em;
-    text-align: center;
-  }
-  
-  .responsive-table li{
-      border-radius: 3px;
-      padding: 25px 30px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 25px;
-    }
-    .table-header {
-      background-color: #95A5A6;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-    .table-row {
-      background-color: #ffffff;
-      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    }
-    .col-1 {
-      flex-basis: 10%;
-    }
-    .col-2 {
-      flex-basis: 40%;
-      font-weight: bold;
-      font-size: 1.2em;
-      color: var(--asterone-black);
-    }
-    .col-3 {
-      flex-basis: 25%;
-    }
-    .col-4 {
-      flex-basis: 25%;
-    }
-    
-    @media all and (max-width: 767px) {
-      .table-header {
-        display: none;
-      }
-      .table-row{
-        
-      }
-      li {
-        display: block;
-      }
-      .col {
-        
-        flex-basis: 100%;
-        
-      }
-      .col {
-        display: flex;
-        padding: 10px 0;
-        
-      }
-  }
+}
+
+
+
+section.company-data {
+  display: flex;
+  position: relative;
+}
+
+section.company-data .map {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.map img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.backdrop {
+  bottom: 0;
+  top: unset;
+}

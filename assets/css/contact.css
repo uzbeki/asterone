@@ -35,7 +35,7 @@ section.container-box > div {
     transition: all 0.3s ease-out;
     text-decoration: none;
     padding: 2rem;
-    --shadow: var(--asterone-yellow);
+    --shadow: var(--primary);
 }
 
 section.container-box > div .icon-container {
@@ -44,7 +44,7 @@ section.container-box > div .icon-container {
     width: 4rem;
     background-color: #f5d020;
     background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-    /* background-image: linear-gradient(50deg, var(--asterone-yellow) 0%, hsl(43, 93%, 70%) 100%); */
+    /* background-image: linear-gradient(50deg, var(--primary) 0%, hsl(43, 93%, 70%) 100%); */
     display: grid;
     place-content: center;
     margin: 0 auto;
@@ -83,8 +83,8 @@ section.container-box > div i {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: var(--asterone-yellow);
-    background-image: linear-gradient(315deg, var(--asterone-yellow-darker) 0%, #ffcc2f 74%);
+    background-color: var(--primary);
+    background-image: linear-gradient(315deg, var(--primary-dark) 0%, #ffcc2f 74%);
     transition: all 0.8s ease-in-out;
     z-index: 1;
 }
@@ -113,7 +113,7 @@ form {
     padding: 2rem;
     max-width: 50rem;
     background-color: #fce043;
-    background-image: linear-gradient(315deg, #fce043 0%, var(--asterone-yellow-darker) 74%);
+    background-image: linear-gradient(315deg, #fce043 0%, var(--primary-dark) 74%);
     /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,7 +181,7 @@ input[type="checkbox"] + label {
     color: #fff;
     font-weight: 700;
     font-size: 15px;
-    background-color: var(--asterone-yellow-darker);
+    background-color: var(--primary-dark);
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -199,7 +199,7 @@ input[type="checkbox"] + label {
     top: 0;
     height: 490%;
     width: 140%;
-    background: var(--asterone-yellow);
+    background: var(--primary);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);

@@ -31,9 +31,9 @@ div.top-section-content {
 div.top-section-content h1 {
   font-size: 6em;
   z-index: 2;
-  /* color: var(--asterone-yellow); */
+  /* color: var(--primary); */
   color: var(--white);
-  /* text-shadow: var(--asterone-yellow-darker) 0px 0px 5px; */
+  /* text-shadow: var(--primary-dark) 0px 0px 5px; */
   text-shadow: 0 1px 0 black;
 }
 
@@ -44,7 +44,7 @@ div.top-section-content p {
   font-weight: bold;
   color: var(--white);
   /* text-shadow: 0 1px 0 black; */
-  /* background: var(--asterone-yellow); */
+  /* background: var(--primary); */
   /* display: inline; */
   /* padding: 0; */
   -webkit-box-decoration-break: clone;
@@ -99,7 +99,7 @@ div.flex-div {
 }
 
 .flip-card-back {
-  background-color: var(--asterone-yellow-darker);
+  background-color: var(--primary-dark);
   transform: rotateY(180deg);
 }
 
@@ -135,7 +135,7 @@ section.bottom-section img {
 
 section.bottom-section h1 {
   font-size: 4em;
-  color: var(--asterone-yellow-darker);
+  color: var(--primary-dark);
   text-align: center;
 }
 

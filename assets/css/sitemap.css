@@ -17,7 +17,7 @@
 
 #container div.sitemap h1 {
     text-align: center;
-    color: var(--asterone-yellow);
+    color: var(--primary);
     padding: 2rem;
 }
 
@@ -37,7 +37,7 @@ div.sitemap-links p {
 }
 
 div.sitemap-links p:hover {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 } */
 
 #container {
@@ -58,10 +58,10 @@ div.line-div {
 }
 
 #container h1 {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 div.homepage {
-    border: 1px solid var(--asterone-black-light);
+    border: 1px solid var(--black-light);
     text-align: center;
     padding: 2rem;
 }
@@ -72,13 +72,13 @@ div.homepage {
 div.homepage a i {
     display: block;
     font-size: 4rem;
-    color: var(--asterone-yellow-lighter);
+    color: var(--primary-light);
     position: relative;
     top: -70px;
 }
 
 div.sitemap-links {
-    border: 1px solid var(--asterone-black-light);
+    border: 1px solid var(--black-light);
     text-align: center;
     padding: 2rem;
     
@@ -86,13 +86,13 @@ div.sitemap-links {
 div.sitemap-links a i {
     display: block;
     font-size: 4rem;
-    color: var(--asterone-yellow-lighter);
+    color: var(--primary-light);
     position: relative;
     top:-60px;
 }
 
 div.links-child {
-    border: 1px solid var(--asterone-black-light);
+    border: 1px solid var(--black-light);
     text-align: center;
     padding: 2.5rem;
 }

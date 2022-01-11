@@ -17,7 +17,7 @@ div.sidenav a {
     display: block;
 }
 div.sidenav a:hover {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 /* cards */
@@ -180,14 +180,14 @@ div.whole-card-container {
     margin-bottom: 2rem;
     padding: 0.5em 1.5em;
     appearance: none;
-    background-color: var(--asterone-yellow);
+    background-color: var(--primary);
     color: #fff;
     border-radius: 5%;
     border: none;
     cursor: pointer;
     position: relative;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    box-shadow: 0 2px 25px var(--asterone-yellow);
+    box-shadow: 0 2px 25px var(--primary);
   }
 .bubbly-button:focus {
     outline: 0;
@@ -308,7 +308,7 @@ div.whole-card-container {
   section.about-job h1 {
     font-size: 4em;
     margin: 0 0 1rem;
-    color: var(--asterone-yellow-darker);
+    color: var(--primary-dark);
     position: relative;
   }
   h1.about-job-title::after {

@@ -17,7 +17,7 @@ div.sidenav a {
     display: block;
 }
 div.sidenav a:hover {
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 div.flow-steps {
@@ -76,7 +76,7 @@ div.middle-container p {
     border: 1px solid var(--header-bg);
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--asterone-yellow-darker);
+    color: var(--primary-dark);
 }
 
 div.middle-container p:hover {
@@ -84,7 +84,7 @@ div.middle-container p:hover {
     transition: ease 0.5s;
     border: 2px solid var(--header-bg);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 div.middle-container-right p{
     text-align: center;

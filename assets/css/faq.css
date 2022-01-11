@@ -23,12 +23,12 @@ section.content {
 
 section.content h1 {
     font-size: 2em;
-    color: var(--asterone-yellow);
+    color: var(--primary);
 }
 
 div.image_arrow i {
     font-size: 2em;
-    color: var(--asterone-yellow);
+    color: var(--primary);
     cursor: pointer;
     margin-bottom: 1rem;
 }

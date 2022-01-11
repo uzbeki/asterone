@@ -29,7 +29,7 @@ main div.privacy {
 
 main div.intro-title h1 {
     font-size: 2em;
-    color: var(--asterone-yellow);
+    color: var(--primary);
     padding: 0 2.5rem;
 }
 
