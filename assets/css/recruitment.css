@@ -96,11 +96,6 @@ section.catch-phrase h1 {
   color: var(--white);
   font-size: 4rem;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-  transition: ease-in-out 0.3s;
-}
-
-section.catch-phrase h1:hover {
-  transform: scale(1.1);
 }
 
 div.sidenav {

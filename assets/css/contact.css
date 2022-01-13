@@ -1,4 +1,4 @@
-main section.contact-form, section.container-box {
+main section.container-box {
     min-height: 100vh;
     margin: 0 var(--content-start);
 }
@@ -21,6 +21,7 @@ section.container-box h3 {
 
 section.container-box p {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 section.container-box > div {
@@ -42,9 +43,9 @@ section.container-box > div .icon-container {
     position: relative;
     height: 4rem;
     width: 4rem;
-    background-color: #f5d020;
-    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-    /* background-image: linear-gradient(50deg, var(--primary) 0%, hsl(43, 93%, 70%) 100%); */
+    /* background-color: #f5d020; */
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%); 
+    /* /* background-image: linear-gradient(50deg, var(--primary) 0%, hsl(43, 93%, 70%) 100%); */
     display: grid;
     place-content: center;
     margin: 0 auto;
@@ -83,7 +84,7 @@ section.container-box > div i {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     background-image: linear-gradient(315deg, var(--primary-dark) 0%, #ffcc2f 74%);
     transition: all 0.8s ease-in-out;
     z-index: 1;
@@ -102,19 +103,242 @@ section.container-box > div i {
     /* background: transparent; */
 }
 
+
+
+
+
+
+
+
+
+
+/* ===============TESTING==================== */
+
+
+
+
+
+section.container-box > div.office-hours {
+    width: 100%;
+    height: 321px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    padding: 2rem;
+    --shadow: var(--primary);
+}
+
+section.container-box > div.office-hours .icon-container {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    /* background-color: var(--secondary-blue); */
+    background-image: linear-gradient(315deg, var(--secondary-blue-bg) 0%, var(--secondary-blue) 74%);
+    /* background-image: linear-gradient(50deg, var(--primary) 0%, hsl(43, 93%, 70%) 100%); */
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 100% 100% 0;
+    transition: all 0.5s ease-out;
+}
+
+section.container-box > div.office-hours i {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+    transition: all 0.8s ease-out;
+    transform: rotate(-45deg);
+}
+
+.office-hours {
+    position: relative;
+}
+
+.office-hours .icon-container {
+    z-index: 3;
+}
+
+.office-hours.content {
+    z-index: 3;
+    position: relative;
+    transition: all 0.6s ease-out;
+}
+
+.office-hours:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* background-color: var(--primary); */
+    background-image: linear-gradient(315deg, var(--secondary-blue) 0%, var(--secondary-blue-bg) 74%);
+    transition: all 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.office-hours:hover::before {
+    height: 100%;
+}
+.office-hours:hover .content {
+    color: white;
+    text-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+}
+
+.office-hours:hover .icon-container {
+    box-shadow: 0px 0px 42px 0px rgb(0 0 0 / 22%);
+    /* background: transparent; */
+}
+
+
+
+section.container-box > div.email {
+    width: 100%;
+    height: 321px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    padding: 2rem;
+    --shadow: var(--primary);
+}
+
+section.container-box > div.email .icon-container {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    /* background-color: var(--secondary-blue); */
+    background-image: linear-gradient(315deg, var(--secondary-violet-bg) 0%, var(--primary-dark) 74%);
+    /* background-image: linear-gradient(50deg, var(--primary) 0%, hsl(43, 93%, 70%) 100%); */
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 100% 100% 0;
+    transition: all 0.5s ease-out;
+}
+
+section.container-box > div.email i {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+    transition: all 0.8s ease-out;
+    transform: rotate(-45deg);
+}
+
+.email {
+    position: relative;
+}
+
+.email .icon-container {
+    z-index: 3;
+}
+
+.email.content {
+    z-index: 3;
+    position: relative;
+    transition: all 0.6s ease-out;
+}
+
+.email:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* background-color: var(--primary); */
+    background-image: linear-gradient(315deg, var(--secondary-violet-bg) 0%, var(--primary-dark) 74%);
+    transition: all 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.email:hover::before {
+    height: 100%;
+}
+.email:hover .content {
+    color: white;
+    text-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+}
+
+.office-hours:hover .icon-container {
+    box-shadow: 0px 0px 42px 0px rgb(0 0 0 / 22%);
+    /* background: transparent; */
+}
+
+
+
+
+/* ===============TESTING ENDS=================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================ CONTACT FORM ================ */
 
 section.contact-form {
-    margin: 2rem 0;
+    background-color: var(--header-bg);
+    width: 100%;
 }
-
+section.contact-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--asterone-black);
+    padding: 2.5rem;
+}
 form {
-    border-radius: var(--border-radius);
     padding: 2rem;
-    max-width: 50rem;
-    background-color: #fce043;
-    background-image: linear-gradient(315deg, #fce043 0%, var(--primary-dark) 74%);
-    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+    max-width: 60rem;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -130,6 +354,10 @@ form section {
 
 form section a {
     font-size: 1.2rem;
+    transition: 2s ease-in;
+}
+form section a:hover {
+  transform: scale(1.1);
 }
 
 form section.agree_check {
@@ -140,16 +368,16 @@ form section.agree_check {
 
 form section label {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--asterone-black);
     font-weight: bold;
 }
 
 form section input,
 form section textarea {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--secondary-blue);
     background: transparent;
-    color: #fff;
+    color: var(--asterone-black);   
     font-size: 1.2rem;
     padding: 0.5rem;
     /* width: 100%; */
@@ -157,7 +385,7 @@ form section textarea {
 }
 
 form section input::placeholder {
-    color: hsla(0, 0%, 100%, 0.8);
+    color: var(--secondary-blue);
 }
 
 input[type="checkbox"] {
@@ -170,7 +398,7 @@ input[type="checkbox"] + label {
 }
 
 .btn {
-    border: none;
+    border: 1px solid var(--secondary-blue);
     display: block;
     text-align: center;
     cursor: pointer;
@@ -178,10 +406,9 @@ input[type="checkbox"] + label {
     outline: none;
     overflow: hidden;
     position: relative;
-    color: #fff;
-    font-weight: 700;
-    font-size: 15px;
-    background-color: var(--primary-dark);
+    color: var(--asterone-black);
+    font-weight: normal;
+    font-size: 1.5rem;
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -199,7 +426,7 @@ input[type="checkbox"] + label {
     top: 0;
     height: 490%;
     width: 140%;
-    background: var(--primary);
+    background-image: linear-gradient(315deg, var(--secondary-blue) 0%, var(--secondary-blue-bg) 74%);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -220,7 +447,6 @@ main > section.accsess-map {
     width: 100vw;
     height: 600px;
     margin-top: 10%;
-    background-color: teal;
 }
 div.mapouter {
     height: 750px;
