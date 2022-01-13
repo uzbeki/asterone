@@ -6,6 +6,7 @@ section.services .cards {
     width: 100%;
     /* justify-content: space-between; */
     place-content: center space-between;
+    margin-top: -13rem;
 }
 
 section.services .cards li.card {
@@ -108,7 +109,6 @@ section.services .cards li.card .card-footer i {
     /* margin: 0 5px; */
 }
 
-
 /* Main > Services > Hover effects */
 
 section.services .cards li.card:hover .card-image img {
@@ -137,19 +137,19 @@ div.services-container {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-left: 4rem;
     position: relative;
     background-color: var(--asterone-bg);
 }
-div.img-wrapper{
+div.img-wrapper {
     border-radius: 50%;
     background-color: var(--asterone-yellow);
-    
 }
-div.img-wrapper img{
+div.img-wrapper img {
     border-radius: 50%;
     width: 30vw;
 }
-div.info-box1{
+div.info-box1 {
     text-align: left;
     position: absolute;
     top: 15%;
@@ -159,27 +159,27 @@ div.info-box1{
     border-radius: 4px;
     background-color: #fff;
 }
-div.info-box1 span{
+div.info-box1 span {
     font-size: 2em;
     font-weight: 900;
     color: var(--asterone-black);
 }
-div.info-box1 p{
+div.info-box1 p {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--asterone-black);
 }
-div.info-box1 i{
-   position: absolute;
+div.info-box1 i {
+    position: absolute;
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
     color: var(--asterone-black);
-   background-color: var(--asterone-yellow);
+    background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;
 }
-div.info-box2{
+div.info-box2 {
     text-align: left;
     position: absolute;
     top: -7%;
@@ -189,27 +189,27 @@ div.info-box2{
     border-radius: 4px;
     background-color: #fff;
 }
-div.info-box2 span{
+div.info-box2 span {
     font-size: 2em;
     font-weight: 900;
     color: var(--asterone-black);
 }
-div.info-box2 p{
+div.info-box2 p {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--asterone-black);
 }
-div.info-box2 i{
-   position: absolute;
+div.info-box2 i {
+    position: absolute;
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
     color: var(--asterone-black);
-   background-color: var(--asterone-yellow);
+    background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;
 }
-div.info-box3{
+div.info-box3 {
     text-align: left;
     position: absolute;
     top: 77%;
@@ -219,58 +219,69 @@ div.info-box3{
     border-radius: 4px;
     background-color: #fff;
 }
-div.info-box3 span{
+div.info-box3 span {
     font-size: 2em;
     font-weight: 900;
     color: var(--asterone-black);
 }
-div.info-box3 p{
+div.info-box3 p {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--asterone-black);
 }
-div.info-box3 i{
-   position: absolute;
+div.info-box3 i {
+    position: absolute;
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
     color: var(--asterone-black);
-   background-color: var(--asterone-yellow);
+    background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;
-} 
+}
 
 div.services-title {
-    padding: 4rem;
+    padding: 6rem;
 }
-div.services-title h2{
+div.services-title h2 {
     text-align: left;
     font-size: 2.5em;
     font-weight: 900;
-    color: var(--asterone-black);
+    color: var(--secondary-blue);
+    width: 78%;
+    padding-bottom: 1rem;
 }
-div.services-title p{
+div.services-title p {
     text-align: left;
     line-height: 2;
     padding: 0 7rem 0 0;
 }
 section.card-section {
     display: flex;
-
 }
 div.bg-img {
-   text-align: center;
-   z-index: -1;
-
+    text-align: center;
+    padding: 0 7rem;
+    margin-top: 7rem;
 }
 div.bg-img h2 {
     font-size: 2.5em;
     font-weight: 900;
-    color: var(--asterone-black);
-    margin-bottom: -13rem;
-    padding: 0 19rem;
+    color: var(--secondary-blue);
+    margin-bottom: -19rem;
+    padding: 0 24%;
 }
 img.bg {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
+    right: 0;
+}
+
+section.card-section {
+    background-color: #f5f6f9;
+    z-index: -1;
+}
+img.bg4{
+    max-width: 100%;
+    height: auto;
 }
