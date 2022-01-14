@@ -174,7 +174,7 @@ div.info-box1 i {
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
-    color: var(--asterone-black);
+    color: var(--white);
     background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;
@@ -204,7 +204,7 @@ div.info-box2 i {
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
-    color: var(--asterone-black);
+    color: var(--white);
     background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;
@@ -234,7 +234,7 @@ div.info-box3 i {
     top: 1em;
     right: -1.5em;
     font-size: 1.8em;
-    color: var(--asterone-black);
+    color: var(--white);
     background-color: var(--asterone-yellow);
     border-radius: 50%;
     padding: 0.5em;

@@ -326,7 +326,6 @@ section.container-box > div.email i {
 /* ================ CONTACT FORM ================ */
 
 section.contact-form {
-    background-color: var(--header-bg);
     width: 100%;
 }
 section.contact-form h2 {
