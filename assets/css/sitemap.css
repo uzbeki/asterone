@@ -1,98 +1,75 @@
-/* 
-#container {
-    display: grid;
-    justify-content: center;
-    justify-self: center;
-    min-height: 40vh;
-    min-width: 40vw;
-    padding: 1rem;
-    margin: 4% 0;
-    border: 1px solid #eee;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+section.sitemap-container {
+    margin: 4rem 0;
 }
 
-#container div.sitemap {
-    width: 40vw;
-}
 
-#container div.sitemap h1 {
-    text-align: center;
-    color: var(--primary);
-    padding: 2rem;
-}
-
-div.sitemap-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-div.sitemap-links ul {
-    text-align: start;
-}
-
-div.sitemap-links p {
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
     color: var(--asterone-black);
+  }
+  
+  .responsive-table li.row {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  div.flex-links {
+      display: flex;
+      justify-content: space-between;
+  }
+  div.flex-links i,.row:hover {
+      color: var(--primary);
+  }
+  .row:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  .col-1 {
+    flex-basis: 10%;
+  }
+  
+  .col-2 {
+    flex-basis: 30%;
     font-weight: bold;
-}
-
-div.sitemap-links p:hover {
-    color: var(--primary);
-} */
-
-#container {
-    display: grid;
-    align-items: center;
+    font-size: 1.2em;
+    color: var(--asterone-black);
+  }
+  .col-4 {
+    flex-basis: 70%;
+  }
+  
+  .address-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-flow: wrap; */
+    gap: 1rem;
+  }
+  
+  .address {
+    margin-bottom: 1rem;
+  }
+  
+  .tel-fax {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-}
-div.line-div {
-    display: grid;
-    justify-self: center;
-    height: 1px;
-    width: 300%;
-    border: 1px solid var(--asterone-black);
-    background-color: var(--asterone-black);  
-}
-
-#container h1 {
-    color: var(--primary);
-}
-div.homepage {
-    border: 1px solid var(--black-light);
-    text-align: center;
-    padding: 2rem;
-}
-#container a {
-    font-size: 1.5rem
-}
-
-div.homepage a i {
-    display: block;
-    font-size: 4rem;
-    color: var(--primary-light);
-    position: relative;
-    top: -70px;
-}
-
-div.sitemap-links {
-    border: 1px solid var(--black-light);
-    text-align: center;
-    padding: 2rem;
-    
-}
-div.sitemap-links a i {
-    display: block;
-    font-size: 4rem;
-    color: var(--primary-light);
-    position: relative;
-    top:-60px;
-}
-
-div.links-child {
-    border: 1px solid var(--black-light);
-    text-align: center;
-    padding: 2.5rem;
-}
+  }
+  
+  .tel-fax i {
+    margin-right: .5rem;
+  }
+  
+  address a {
+    color: var(--black-light);
+  }
+  
+  
+  @media all and (max-width: 767px) {
+    .responsive-table li.row {
+      padding: 1rem;
+    }
+  }
+  
