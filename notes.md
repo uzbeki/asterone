@@ -133,3 +133,7 @@ team introduction
 -   hero banner catch phrase (文字数)
 -   当社と SDGs phrase (文字数)
 -   これから SDGs に活躍していきたい事 (文字数)
+
+
+
+

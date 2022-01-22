@@ -376,9 +376,13 @@ section.positions {
   padding: 3rem var(--content-start);
 }
 
+section.positions .title {
+  margin: 1rem 0;
+}
+
 ul#position-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 2rem;
   width: 100%;
 }
@@ -386,7 +390,7 @@ ul#position-list {
 li.position {
   display: grid;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2em;
   border-radius: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
@@ -435,6 +439,7 @@ ul.metas li p {
   background-color: var(--secondary-blue);
   color: var(--white);
 }
+
 .read-more {
   display: flex;
   align-items: center;
