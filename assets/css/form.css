@@ -2,6 +2,7 @@ section.recruitment-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: space-between;
 }
 
 .img img {
@@ -9,130 +10,308 @@ section.recruitment-form {
 }
 
 
-form {
-  max-width: 700px;
+/* Recruitment Form styles */
+.form-container {
+  width: 650px;
+  padding: 1em;
+  /* border: 1px solid #ccc; */
+  font-size: 17px;
+  margin: 0 auto;
+}
+
+.form-container .progress-bar {
+  display: flex;
+  margin: 2em 0;
+}
+
+.form-container .progress-bar .step {
+  text-align: center;
   width: 100%;
-  margin: 5% auto;
+  position: relative;
+
 }
 
-label[for="file"] {
-  cursor: pointer;
+.form-container .progress-bar .step p {
+  font-size: 1em;
+  margin-bottom: .5em;
+  opacity: .7;
+}
+
+.form-container .progress-bar .step.active p {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.form-container .progress-bar .step .bullet {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  /* border: 1px solid #000; */
+  border: 1px solid var(--primary-dark);
+  display: inline-block;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+.form-container .progress-bar .step.active .bullet {
+  background-color: var(--primary-dark);
+  border: none;
+}
+
+.form-container .progress-bar .step:last-child .bullet::before,
+.form-container .progress-bar .step:last-child .bullet::after {
+  display: none;
+}
+
+.progress-bar .step .bullet::before,
+.progress-bar .step .bullet::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 9em;
+  bottom: 11px;
+  right: -9.4em;
+  background: #ddd;
+}
+
+.progress-bar .step.active .bullet::after {
+  background: var(--primary-dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: move-right 0.3s ease-in-out forwards;
+}
+
+@keyframes move-right {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.form-container .progress-bar .step .bullet span {
+  font-size: smaller;
+  line-height: 1.4em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.form-container .progress-bar .step.step .bullet span {
+  display: none;
+}
+
+.form-container .progress-bar .step.active .check {
+  display: block;
+  color: var(--white);
+}
+
+.form-container .progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  font-size: .9em;
+  display: none;
 }
 
 
-form legend {}
-
-.contentform {
-  margin: 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.form-container header {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
-.leftcontact {
-  padding-right: 2rem;
-  border-right: 1px dotted #CCC;
+.form-container .form-outer {
+  width: 100%;
+  overflow: hidden;
 }
 
-.rightcontact {
-  padding-left: 2rem;
-  /* padding: 0px 0px 0px 15px; */
+.form-outer form {
+  display: flex;
+  width: 300%;
 }
 
-.form-group {
-  /* overflow: hidden;
-  clear: both; */
+.form-outer form .page {
+  width: calc(100% / 3);
+  transition: all 0.3s ease-in-out;
+
 }
 
-.form-group label {
-  margin: 0px;
-  font-weight: 500;
-  line-height: 2;
-  color: #333;
+.form-outer form .page .title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-dark);
+
 }
 
-.form-group .input-container {
+.form-outer form .page .field {
+  margin: .5em 0;
+  width: 100%;
+}
+
+.confirmation-message {
+  margin-top: 1em;
+}
+
+.form-outer form .page .field.buttons {
+  margin: 1.5em 0;
+  display: flex;
+  gap: 1.5em;
+}
+
+form .fields {
+  display: flex;
+  gap: 1.5em;
+
+}
+
+.form-outer form .page .field label {
+  font-weight: bold;
+}
+
+.field .input-container {
   display: flex;
   align-items: flex-start;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
 
-input,
-textarea {
-  border-radius: 0px 5px 5px 0px;
+.field input {
   border: 1px solid #eee;
-  margin-bottom: 15px;
   width: 100%;
-  height: 40px;
+  height: 1.8em;
   padding: 0px 15px;
-}
-
-textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-input:focus-visible,
-input:focus,
-textarea:focus,
-textarea:focus-visible {
   outline: none;
-  border-color: var(--primary);
+  font-size: 1em;
 }
+
+/* validation check */
+/* .field input:invalid {
+  border: 1px solid red;
+} */
 
 .icon-case {
   width: 35px;
-  border-radius: 5px 0px 0px 5px;
   background: #eeeeee;
-  height: 40px;
+  height: 100%;
   text-align: center;
-  line-height: 40px;
-}
-
-.icon-case i {
+  line-height: 1.8em;
   color: #555;
+  transition: all 0.2s ease-in-out;
 }
 
-i.fa-cloud-upload-alt {
-  font-size: 2rem;
-  text-align: center;
-  color: #555;
-  margin-bottom: .5rem;
+
+.field .input-container:focus,
+.field .input-container:focus-within {
+  border: 1px solid var(--primary-dark);
 }
 
+.field .input-container:focus .icon-case,
+.field .input-container:focus-within .icon-case {
+  color: var(--primary-dark);
+}
+
+.field .input-container:hover:not(:focus-within) {
+  border: 1px solid #ccc;
+}
+
+.field button {
+  border-color: var(--primary-dark);
+  background-color: #fff;
+  color: var(--primary-dark);
+  width: 100%;
+  border: 1px solid var(--primary-dark);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.field button[type="submit"] {
+  background: var(--primary-dark);
+  color: #fff;
+  border-color: var(--primary-dark);
+}
+
+.field button[type="submit"]:hover,
+.field button[type="submit"]:focus {
+  background: rgba(255, 158, 13, 0.7);
+  border-color: rgba(255, 158, 13, 0.7);
+  color: #fff;
+}
+
+.field button i {
+  margin: 0 .5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.field button:hover,
+.field button:focus {
+  color: #fff;
+  background: rgba(255, 158, 13, 0.7);
+  border-color: transparent;
+}
+
+.field button:active {
+  transform: scale(0.97);
+}
+
+.field button:hover i.fa-arrow-right,
+.field button:focus i.fa-arrow-right {
+  transform: translateX(5px);
+}
+
+.field button:hover i.fa-arrow-left,
+.field button:focus i.fa-arrow-left {
+  transform: translateX(-5px);
+}
+
+/* Drag and drop */
 .drag-drop-area {
   display: grid;
   place-content: center;
   border: 1px dashed #ccc;
-  padding: 2rem;
   cursor: pointer;
   border-radius: 5px;
+  text-align: center;
+  margin-top: .2em;
+  font-weight: normal;
+  height: 6.5em;
 }
 
 .drag-drop-area p {
   font-size: smaller;
-  text-align: center;
   opacity: 0.7;
 }
 
-a.sample {
-  font-size: small;
+.drag-drop-area i {
+  font-size: 2em;
+  opacity: 0.7;
+}
+
+.sample {
   display: block;
   text-align: end;
 }
 
-a.sample i {
-  color: #555;
+
+
+/* Confirmation */
+.confirmation .field {
+  display: flex;
+  gap: 1.5em;
 }
 
+.confirmation .field label {
+  flex: 2;
+}
 
-.primary-btn {
-  background-color: var(--secondary-blue);
-  color: #FFF;
-  text-align: center;
-  width: 100%;
-  border: 0;
-  padding: 17px 25px;
-  border-radius: 0px 0px 5px 5px;
-  cursor: pointer;
-  margin-top: 40px;
-  font-size: 1.2rem;
+.confirmation .field p {
+  flex: 3;
 }

@@ -71,106 +71,234 @@
                 <div class="img">
                     <img src="../../assets/img/recruitment/newbiz_done_shadow.png" alt="" srcset="">
                 </div>
-                <form method='get' action=''>
-                    <legend>エントリーは、下記の入力フォームにご記入の上、送信してください。担当者から折り返しご連絡いたします。
-                        お寄せいただいた個人情報につきましては、ご質問への回答と採用目的としてのみ利用させていただきます。
-                    </legend>
-
-                    <div class="contentform">
-                        <div class="leftcontact">
-                            <div class="form-group">
-                                <label for='name'>お名前<span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="fa fa-male"></i></span>
-                                    <input type="text" name="name" id="name" data-rule="required" />
+                <div class=''>
+                    <div class="form-container">
+                        <header>求人募集フォーム</header>
+                        <div class="progress-bar">
+                            <div class="step">
+                                <p>基本情報</p>
+                                <div class="bullet">
+                                    <span>1</span>
                                 </div>
-                                <div class="validation"></div>
+                                <div class="check fas fa-check"></div>
                             </div>
-
-                            <div class="form-group">
-                                <label for='furigana'>ふりがな<span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <input type="text" name="furigana" id="furigana" data-rule="required" />
+                            <div class="step">
+                                <p>必要書類</p>
+                                <div class="bullet">
+                                    <span>2</span>
                                 </div>
-                                <div class="validation"></div>
+                                <div class="check fas fa-check"></div>
                             </div>
-
-                            <div class="form-group">
-                                <label for='birthday'>生年月日<span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="far fa-calendar-check"></i></span>
-                                    <input type="date" name="birthday" id="birthday" data-rule="required" />
+                            <div class="step">
+                                <p>確認</p>
+                                <div class="bullet">
+                                    <span>3</span>
                                 </div>
-                                <div class="validation"></div>
+                                <div class="check fas fa-check"></div>
                             </div>
-
-                            <div class="form-group">
-                                <label for='email'>メールアドレス <span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="fas fa-at"></i></span>
-                                    <input type="email" name="email" id="email" data-rule="email" />
-                                </div>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for='post_code'>郵便番号 <span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case">〒</span>
-                                    <input type="text" name="post_code" id="post_code" data-rule="required" />
-                                </div>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for='address'>住所 <span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
-                                    <input type="text" name="address" id="address" data-rule="required" />
-                                </div>
-                                <div class="validation"></div>
-                            </div>
-
                         </div>
+                        <div class="form-outer">
+                            <form action="" method="get">
 
-                        <div class="rightcontact">
-                            <div class="form-group">
-                                <label for='phone'>電話番号 <span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                    <input type="tel" name="phone" id="phone" data-rule="maxlen:10" />
-                                </div>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for='file'>履歴書 <span>*</span>
-                                    <div class="drag-drop-area">
-                                        <input type="file" name="file" id="file" hidden>
-                                        <i class="fas fa-cloud-upload-alt"></i>
-                                        <p>ファイルをこちらにドラッグ・ドロップするか、クリックで選択してください。</p>
+                                <!-- Basic Info Page -->
+                                <div class="page">
+                                    <div class="title">基本情報</div>
+                                    <div class="field">
+                                        <label for='name'>お名前<span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fa fa-male"></i></span>
+                                            <input required type="text" name="name" id="name" data-rule="required" />
+                                        </div>
+                                        <div class="validation"></div>
                                     </div>
-                                </label>
-                                <a href="" download class='sample'>サンプル&nbsp;<i class="fas fa-cloud-download-alt"></i></a>
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for='message'>ご連絡可能な時間の指定・お問い合わせなど<span>*</span></label>
-                                <div class="input-container">
-                                    <span class="icon-case"><i class="far fa-envelope"></i></span>
-                                    <textarea name="message" id='message' rows="14" data-rule="required"></textarea>
+                                    <div class="field">
+                                        <label for='furigana'>ふりがな<span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fa fa-user"></i></span>
+                                            <input required type="text" name="furigana" id="furigana"
+                                                data-rule="required" />
+                                        </div>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="fields">
+                                        <div class="field">
+                                            <label for='gender'>性別 <span>*</span></label>
+                                            <div class="input-container">
+                                                <span class="icon-case"><i class="fas fa-venus-mars"></i></span>
+                                                <input id='gender' name='gender' list='genders'>
+                                                <datalist id='genders'>
+                                                    <option value="男性">
+                                                    <option value="女性">
+                                                    <option value="その他">
+                                                </datalist>
+                                            </div>
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="field">
+                                            <label for='birthdate'>生年月日 <span>*</span></label>
+                                            <div class="input-container">
+                                                <span class="icon-case"><i class="fa fa-calendar-day"></i></span>
+                                                <input required type="date" name="birthdate" id="birthdate"
+                                                    data-rule="maxlen:10" />
+                                            </div>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for='phone'>電話番号 <span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fa fa-phone"></i></span>
+                                            <input required type="tel" name="phone" id="phone" data-rule="maxlen:10" />
+                                        </div>
+                                        <div class="validation">正しい電話番号を入力してください</div>
+                                    </div>
+                                    <div class="field">
+                                        <label for='email'>メールアドレス <span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fas fa-at"></i></span>
+                                            <input required type="email" name="email" id="email" data-rule="email" />
+                                        </div>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for='post_code'>郵便番号 <span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case">〒</span>
+                                            <input required type="text" name="post_code" id="post_code"
+                                                data-rule="required" />
+                                        </div>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for='address'>住所 <span>*</span></label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                                            <input required type="text" name="address" id="address"
+                                                data-rule="required" />
+                                        </div>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field buttons">
+                                        <button type="button" class="next">次<i class="fas fa-arrow-right"></i></button>
+                                    </div>
                                 </div>
-                                <div class="validation"></div>
-                            </div>
-                            <a href="../privacy.html" target="_blank">プライバシーポリシーを必ずご一読いただきますようお願いいたします。<i
-                                    class="fas fa-external-link-alt fa-sm"></i>
-                            </a>
+
+
+                                <!-- Document Submission -->
+                                <div class="page">
+                                    <div class="title">資料提出</div>
+                                    <div class="field">
+                                        <label for='resume'>履歴書 <span>*</span>
+                                            <div class="drag-drop-area">
+                                                <input type="file" name="resume" id="resume" hidden
+                                                    accept='.pdf, .doc, .docx' />
+                                                <i class="fas fa-cloud-upload-alt"></i>
+                                                <p>ファイルをこちらにドラッグ・ドロップするか、クリックで選択してください。</p>
+                                            </div>
+                                        </label>
+                                        <a href="" download class='sample'>サンプル&nbsp;<i
+                                                class="fas fa-cloud-download-alt"></i></a>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for='cv'>職務経歴書 <span>*</span>
+                                            <div class="drag-drop-area">
+                                                <input type="file" name="cv" id="cv" hidden accept='.pdf, .doc, .docx'>
+                                                <i class="fas fa-cloud-upload-alt"></i>
+                                                <p>ファイルをこちらにドラッグ・ドロップするか、クリックで選択してください。</p>
+                                            </div>
+                                        </label>
+                                        <a href="" download class='sample'>サンプル&nbsp;<i
+                                                class="fas fa-cloud-download-alt"></i></a>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="github_url">Githubアカウント</label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fab fa-github"></i></span>
+                                            <input type="url" name="github_url" id="github_url">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="portfolio_url">ポートフォリオ</label>
+                                        <div class="input-container">
+                                            <span class="icon-case"><i class="fas fa-link"></i></span>
+                                            <input type="url" name="portfolio_url" id="portfolio_url">
+                                        </div>
+                                    </div>
+
+                                    <div class="field buttons">
+                                        <button type="button" class="prev"><i class="fas fa-arrow-left"></i>前</button>
+                                        <button type="button" class="next">次<i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+
+
+                                <!-- Confirmation -->
+                                <div class="page confirmation">
+                                    <div class="title">確認</div>
+                                    <div class="field">
+                                        <label for='_name'>お名前</label>
+                                        <p id='_name'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_furigana'>ふりがな</label>
+                                        <p id='_furigana'>未入力</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label for='_gender'>性別</label>
+                                        <p id='_gender'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_birthdate'>生年月日</label>
+                                        <p id='_birthdate'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_phone'>電話番号</label>
+                                        <p id='_phone'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_email'>メールアドレス</label>
+                                        <p id='_email'>未入力</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label for='_post_code'>郵便番号</label>
+                                        <p id='_post_code'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_address'>住所</label>
+                                        <p id='_address'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_resume'>履歴書</label>
+                                        <p id='_resume'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_cv'>職務経歴書</label>
+                                        <p id='_cv'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_github_url'>Githubアカウント</label>
+                                        <p id='_github_url'>未入力</p>
+                                    </div>
+                                    <div class="field">
+                                        <label for='_portfolio_url'>ポートフォリオ</label>
+                                        <p id='_portfolio_url'>未入力</p>
+                                    </div>
+                                    <p class="confirmation-message">
+                                        上記で間違えないかどうかの確認の上、送信ボタンを押してください。担当者から折り返しご連絡いたします。お寄せいただいた個人情報につきましては、ご質問への回答と採用目的としてのみ利用させていただきます。
+                                    </p>
+                                    <div class="field buttons">
+                                        <button type="button" class="prev"><i class="fas fa-arrow-left"></i>前</button>
+                                        <button type='submit'>送信</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <button type="submit" class="primary-btn">確認画面ヘ</button>
-                </form>
+                </div>
 
             </section>
         </main>
@@ -238,7 +366,7 @@
                 <p>Copyright <i class="far fa-copyright "></i> 2021 ASTERONE co.,ltd. All Rights Reserved.</p>
             </div>
         </footer>
-        
+        <script src="../../js/multi-step-form.js"></script>
     </body>
 
 </html>

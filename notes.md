@@ -137,3 +137,14 @@ team introduction
 
 
 
+
+
+
+# form.html todos
+- next ni bosganda kngi betga utish oldi, run input validation, show error messages if any
+  - validation error styling not implemented
+- confirmation tab: 性別does not work
+- drag & drop does not work, file name does not appear
+- sample file download styling does not work, sample file needs to be prepared by Ito san
+- which position is the form about (does not show now)
+- successful submission tab not implemented
