@@ -1,0 +1,526 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400';
+
+
+/* colors */
+/* tab setting */
+/* breakpoints */
+/* selectors relative to radio inputs */
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #efefef;
+    color: #333;
+    font-family: "Raleway";
+    height: 100%;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body h1 {
+    text-align: center;
+    color: #428BFF;
+    font-weight: 300;
+    padding: 40px 0 20px 0;
+    margin: 0;
+}
+
+.tabs {
+
+    position: relative;
+    /* background: white; */
+    /* padding: 50px; */
+    padding-bottom: 80px;
+    /* width: 70%; */
+    /* height: 250px; */
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    /* border-radius: 5px; */
+    min-width: 240px;
+    overflow: hidden;
+}
+
+.tabs input[name=tab-control] {
+    display: none;
+}
+
+.tabs .content section h2.mobile-title,
+.tabs ul#tab-ul li label {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 18px;
+    color: #428BFF;
+}
+
+.tabs ul#tab-ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.tabs ul#tab-ul li {
+    box-sizing: border-box;
+    flex: 1;
+    width: 25%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.tabs ul#tab-ul li label {
+    transition: all 0.3s ease-in-out;
+    color: #929daf;
+    padding: 5px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabs ul#tab-ul li label br {
+    display: none;
+}
+
+/* .tabs ul#tab-ul li label svg {
+    fill: #929daf;
+    height: 1.2em;
+    vertical-align: bottom;
+    margin-right: 0.2em;
+    transition: all 0.2s ease-in-out;
+} */
+
+.tabs ul#tab-ul li label:hover,
+.tabs ul#tab-ul li label:focus,
+.tabs ul#tab-ul li label:active {
+    outline: 0;
+    color: #bec5cf;
+}
+
+/* .tabs ul#tab-ul li label:hover svg,
+.tabs ul#tab-ul li label:focus svg,
+.tabs ul#tab-ul li label:active svg {
+    fill: #bec5cf;
+} */
+
+.tabs .slider {
+    position: relative;
+    width: 25%;
+    transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
+.tabs .slider .indicator {
+    position: relative;
+    width: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 4px;
+    background: #428BFF;
+    border-radius: 1px;
+}
+
+.tabs .content {
+    margin-top: 30px;
+}
+
+.tabs .content section {
+    display: none;
+    -webkit-animation-name: content;
+    animation-name: content;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    line-height: 1.4;
+}
+
+.tabs .content section h2.mobile-title {
+    color: #428BFF;
+    display: none;
+}
+
+.tabs .content section h2.mobile-title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #428BFF;
+    margin-top: 5px;
+    left: 1px;
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked~ul>li:nth-child(1)>label {
+    cursor: default;
+    color: #428BFF;
+}
+
+/* .tabs input[name=tab-control]:nth-of-type(1):checked~ul>li:nth-child(1)>label svg {
+    fill: #428BFF;
+} */
+
+@media (max-width: 600px) {
+    .tabs input[name=tab-control]:nth-of-type(1):checked~ul>li:nth-child(1)>label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked~.slider {
+    transform: translateX(0%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(1):checked~.content>section:nth-child(1) {
+    display: block;
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label {
+    cursor: default;
+    color: #428BFF;
+}
+
+/* .tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label svg {
+    fill: #428BFF;
+} */
+
+@media (max-width: 600px) {
+    .tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked~.slider {
+    transform: translateX(100%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(2):checked~.content>section:nth-child(2) {
+    display: block;
+}
+
+.tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
+    cursor: default;
+    color: #428BFF;
+}
+
+/* .tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label svg {
+    fill: #428BFF;
+} */
+
+@media (max-width: 600px) {
+    .tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tabs input[name=tab-control]:nth-of-type(3):checked~.slider {
+    transform: translateX(200%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(3):checked~.content>section:nth-child(3) {
+    display: block;
+}
+
+.tabs input[name=tab-control]:nth-of-type(4):checked~ul>li:nth-child(4)>label {
+    cursor: default;
+    color: #428BFF;
+}
+
+/* .tabs input[name=tab-control]:nth-of-type(4):checked~ul>li:nth-child(4)>label svg {
+    fill: #428BFF;
+} */
+
+@media (max-width: 600px) {
+    .tabs input[name=tab-control]:nth-of-type(4):checked~ul>li:nth-child(4)>label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tabs input[name=tab-control]:nth-of-type(4):checked~.slider {
+    transform: translateX(300%);
+}
+
+.tabs input[name=tab-control]:nth-of-type(4):checked~.content>section:nth-child(4) {
+    display: block;
+}
+
+
+
+@keyframes content {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .tabs ul li label {
+        white-space: initial;
+    }
+
+    .tabs ul li label br {
+        display: initial;
+    }
+
+    /* .tabs ul li label svg {
+        height: 1.5em;
+    } */
+}
+
+@media (max-width: 600px) {
+    .tabs ul li label {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .tabs ul li label span {
+        display: none;
+    }
+
+    .tabs .slider {
+        display: none;
+    }
+
+    .tabs .content {
+        margin-top: 20px;
+    }
+
+    .tabs .content section h2 {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+.content .img-box {
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.content .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.content .img-box.active img,
+.content .img-box img:focus-visible,
+.content .img-box:hover img,
+.content .img-box:focus img {
+    border-color: #428BFF;
+    transform: scale(1.05);
+
+}
+
+.content .meet {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul#individuals {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.content ul li {}
+
+.content ul li img {
+    border: .5rem solid transparent;
+    outline: none;
+}
+
+.content ul li:nth-child(1) img {
+    border-radius: 50% 50% 0 50%;
+}
+
+.content ul li:nth-child(2) img {
+    border-radius: 50% 50% 0 0;
+}
+
+.content ul li:nth-child(3) img {
+    border-radius: 50% 50% 50% 0;
+}
+
+.content ul li:nth-child(4) img {
+    border-radius: 50% 0% 50% 50%;
+}
+
+.content ul li:nth-child(5) img {
+    border-radius: 0 0% 50% 50%;
+}
+
+
+ul.descriptions {
+    /* outline: 1px solid #000; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+ul.descriptions li.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(50%);
+    /* transition-delay: .5s; */
+}
+
+ul.descriptions li {
+    visibility: hidden;
+    opacity: 0;
+    /* outline: 1px solid #000; */
+    position: absolute;
+    min-width: 250px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+ul.descriptions li h2 {
+    color: #428BFF;
+    font-size: 2rem;
+    margin: .2rem 0;
+}
+
+ul.descriptions li h3 {
+    margin: 0;
+    color: #afafaf;
+}
+
+ul.descriptions li {}
+
+
+
+.content .group-container {
+    margin-top: 5rem;
+
+}
+
+.content .group {
+    width: 110%;
+    height: fit-content;
+    margin: 1rem -4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.content .group>div {
+    height: 25rem;
+}
+
+.content .group img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.content .group img:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.content .group .left {
+    flex: 5;
+}
+
+.content .group .right {
+    flex: 3;
+}
+
+.content .group-container .about {
+    max-width: 1000px;
+    margin-left: 5%;
+
+}
+
+.content .group-container .about p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: .9rem;
+}
+
+
+
+
+/* WORK WITH US */
+.work-with-us {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 15vh;
+}
+
+.work-with-us header {
+    position: absolute;
+    left: 50%;
+    /* top: 5%; */
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.work-with-us header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.work-with-us header p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.work-with-us header .button {
+    text-decoration: none;
+    background: #428BFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.work-with-us .bg {
+    padding: 0 2rem;
+}
