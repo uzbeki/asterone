@@ -322,12 +322,25 @@ ul#tab-ul li label:active {
 
 
 
+.content .meet {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem var(--content-start);
+}
 
-
+ul#individuals {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(18rem, 1fr));
+    gap: 2rem;
+    user-select: none;
+}
 
 .content .img-box {
-    height: 300px;
-    width: 300px;
+    /* height: 300px; */
+    /* width: 300px; */
     padding: 0;
     cursor: pointer;
     /* overflow: hidden; */
@@ -338,6 +351,7 @@ ul#tab-ul li label:active {
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
+    aspect-ratio: 1 / 1;
 }
 
 .content .img-box.active img,
@@ -349,22 +363,8 @@ ul#tab-ul li label:active {
 
 }
 
-.content .meet {
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem var(--content-start);
-    margin-bottom: 3rem;
-}
 
-ul#individuals {
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    user-select: none;
-}
+
 
 .content ul li {}
 
@@ -405,7 +405,8 @@ ul.descriptions li.active {
     /* transition-delay: .5s; */
 }
 
-ul.descriptions li {
+ul.descriptions li,
+.member-info {
     visibility: hidden;
     opacity: 0;
     /* outline: 1px solid #000; */
@@ -416,19 +417,22 @@ ul.descriptions li {
     position: absolute;
 }
 
-ul.descriptions li h2 {
+ul.descriptions li h2,
+.member-info h2 {
     color: #428BFF;
     font-size: 2rem;
     margin-bottom: .5rem;
 }
 
-ul.descriptions li h3 {
+ul.descriptions li h3,
+.member-info h3 {
     margin: 0;
     color: #afafaf;
     margin-bottom: .5rem;
 }
 
-ul.descriptions li p {
+ul.descriptions li p,
+.member-info p {
     margin: 0;
     color: rgba(0, 0, 0, 0.8);
     font-size: 1.2rem;
@@ -436,17 +440,19 @@ ul.descriptions li p {
 
 }
 
-ul.descriptions li .blob {
+/* ul.descriptions li .blob { */
+.blob {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
-ul.descriptions li .blob svg{
+/* ul.descriptions li .blob svg { */
+.blob svg {
     max-height: 100%;
     width: 100%;
-    fill: var(--secondary-blue-bg);
+    fill: var(--primary-bg);
 }
 
 .blob path {
@@ -521,14 +527,13 @@ ul.descriptions li .blob svg{
 }
 
 .content .group-container .about {
-    max-width: 1000px;
-    margin-left: 5%;
+    margin: 1rem var(--content-start);
 
 }
 
 .content .group-container .about p {
     color: rgba(0, 0, 0, 0.6);
-    font-size: .9rem;
+    font-size: 2rem;
 }
 
 
@@ -583,7 +588,7 @@ ul.descriptions li .blob svg{
 
 /* SYSTEM Kaihatsu team */
 #system-team {
-    margin: 0 5%;
+    margin: 0 var(--content-start);
 }
 
 
@@ -602,7 +607,7 @@ ul.descriptions li .blob svg{
     /* overflow: hidden; */
     margin: 0;
     padding: var(--hl) 0;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* background: #262626; */
     filter: drop-shadow(2px 2px 5px);
 }
@@ -618,8 +623,9 @@ ul.descriptions li .blob svg{
     overflow: hidden;
     grid-column-end: span 2;
     margin: calc(-1*var(--hl)) 0;
-    transform: scale(0.95);
+    transform: scale(0.9);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    user-select: none;
 }
 
 .hex-cell img {
@@ -632,6 +638,7 @@ ul.descriptions li .blob svg{
     transition: .7s;
 }
 
+.hex-cell.active img,
 .hex-cell img:hover {
     --hl: 1;
 }
@@ -639,11 +646,8 @@ ul.descriptions li .blob svg{
 
 
 /* customizied */
-.hex-cell {
-    position: relative;
-}
 
-.hex-cell:hover+.member-info {
+.member-info.active {
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
@@ -651,20 +655,4 @@ ul.descriptions li .blob svg{
     bottom: var(--b, unset);
     left: var(--le, unset);
     right: var(--r, unset);
-
-}
-
-
-.member-info {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    filter: none;
-
-    transition: all 0.2s ease-in-out;
 }
