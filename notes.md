@@ -148,3 +148,10 @@ team introduction
 - sample file download styling does not work, sample file needs to be prepared by Ito san
 - which position is the form about (does not show now)
 - successful submission tab not implemented
+
+
+
+
+# before deployment
+-  compress, convert all images to webp format
+-  minify css, js files

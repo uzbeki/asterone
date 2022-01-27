@@ -22,12 +22,15 @@ body {
     --light-gray: #bbb;
 
     --primary: var(--asterone-yellow);
+    --primary-dark: #FF9E0D;
+    --primary-light: #FEFF0D;
+    --primary-bg: rgba(255, 204, 0, 0.6);
+
+
     --secondary-blue: #199DFF;
     --secondary-blue-bg: hsl(206, 80%, 95%);
     --secondary-violet: #8B19FF;
     --secondary-violet-bg: hsl(270, 100%, 85%);
-    --primary-dark: #FF9E0D;
-    --primary-light: #FEFF0D;
 
     --white: #fff;
     --black: var(--asterone-black);
