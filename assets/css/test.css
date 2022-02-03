@@ -262,7 +262,11 @@ div.test-page {
     position: relative;
 }
 
-
+@media (max-width: 1270px) {
+    div.bg-element {
+        transform: translate(118%, 36%);
+     }
+}
 
  @media (max-width: 768px) {
     section.test-section::before {

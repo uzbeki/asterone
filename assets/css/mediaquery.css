@@ -1,0 +1,399 @@
+
+/* Top page humburger menu toggle */
+@media screen and (max-width: 2400px) {
+    #toggle {
+        display: none;
+    }
+}
+/* Top page Ceo card part */
+@media screen and (max-width: 800px) {
+    section.message-ceo div.container-card {
+        display: flex;
+    }
+    div.message {
+        padding: 0;
+    }
+    .container-card {
+        padding: 0;
+    }
+}
+/* Top page Ceo card part */
+@media screen and (max-width: 771px) {
+    .container-card .message {
+        padding: 0;
+    }
+}
+/* Top page Ceo card part */
+@media screen and (max-width: 711px) {
+    .container-card .message {
+        padding: 1em;
+    }
+    .img-ceo {
+        height: 613px;
+    }
+    
+
+  
+/** TOP page hamburger menu **/
+    .hamburger {
+        position: absolute;
+        top: 3.5em;
+        right: 7%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+    }
+
+    .hamburger div {
+        position: relative;
+        width: 3em;
+        height: 7px;
+        border-radius: 3px;
+        background-color: var(--primary-dark);
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+/** Top page humberger menu nav styles **/
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 33%;
+        background-color: var(--navbar-black);
+        top: -100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+    }
+    .nav-wrapper {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+    }
+    nav {
+        text-align: left;
+    }
+    nav li a {
+        position: relative;
+        text-decoration: none;
+        color: var(--light-gray);
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 1px;
+    }
+    nav li a:before {
+        content: "";
+        height: 0;
+        position: absolute;
+        width: 0.25em;
+        background-color: white;
+        left: -0.5em;
+        transition: all 0.2s ease-in-out;
+    }
+    nav li a:hover {
+        color: var(--primary-dark);
+    }
+    /* nav li a:hover:before {
+  height: 100%;
+} */
+
+/** Animations for hamburger menu **/
+    #toggle:checked + .hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+    #toggle:checked + .hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+    #toggle:checked + .hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+
+    #toggle:checked + .hamburger + .nav {
+        top: 0;
+        transform: scale(1);
+    }
+
+    header .bottom nav ul {
+        display: grid;
+    }
+}
+
+/*  Top page header part */
+@media screen and (max-width: 470px) {
+    header .top {
+        display: grid;
+        gap: 1em;
+    }
+
+    header .top .left,
+    header .top .right {
+        display: grid;
+        gap: 1em;
+    }
+}
+
+/*  Top page news part */
+@media screen and (max-width: 200px) {
+    section.news {
+        display: none;
+    }
+    section.news .news-container .intro-title {
+        display: none;
+    }
+}
+
+
+/*  Top page news part */
+@media screen and (max-width: 715px) {
+    #toggle {
+        display: none;
+    }
+    section.news .news-container .intro-title h2 {
+        font-size: 1em;
+    }
+    .intro .intro-title h2 {
+        padding: 9px 0px;
+    }
+
+    section.news .news-container {
+        display: flex;
+        border-radius: 1rem;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    section.news .news-container .intro-title .arrow {
+        position: absolute;
+        right: -6rem;
+        bottom: -1rem;
+    }
+    .intro-title {
+        margin: 2rem;
+    }
+
+    .container-card {
+        padding: 1rem;
+    }
+    .container-card .message {
+        display: contents;
+    }
+
+    section.banner .content h1 {
+        font-size: 1.2em;
+        width: 85%;
+    }
+    section.full-page {
+        gap: 2em;
+        padding: 2em;
+    }
+
+    .intro {
+        display: block;
+    }
+    section.services .service-list li {
+        grid-template-rows: 18fr 3fr;
+    }
+    div.message h3 {
+        font-size: 1.6em;
+    }
+
+    div.content {
+        padding: 1rem;
+    }
+    section.message-ceo div.container-card {
+        display: inline-table;
+    }
+    .img-ceo {
+        height: 355px;
+    }
+    svg {
+        display: none;
+    }
+    /* icon up arrow */
+    #goTop {
+        position: fixed;
+        right: 1rem;
+    }
+}
+
+
+/* ================= ABOUT PAGE ==================== */
+
+@media screen and (max-width: 1024px){
+    /* Circles on hero banner */
+    .info.left {
+        left: 8%;
+        top: -3%;
+     }
+     .info.right {
+         bottom: -2%;
+     }
+     .info.top {
+         top: -5%;
+     }
+     .info.bottom {
+         bottom: -1%;
+     }
+     .vision img {
+        max-width: 111%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .info.left {
+        top: -9%;
+     }
+     .info.right {
+         bottom: -2%;
+     }
+     .info.top {
+         top: -9%;
+     }
+     .info.bottom {
+         bottom: -8%;
+     }
+    .vision img {
+        margin-top: 3em;
+    }
+    
+    /* Section full-page value1 */
+    section.value1 {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    section.company-data .map {
+        transform: translate(-112px, 257px);
+    }
+    svg.geolonia-svg-map {
+        transform: scale(2.5);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    /* circles on hero banner */
+    .about-company .info {
+        width: 8rem;
+        height: 8rem;
+    }
+    .info.left {
+        font-size: 10px;
+        top: 8%;
+     }
+     .info.right {
+         font-size: 10px;
+         bottom: 4%;
+     }
+     .info.top {
+         font-size: 10px;
+         top: 8%;
+     }
+     .info.bottom {
+         font-size: 10px;
+         bottom: 5%;
+     }
+     .description h1 {
+        font-size: 1rem;
+     }
+     section.about-company .emphasis {
+        font-size: 1.2rem;
+        width: 5rem;
+     }
+     section.about-company .description {
+        padding: 1.5rem;
+        min-width: 100vw;
+     }
+     .word {
+        transform: translate(-50%, 78%);
+    }
+    section.full-page {
+        padding: 0;
+    }
+    .vision {
+        width: 100%;
+    }
+    section.company-data .map {
+        width: 0%;
+        padding: 0rem;
+    }
+        
+}
+@media screen and (max-width: 376px) {
+    .about h1 {
+        font-size: 1.8rem;
+    }
+    .container h2 {
+        font-size: 2rem;
+    }
+ }
+     
+
+ /* ==================== TEAM PAGE ==================== */
+
+ @media screen and (max-width: 1024px) {
+    section.team ul.descriptions {
+        position: relative;
+        left: -440px;
+        top: 140px;
+    }
+    #newbiz-team .content ul li:nth-child(1) img {
+        border-radius: 50% 50% 50% 0%;
+    }
+    .content ul li:nth-child(2) img {
+        border-radius: 50% 50% 0 50%;
+    }
+    .content ul li:nth-child(3) img {
+        border-radius: 50% 50% 0% 50%;
+    }
+    .content ul li:nth-child(4) img {
+        border-radius: 0% 50% 50% 50%;
+     }
+    .content ul li:nth-child(5) img {
+        border-radius: 0% 50% 50% 50%;
+    }
+   
+ }
+ 
+ @media screen and (max-width: 768px) {
+    ul#individuals {
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        gap: 2rem;
+
+    }
+    section.team ul.descriptions {
+        position: relative;
+        left: -440px;
+        top: 323px;
+    }
+ }    
+
+ @media screen and (max-width: 425px) {
+      ul#individuals {
+        grid-template-columns: repeat(1, minmax(20rem, 1fr));
+        gap: 2rem;
+    }
+    .content .group {
+        width: 101%;
+        height: fit-content;
+        margin: 1rem 0rem;
+        display: grid;
+        gap: 2rem;
+    }
+    .content .group-container .about p {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1.5rem;
+    }
+ }
+ 
+ 

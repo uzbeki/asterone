@@ -8,6 +8,7 @@
         <title>チーム</title>
         <!-- links -->
         <!-- <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer> -->
+        <link rel="stylesheet" href="../assets/css/mediaquery.css">
         <link rel="stylesheet" href="../assets/css/base.css">
         <link rel="stylesheet" href="../assets/css/index.css">
         <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css" />
@@ -45,13 +46,25 @@
                     </div>
                 </section>
             </div>
-            <div class="bottom">
+    <div class="bottom">
                 <div class="brand-logo">
                     <img src="../assets/img/SVG/logo.svg" alt="">
                     <a href="../index.html">
                         <h3>ASTER<span>ONE</span></h3>
                     </a>
                 </div>
+
+                    <!-- =======TESTING======== --> 
+           <input id="toggle" type="checkbox"></input>
+           <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </label>
+
+        <!-- =========TESTING ENDS========== -->
+        <div class="nav">
+            <div class="nav-wrapper">
                 <nav>
                     <ul>
                         <li><a href="./about.html">会社について</a></li>
@@ -62,6 +75,8 @@
                     </ul>
                 </nav>
             </div>
+        </div>
+    </div>
         </header>
         <!-- ======== Main ========= -->
         <main>
@@ -518,12 +533,56 @@
 
                         </section>
                         <section id='se-team' total="9">
-                            <h2 class="mobile-title">SE部</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam
-                            error
-                            quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis!
-                            Veniam,
-                            quia in eum.
+                            <!-- ================= TESTING ================ https://codepen.io/Kikeztw/pen/mKvjdL -->
+                            <div class="container-fluid box-team">
+                                <div class="row ux">
+                                    <div class="col-12 top">
+                                      <h1>OUR Team</h1>
+                                      <p>Lorem ipsum dolor sit amet consectetur  <br> adipisicing elit. Nostrum, animi.</p>
+                                    </div> 
+                                    <div class="col-3 d-flex justify-content-center">
+                                      <h3 >programmer</h2>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-center">
+                                      <h3 class="cm">community manager</h2>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-center">
+                                      <h3 class="wd">web developer</h2>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-center">
+                                      <h3 class="gd">graphic design</h3>
+                                    </div>
+                                    
+                                  
+                                </div>
+                                <div class="row full-screen no-gutters">
+                                  
+                                  <div class="col-3 hover-screen">
+                                      <h2>Nombre NOMBRE</h2>
+                                  </div>
+                                  <div class="col-3 hover-screen">
+                                    <h2>Nombre</h2>
+                                  </div>
+                                  <div class="col-3 hover-screen">
+                                    <h2>Nombre</h2>
+                                  </div>
+                                  <div class="col-3 hover-screen">
+                                    <h2>Nombre</h2>
+                                  </div>
+                                </div>
+                                <div class="row no-gutters team-inf d-flex justify-content-center align-items-center" id="team-inf">
+                                   <span class="close-icon" id="close">X</span>
+                                  <div class="col-5 img-container">
+                                    <img src="https://images.pexels.com/photos/888956/pexels-photo-888956.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="img-fluid">
+                                  </div>
+                                  <div class="col-4 team-inf-container">   
+                                      <h3>AYAKKABI</h3>
+                                      <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, commodi.</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- ======================= TESTING ENDS ========================== -->
                         </section>
                         <section id='soumu-team' total="2">
                             <h2 class="mobile-title">総務</h2>
@@ -662,6 +721,25 @@
                 //     member_info.style.opacity = 0;
                 // });
             });
+
+        </script>
+
+        <!-- ============ SYSTEM TEAM SCRIPT ============= -->
+        <script>
+            let team = document.getElementById("team-inf");
+let Hscreen = document.getElementsByClassName("hover-screen")[0];
+console.dir(Hscreen);
+document.addEventListener("click", element =>{
+      console.dir(element)
+    if(element.target.className.includes("hover-screen")){
+        team.style.transform = "translate(0, 0%) "
+    }
+ if(element.target.id === "close"){
+   
+    team.style.transform = "translate(0, 100%) "
+   
+ } 
+})
 
         </script>
     </body>
