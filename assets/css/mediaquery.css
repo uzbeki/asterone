@@ -347,19 +347,19 @@
         left: -440px;
         top: 140px;
     }
-    #newbiz-team .content ul li:nth-child(1) img {
+    #newbiz-team .content ul#individuals li:nth-child(1) img {
         border-radius: 50% 50% 50% 0%;
     }
-    .content ul li:nth-child(2) img {
+    .content ul#individuals li:nth-child(2) img {
         border-radius: 50% 50% 0 50%;
     }
-    .content ul li:nth-child(3) img {
+    .content ul#individuals li:nth-child(3) img {
         border-radius: 50% 50% 0% 50%;
     }
-    .content ul li:nth-child(4) img {
+    .content ul#individuals li:nth-child(4) img {
         border-radius: 0% 50% 50% 50%;
      }
-    .content ul li:nth-child(5) img {
+    .content ul#individuals li:nth-child(5) img {
         border-radius: 0% 50% 50% 50%;
     }
    

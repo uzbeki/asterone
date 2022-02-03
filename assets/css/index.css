@@ -865,17 +865,19 @@ footer p {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: var(--asterone-black);
+    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     text-decoration: none;
     border-radius: 5px;
+    transition: transform 0.5s;
 }
 
 .sci li a:hover {
-    background: #999;
+    color: #ffe501;
+    transform: translateY(-7px);
 }
 
 .sci li a .fab {
