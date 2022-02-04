@@ -685,12 +685,17 @@
                               <!-- ======================= TESTING ENDS ========================== -->
                         </section>
                         <section id='soumu-team' total="2">
-                            <h2 class="mobile-title">総務</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque
-                            repudiandae
-                            architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae
-                            enim
-                            deserunt necessitatibus eaque quidem incidunt.
+                            <div class="smoothSlideContainer">
+                                <div class="bar" id="bar1"></div>
+                                <div class="bar"  id="bar2"></div>
+                                <div class="bar" id="bar3"></div>
+                                <div class="bar" id="bar4"></div>
+                                <div class="bar2" id="bar5"></div>
+                                <div class="bar" id="bar6"></div>
+                                <div class="bar2" id="bar7"></div>
+                                <div class="bar2" id="bar8"></div>
+                                <div id="soumu-person"><img id="imgModule" src="https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"></div>
+                              </div>
                         </section>
                         <!-- git clone ssh://beki@180.33.213.159:322/home/git/inf.shizuoka.ac.jp/nftfif.git -->
                     </div>
@@ -822,6 +827,31 @@
                 // });
             });
 
+        </script>
+
+        <script>
+            var peopleList = [
+  "https://goj2.com/wp-content/uploads/2019/01/zacSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/hughSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/jimmySlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/melanieSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/mSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/troySlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/chelseaSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/erikSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/hannahSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"
+]
+var indexLength = peopleList.length;
+var currIndex = 0;
+document.getElementById("soumu-person").addEventListener("animationiteration", function() {
+  document.getElementById("imgModule").src=peopleList[currIndex];
+  if(currIndex < indexLength-1){
+    currIndex++;
+  }else{
+    currIndex = 0;
+  }
+}, false);
         </script>
     </body>
 
