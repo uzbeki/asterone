@@ -375,7 +375,7 @@ section.atmosphere {
 
 @media (max-width: 800px) {
   #gallery {
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;

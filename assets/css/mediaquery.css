@@ -396,4 +396,10 @@
     }
  }
  
- 
+ /* ======================== RECRUITMENT PAGE ============================== */
+ @media (max-width: 470px){
+    section.catch-phrase h1 {
+        font-size: 2rem;
+    }
+     
+ }
