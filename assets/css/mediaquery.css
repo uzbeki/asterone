@@ -1,10 +1,140 @@
 
-/* Top page humburger menu toggle */
-@media screen and (max-width: 2400px) {
-    #toggle {
+
+/*  Top page news part */
+@media screen and (max-width: 200px) {
+    section.news {
+        display: none;
+    }
+    section.news .news-container .intro-title {
         display: none;
     }
 }
+
+/*  Top page header part */
+@media screen and (max-width: 376px) {
+    header.top {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .brand-logo img {
+        width: 25px;
+    }
+    .brand-logo h3 {
+        font-size: medium;
+    }
+}
+    
+@media screen and (min-width: 600px) {
+    section.banner .content p {
+        width: 80%;
+    }
+    header.top {
+        display: none;
+    }
+    
+}
+
+/* Top page Ceo card part */
+@media screen and (max-width: 711px) {
+    .container-card .message {
+        padding: 1em;
+    }
+    .img-ceo {
+        height: 613px;
+    }
+    
+/*  Top page news part */
+@media screen and (max-width: 715px) {
+    #toggle {
+        display: none;
+    }
+    section.news .news-container .intro-title h2 {
+        font-size: 1em;
+    }
+    .intro .intro-title h2 {
+        padding: 9px 0px;
+    }
+
+    section.news .news-container {
+        display: flex;
+        border-radius: 1rem;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    section.news .news-container .intro-title .arrow {
+        position: absolute;
+        right: -6rem;
+        bottom: -1rem;
+    }
+    .intro-title {
+        margin: 2rem;
+    }
+
+    .container-card {
+        padding: 1rem;
+    }
+    .container-card .message {
+        display: contents;
+    }
+
+    section.banner .content h1 {
+        font-size: 1.5em;
+        width: 85%;
+    }
+    section.full-page {
+        gap: 2em;
+        padding: 2em;
+    }
+
+    .intro {
+        display: block;
+    }
+    section.services .service-list li {
+        grid-template-rows: 18fr 3fr;
+    }
+    div.message h3 {
+        font-size: 1.6em;
+    }
+
+    div.content {
+        padding: 1rem;
+    }
+    section.message-ceo div.container-card {
+        display: inline-table;
+    }
+    .img-ceo {
+        height: 355px;
+    }
+    svg {
+        display: none;
+    }
+    /* icon up arrow */
+    #goTop {
+        position: fixed;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 766px){
+    section.banner .content h1 {
+        font-size: 2.5rem;
+    }
+    section.news .news-container {
+        padding: 2rem;
+    }
+    
+}
+
+/* Top page Ceo card part */
+@media screen and (max-width: 771px) {
+    .container-card .message {
+        padding: 0;
+    }
+}
+
 /* Top page Ceo card part */
 @media screen and (max-width: 800px) {
     section.message-ceo div.container-card {
@@ -17,39 +147,31 @@
         padding: 0;
     }
 }
-/* Top page Ceo card part */
-@media screen and (max-width: 771px) {
-    .container-card .message {
-        padding: 0;
+
+/* Top page humburger menu toggle */
+@media screen and (max-width: 2400px) {
+    #toggle {
+        display: none;
     }
 }
-/* Top page Ceo card part */
-@media screen and (max-width: 711px) {
-    .container-card .message {
-        padding: 1em;
-    }
-    .img-ceo {
-        height: 613px;
-    }
-    
 
   
 /** TOP page hamburger menu **/
     .hamburger {
         position: absolute;
         top: 3.5em;
-        right: 7%;
+        right: 15%;
         margin-left: -2em;
         margin-top: -45px;
         width: 2em;
-        height: 45px;
+        height: 2em;
         z-index: 5;
     }
 
     .hamburger div {
         position: relative;
-        width: 3em;
-        height: 7px;
+        width: 2em;
+        height: 0.2em;
         border-radius: 3px;
         background-color: var(--primary-dark);
         margin-top: 8px;
@@ -125,105 +247,6 @@
 
     header .bottom nav ul {
         display: grid;
-    }
-}
-
-/*  Top page header part */
-@media screen and (max-width: 470px) {
-    header .top {
-        display: grid;
-        gap: 1em;
-    }
-
-    header .top .left,
-    header .top .right {
-        display: grid;
-        gap: 1em;
-    }
-}
-
-/*  Top page news part */
-@media screen and (max-width: 200px) {
-    section.news {
-        display: none;
-    }
-    section.news .news-container .intro-title {
-        display: none;
-    }
-}
-
-
-/*  Top page news part */
-@media screen and (max-width: 715px) {
-    #toggle {
-        display: none;
-    }
-    section.news .news-container .intro-title h2 {
-        font-size: 1em;
-    }
-    .intro .intro-title h2 {
-        padding: 9px 0px;
-    }
-
-    section.news .news-container {
-        display: flex;
-        border-radius: 1rem;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        gap: 0;
-    }
-    section.news .news-container .intro-title .arrow {
-        position: absolute;
-        right: -6rem;
-        bottom: -1rem;
-    }
-    .intro-title {
-        margin: 2rem;
-    }
-
-    .container-card {
-        padding: 1rem;
-    }
-    .container-card .message {
-        display: contents;
-    }
-
-    section.banner .content h1 {
-        font-size: 1.2em;
-        width: 85%;
-    }
-    section.full-page {
-        gap: 2em;
-        padding: 2em;
-    }
-
-    .intro {
-        display: block;
-    }
-    section.services .service-list li {
-        grid-template-rows: 18fr 3fr;
-    }
-    div.message h3 {
-        font-size: 1.6em;
-    }
-
-    div.content {
-        padding: 1rem;
-    }
-    section.message-ceo div.container-card {
-        display: inline-table;
-    }
-    .img-ceo {
-        height: 355px;
-    }
-    svg {
-        display: none;
-    }
-    /* icon up arrow */
-    #goTop {
-        position: fixed;
-        right: 1rem;
     }
 }
 
