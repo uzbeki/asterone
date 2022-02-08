@@ -1,123 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="test.css">
-        <title>Circles</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/mediaquery.css">
+        <link rel="stylesheet" href="./assets/css/test.css" />
+        <link rel="stylesheet" href="./assets/css/form.css" />
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
     </head>
-
     <body>
-        <ul class='circles'></ul>
-        <!-- <ul class='circles'> -->
-            <!-- <li class="circle">
-                <h3>会社名</h3>
-                <p>株式会社アスタワン ASTERONE Co. Ltd.</p>
-            </li>
-            <li class="circle">
-                <h3>設立</h3>
-                <p>2013年（平成25年）5月1日</p>
-            </li>
+          <!--======== Header ======== -->
+          <header>
+            <div class="top">
+                <section class="left">
+                    <div class="phone">
+                        <!-- <span class="material-icons">call</span> -->
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+817038331513">070-3833-1513</a>
+                    </div>
+                    <div class="email">
+                        <!-- <span class="material-icons-outlined">email</span> -->
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contact@asterone.co.jp">contact@asterone.co.jp</a>
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="working-hours">
+                        <!-- <span class="material-icons-outlined">schedule</span> -->
+                        <i class="far fa-clock"></i>
+                        <span>
+                            <span>Mon-Fri:</span>
+                            <span>9:00-18:00</span>
+                        </span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-line"></i></a>
+                    </div>
+                </section>
+            </div>
+            <div class="bottom">
+                <div class="brand-logo">
+                    <img src="../../assets/img/SVG/logo.svg" alt="">
+                    <a href="../index.html">
+                        <h3>ASTER<span>ONE</span></h3>
+                    </a>
+                </div>
 
-            <li class="circle">
-                <h3>資本金</h3>
-                <p>10,000,000円</p>
-            </li>
-            <li class="circle">
-                <h3>代表者</h3>
-                <p>代表取締役社長 久米 幹夫</p>
-            </li>
-            <li class="circle">
-                <h3>従業員数</h3>
-                <p>26名</p>
-            </li>
-            <li class="circle">
-                <h3>免許</h3>
-                <p>労働者派遣事業 派 22-300618</p>
-            </li>
-            <li class="circle">
-                <h3>本社</h3>
-                <p> 〒435-0042
-                    静岡県浜松市東区篠ケ瀬町1368-2
-                </p>
-            </li>
-            <li class="circle">
-                <h3>本社電話番号</h3>
-                <p> TEL.053-488-4427
-                    FAX.053-488-4437</p>
-            </li>
-            <li class="circle">
-                <h3>東京オフィス</h3>
-                <p> 〒171-0014
-                    東京都豊島区池袋3丁目 60-5
-                    フェイヴァーフィールド池袋 401</p>
-            </li>
-            <li class="circle">
-                <h3>東京オフィス電話番号</h3>
-                <p> TEL.03-5843-3913
-                    FAX.03-5843-3914</p>
-            </li> -->
-        <!-- </ul> -->
-        <p></p>
+                    <!-- =======TESTING======== --> 
+                    <input id="toggle" type="checkbox"></input>
+                    <label for="toggle" class="hamburger">
+                     <div class="top-bun"></div>
+                     <div class="meat"></div>
+                     <div class="bottom-bun"></div>
+                   </label>
+         
+                 <!-- =========TESTING ENDS========== -->
+                 <div class="nav">
+                     <div class="nav-wrapper">
+
+                   <nav>
+                       <ul>
+                        <li><a href="../about.html">会社について</a></li>
+                        <li><a href="./pages/services/services.html">サービス</a></li>
+                        <li><a href="./pages/team.html">チーム</a></li>
+                        <li><a href="../recruitment/recruitment.html">採用情報</a></li>
+                        <li><a href="../contact.html">お問い合わせ</a></li>
+                       </ul>
+                   </nav>
+                     </div>
+                 </div>
+            </div>
+        </header>
+        <div class="blob">
+            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(300,300)">
+                    <path
+                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                </g>
+            </svg>
+        </div>
+        <div class="blob">
+            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(300,300)">
+                    <path
+                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                </g>
+            </svg>
+        </div>
+        <div class="bg-element">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: var(--secondary-blue-bg);
+                        }
+
+                        .cls-2 {
+                            fill: #fff;
+                        }
+
+                    </style>
+                </defs>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="レイヤー_1" data-name="レイヤー 1">
+                        <polygon class="cls-1"
+                            points="75.67 24.94 70.31 15.66 43.19 31.32 43.19 0 32.48 0 32.48 31.32 5.36 15.66 0 24.94 27.13 40.6 0 56.26 5.36 65.53 32.48 49.87 32.48 81.19 43.19 81.19 43.19 49.87 70.31 65.53 75.67 56.26 48.55 40.6 75.67 24.94" />
+                        <polygon class="cls-2" points="32.48 31.32 32.48 49.87 48.55 40.6 32.48 31.32" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <h2 class="margin">弊社へのお問い合わせは下記フォームよりご連絡ください。<br> 後日担当者よりご連絡をさしあげます。</h2> 
+        <p class="margin-p">※会社や団体からの営業目的のメールはご遠慮願います。</p>
+       
+       
+        <section class="container-box">
+        
+            <div class="box holidays">
+                <span class="icon-container">
+                    <i class="fas fa-clock"></i>
+                </span>
+              <div class="content">
+                <h3>営業時間</h3>
+                <p>9:00 - 18:00</p>
+                <p>土日、祝日、年末年始以外</p>
+              </div>  
+            </div>
+     
+           
+
+            <div class="box head-office">
+                <span class="icon-container">
+                    <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <div class="content">
+                    <h3>住所</h3>
+                    <p>本社：静岡県浜松市東区篠ケ瀬町1368-2</p>
+                    <p>東京オフィス：東京都豊島区池袋3丁目 60-5 フェイヴァーフィールド池袋 401</p>
+                </div>
+            </div>
+            <div class="box office-hours">
+                <span class="icon-container">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <div class="content">
+                    <h3>電話番号</h3>
+                    <p>本社：053-488-4427</p>
+                    <p>東京オフィス：03-5843-3913</p>
+                </div>
+            </div>
+            <div class="box email-contact">
+                <span class="icon-container">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <div class="content">
+                    <h3>メールアドレス</h3>
+                    <p>	manage@asterone.co.jp</p>
+                    <p>support@asterone.co.jp</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-section">
+            <div class="container-test">
+               
+
+        <div class="page test-page">
+        <div class="field">
+            <label for='name'>お名前<span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fa fa-male"></i></span>
+                <input required type="text" name="name" id="name" data-rule="required" />
+            </div>
+            <div class="validation"></div>
+        </div>
+        <div class="field">
+            <label for='furigana'>ふりがな<span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fa fa-user"></i></span>
+                <input required type="text" name="furigana" id="furigana"
+                    data-rule="required" />
+            </div>
+            <div class="validation"></div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label for='gender'>会社名 <span>*</span></label>
+                <div class="input-container">
+                    <span class="icon-case"><i class="fas fa-building"></i></span>
+                    <input id='gender' name='gender' list='genders'>
+                </div>
+                <div class="validation"></div>
+            </div>
+           
+        </div>
+        <div class="field">
+            <label for='phone'>電話番号 <span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fa fa-phone"></i></span>
+                <input required type="tel" name="phone" id="phone" data-rule="maxlen:10" />
+            </div>
+        </div>
+        <div class="field">
+            <label for='email'>メールアドレス <span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fas fa-at"></i></span>
+                <input required type="email" name="email" id="email" data-rule="email" />
+            </div>
+            <div class="validation"></div>
+        </div>
+        <div class="field">
+            <label for='post_code'>郵便番号 <span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case">〒</span>
+                <input required type="text" name="post_code" id="post_code"
+                    data-rule="required" />
+            </div>
+            <div class="validation"></div>
+        </div>
+        <div class="field">
+            <label for='address'>住所 <span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                <input required type="text" name="address" id="address"
+                    data-rule="required" />
+            </div>
+            <div class="validation"></div>
+        </div>
+
+        <div class="field">
+            <label for='address'>お問い合わせ内容 <span>*</span></label>
+            <div class="input-container">
+                <span class="icon-case"><i class="fas fa-envelope-open-text"></i></span>
+               <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="validation"></div>
+        </div>
+        <a class="privacy-link" href="./pages/privacy.html">プライバシーポリシーを必ずご一読いただくようお願い致します。<i class="fas fa-external-link-alt"></i></a>
+        <div class="field buttons margin">
+            <button type="button" class="next test-btn">送信<i class="fas fa-arrow-right"></i></button>
+        </div>
+      
+    </div>
+            </div>
+        </section>
+        <section class="access-map">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <!-- <iframe width="700" height="500" id="gmap_canvas" -->
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=asterone&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+         <!-- ========= Footer ========== -->
+       <footer data-aos="fade-up">
+        <div class="footer-container ">
+            <div class="sec about-us " data-aos-delay="1000" data-aos="fade-right">
+                <div class="brand-logo">
+                    <img src="./assets/img/SVG/logo.svg" alt="">
+                    <a href="index.html">
+                        <h3>ASTER<span>ONE</span></h3>
+                    </a>
+                </div>
+                <p>インフレを抑制しようとして金融政策に偏重すると、金融、したがって景気を必要以上に締め付けることになりかねない、８時に空港に到着する予定です。</p>
+                <ul class="sci ">
+                    <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
+                    <li><a href="# "><i class="fab fa-twitter "></i></a></li>
+                    <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
+                    <li><a href="# "><i class="fab fa-line "></i></i></a></li>
+                </ul>
+            </div>
+            <div class="links" data-aos-delay="500" data-aos="fade-up">
+                <ul>
+                    <li>
+                        <a href="./pages/sustainability.html">サステナビリティ</a>
+                    </li>
+                    <li>
+                        <a href="./pages/our_products.html">自社商品開発</a>
+                    </li>
+                    <li>
+                        <a href="./pages/privacy.html">プライバシーポリシー</a>
+                    </li>
+                    <li>
+                        <a href="./pages/faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./pages/sitemap.html">サイトマップ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
+                <h2>お問合せ</h2>
+                <ul class="info ">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt "></i></span>
+                        <span>本社: <br> 〒435-0042 <br>
+                            静岡県浜松市東区篠ケ瀬町1368-2</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt "></i></span>
+                        <p> <a href="# ">070-3833-1513</a><br>
+                            <a href="# ">053-488-4427</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope "></i></span>
+                        <p><a href="# ">contact@asterone.co.jp</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-text ">
+            <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE co.,ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
     </body>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-        const data = [
-            {
-                name: '会社名',
-                value: '株式会社アスタワン ASTERONE Co. Ltd.'
-            },
-            {
-                name: '設立',
-                value: '2013年（平成25年）5月1日'
-            },
-            {
-                name: '資本金',
-                value: '10,000,000円'
-            },
-            {
-                name: '代表者',
-                value: '代表取締役社長 久米 幹夫'
-            },
-            {
-                name: '従業員数',
-                value: '26名'
-            },
-            {
-                name: '免許',
-                value: '労働者派遣事業 派 22-300618'
-            },
-            {
-                name: '本社',
-                value: '〒435-0042 静岡県浜松市東区篠ケ瀬町1368-2'
-            },
-            {
-                name: '本社電話番号',
-                value: 'TEL.053-488-4427 FAX.053-488-4437'
-            },
-            {
-                name: '東京オフィス',
-                value: '〒171-0014 東京都豊島区池袋3丁目 60-5 フェイヴァーフィールド池袋 401'
-            },
-            {
-                name: '東京オフィス電話番号',
-                value: 'TEL.03-5843-3913 FAX.03-5843-3914'
-            },
-            
-        ]
-        // const circles = d3.selectAll('.circle').data(data)
-        const circles = d3.select('.circles')
-            .selectAll('li')    
-            .data(data)
-            .enter()
-            .append('li')
-            .attr('class', 'circle')
-            .append('h3')
-            .text(d => d.name)
-            
 
-    </script>
+      
 
 </html>
