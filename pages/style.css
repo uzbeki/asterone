@@ -534,7 +534,9 @@ ul.descriptions li p,
 
 .content .group-container .about p {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 2rem;
 }
 
 
