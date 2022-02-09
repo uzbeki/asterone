@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/index.css">
         <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css" />
-        <link rel="stylesheet" href="./assets/css/mediaquery.css">
+        <!-- <link rel="stylesheet" href="./assets/css/mediaquery.css"> -->
+        <link rel="stylesheet" href="./assets/css/mediaqueries/index.css">
     </head>
 
     <body>
@@ -52,17 +53,16 @@
                         <h3>ASTER<span>ONE</span></h3>
                     </a>
                 </div>
-        <!-- =======TESTING======== --> 
-        <input id="toggle" type="checkbox"></input>
-        <label for="toggle" class="hamburger">
-            <div class="top-bun"></div>
-            <div class="meat"></div>
-            <div class="bottom-bun"></div>
-          </label>
+                <!-- =======TESTING======== -->
+                <input id="toggle" type="checkbox" hidden></input>
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
 
-        <!-- =========TESTING ENDS========== -->
-        <div class="nav">
-            <div class="nav-wrapper">
+                <!-- =========TESTING ENDS========== -->
+                <!-- <div class="nav"> -->
                 <nav>
                     <ul>
                         <li><a href="./pages/about.html">会社について</a></li>
@@ -72,8 +72,7 @@
                         <li><a href="/test.html">お問い合わせ</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+                <!-- </div> -->
             </div>
         </header>
 
@@ -602,14 +601,14 @@
                 // direction: 'horizontal',
                 // loop: true,
                 // loopedSlides: 8,
-                grabCursor: true,
+                // grabCursor: true,
                 // centeredSlides: true,
                 slidesPerView: 'auto',
-                // slidesPerView: 3,
+                // slidesPerView: 1,
                 spaceBetween: 50,
                 speed: 2000,
                 autoplay: {
-                    delay: 4000,
+                    delay: 2000,
                 },
             })
             const swiper2 = new Swiper('.swiper2', {
@@ -661,6 +660,13 @@
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
             });
+
+            // destroy swiper1 for windows sizes below 425px
+
+            if (window.innerWidth < 426) {
+                // swiper1.disable;
+                swiper1.destroy();
+            }
         </script>
     </body>
 

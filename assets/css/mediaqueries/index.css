@@ -1,0 +1,206 @@
+@media screen and (max-width: 750px) {
+
+    /* HEADER */
+    #header .top {
+        display: none;
+    }
+
+    .hamburger {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+    nav {
+        text-align: left;
+        background-color: var(--navbar-black);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        transform: scale(0) translate(100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul {
+        padding: 1.5rem var(--content-start)
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+
+    nav li a {
+        position: relative;
+        text-decoration: none;
+        color: var(--light-gray);
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 1px;
+    }
+
+    nav li a:before {
+        content: "";
+        height: 0;
+        position: absolute;
+        width: 0.25em;
+        background-color: white;
+        left: -0.5em;
+        transition: all 0.2s ease-in-out;
+    }
+
+    nav li a:hover {
+        color: var(--primary-dark);
+    }
+
+
+    /** Animations for hamburger menu **/
+    #toggle:checked+.hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+
+    #toggle:checked+.hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked+.hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+
+    #toggle:checked+.hamburger+nav {
+        top: 0;
+        transform: scale(1);
+    }
+
+
+
+}
+
+/* Main section */
+/* Hero banner */
+@media screen and (max-width: 750px) {
+    section.banner .content h1 {
+        font-size: 2.5rem;
+    }
+
+    section.banner .content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    /* Hero banner */
+    section.banner .content h1 {
+        font-size: 2rem;
+    }
+
+    section.banner .content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    /* Hero banner */
+    section.banner .content h1 {
+        font-size: 1.5rem;
+    }
+
+    section.banner .content p {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+}
+
+
+
+/* NEWS section */
+@media screen and (max-width: 1024px) {
+    section.news .news-container {
+        padding: 2rem;
+    }
+
+    section.news .news-container .intro-title .arrow {
+        bottom: -2rem;
+        left: 3.5rem;
+    }
+
+    #news-content div {
+        max-width: 15rem;
+    }
+
+    #news-content a.swiper-slide {
+        max-width: fit-content;
+    }
+}
+
+
+/* @media screen and (max-width: 750px) {} */
+@media screen and (max-width: 768px) {
+    section.news .news-container {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        align-items: self-start;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    section.news .news-container .intro-title {
+        display: none;
+    }
+
+    #news-content img {
+        width: 5rem;
+        height: 5rem;
+        border-bottom-right-radius: 0;
+    }
+
+    #news-content div {
+        max-width: 15rem;
+    }
+
+    #news-content h3 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    section.news .news-container {
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        align-items: center;
+    }
+
+    section.news .news-container .intro-title {
+        display: block;
+        text-align: center;
+    }
+
+    #news-content a.swiper-slide {
+        max-width: 100%;
+    }
+    section.news .news-container .intro-title .arrow {
+        display: none;
+    }
+    #news-content div {
+        max-width: 100%;
+    }
+    #news-content {
+        flex-direction: column;
+        width: 100%;
+    }
+}
