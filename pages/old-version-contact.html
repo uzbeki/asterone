@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>お問い合わせ</title>
     <!-- links -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer>
+    <!-- <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer>
     <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css"> -->
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div class="top">
             <section class="left">
                 <div class="phone">
@@ -34,7 +35,7 @@
                     <i class="far fa-clock"></i>
                     <span>
                         <span>Mon-Fri:</span>
-                    <span>9:00-18:00</span>
+                        <span>9:00-18:00</span>
                     </span>
                 </div>
                 <div class="social-icons">
@@ -63,71 +64,112 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="img">
-            <img src="../assets/img/SVG/faq.svg" alt="">
-        </section>
-        <section class="content">
-            <h1>よくある質問</h1>
-            <div class="content">
-                <div class="elem">
-                    <input type="checkbox" id="question1" name="q" class="checkbox" hidden>
-                    <label for="question1" class="question">ログアウトするんじゃなかったよ。 そんな不当な提案は、拒否すべきだったのに？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">いろいろな国へ行ったがやっぱり日本が一番いい。</div>
-                </div>
+        <section class="container-box">
+            <!-- <div class="box holidays">
+                <span class="icon-container">
+                    <i class="fas fa-clock"></i>
+                </span>
+                <h3>営業時間</h3>
+                <p>9:00 - 18:00</p>
+                <p>土日、祝日、年末年始以外</p>
+            </div> -->
 
-                <div class="elem">
-                    <input type="checkbox" id="question2" name="q" class="checkbox" hidden>
-                    <label for="question2" class="question">社長さんの車種と色は家に帰りましょうか？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">何でもしてあげて下さい。 家に帰りましょうか。</div>
+            <div class="box head-office">
+                <span class="icon-container">
+                    <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <div class="content">
+                    <h3>住所</h3>
+                    <p>本社：静岡県浜松市東区篠ケ瀬町1368-2</p>
+                    <!-- <h3></h3> -->
+                    <p>東京オフィス：東京都豊島区池袋3丁目 60-5 フェイヴァーフィールド池袋 401</p>
                 </div>
-
-                <div class="elem">
-                    <input type="checkbox" id="question3" name="q" class="checkbox" hidden>
-                    <label for="question3" class="question">この天気とは気長に付き合っていくしかない。 あの方が言われる事を、何でもしてあげて下さい？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">ITである。 社長さんの車種と色は？ 「どうかしたの？」と小さい白いウサギが聞きました。</div>
-                </div>
-                <div class="elem">
-                    <input type="checkbox" id="question4" name="q" class="checkbox" hidden>
-                    <label for="question4" class="question">１１時になっているよ。 日没は言葉では表現できないほど美しかった？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">村人たちは皆、行方不明になった猫を探すために山の中へでかけた。 もっと時間が必要だ。</div>
-                </div>
-                <div class="elem">
-                    <input type="checkbox" id="question5" name="q" class="checkbox" hidden>
-                    <label for="question5" class="question">あなたは船で旅行をしますか、飛行機でしますか？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">あなたは船で旅行をしますか、飛行機でしますか。</div>
-                </div>
-                <div class="elem">
-                    <input type="checkbox" id="question5" name="q" class="checkbox" hidden>
-                    <label for="question5" class="question">８時にヒースロー空港に到着する予定ですか？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">イルカは人間に次いで最も知能が高く、やがては彼らとの対話も夢ではないと考えている科学者もいる。</div>
-                </div>
-                <div class="elem">
-                    <input type="checkbox" id="question5" name="q" class="checkbox" hidden>
-                    <label for="question5" class="question">いい手品師になろうと本気で思っている。 いや、大丈夫だ？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers"> いやしくも何かをするなら、じょうずにやりなさい。</div>
-                </div>
-                <div class="elem">
-                    <input type="checkbox" id="question5" name="q" class="checkbox" hidden>
-                    <label for="question5" class="question">彼の話はあまりにも馬鹿げていたので誰も信じなかった？</label>
-                    <div class="image_arrow"> <i class="fas fa-sort-down"></i></div>
-                    <div class="hidden_answers">授業は八時三十分から始まるから。 いろいろな意味で、正直が最善の策であることは言うまでもない。</div>
-                </div>
-
             </div>
+            <div class="box office-hours">
+                <span class="icon-container">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <div class="content">
+                    <h3>電話番号</h3>
+                    <p>本社：053-488-4427</p>
+                    <p>東京オフィス：03-5843-3913</p>
+                </div>
+            </div>
+            <div class="box email-contact">
+                <span class="icon-container">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <div class="content">
+                    <h3>メールアドレス</h3>
+                    <p>	manage@asterone.co.jp</p>
+                    <p>support@asterone.co.jp</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>下記のフォームを記入の上でお問い合わせください</h2>
+            <form action="">
+                <section>
+                    <label for="name">お名前</label>
+                    <input type="text" name="first-name" placeholder="太郎" required>
+                </section>
+                <section>
+                    <label for="name-furigana">ふりがな</label>
+                    <input type="text" name="first-name-furigana" placeholder="たろう" required>
+                </section>
+                <section>
+                    <label for="company-name">会社名</label>
+                    <input type="text" name="company-name" required>
+                </section>
+                <section>
+                    <label for="subject">お問い合わせ内容</label>
+                    <textarea name="subject" id="subject" required></textarea>
+                </section>
+                <section>
+                    <label for="address">住所</label>
+                    <input type="text" name="address" placeholder="静岡県浜松市東区篠ケ瀬町1368-2" required>
+                </section>
+                <section>
+                    <label for="post-address">郵便番号</label>
+                    <input type="number" name="post-address" placeholder="000-0000" required>
+                </section>
+                <section>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" name="email" required>
+                </section>
+                <section>
+                    <label for="phone-number">連絡先電話番号</label>
+                    <input type="number" name="phone-number" placeholder="000-0000-0000" required>
+                </section>
+                <section>
+                    <a href="./privacy.html" target="_blank">プライバシーポリシーを必ずご一読いただきますようお願いいたします。<i
+                            class="fas fa-external-link-alt fa-sm"></i></a>
+                </section>
+                <section class="agree_check">
+                    <input type="checkbox" id="agree_check">
+                    <label for='agree_check'>同意する</label>
+                </section>
+                <button class="btn"><span>確認画面ヘ</span></button>
+            </form>
 
+    
 
+        </section>
+        <section class="access-map">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <!-- <iframe width="700" height="500" id="gmap_canvas" -->
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=asterone&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
         <div class="footer-container ">
             <div class="sec about-us ">
                 <div class="brand-logo">
@@ -185,11 +227,9 @@
             </div>
         </div>
         <div class="copyright-text ">
-            <p>Copyright <i class="far fa-copyright "></i> 2021 ASTERONE co.,ltd. All Rights Reserved.</p>
+            <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE co.,ltd. All Rights Reserved.</p>
         </div>
     </footer>
-
-
 </body>
 
 </html>
