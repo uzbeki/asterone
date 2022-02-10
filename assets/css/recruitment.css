@@ -1,3 +1,12 @@
+section.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
 @keyframes move_wave {
   0% {
     transform: translateX(0) translateZ(0) scaleY(1)

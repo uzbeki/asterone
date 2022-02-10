@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+    main header .details img {
+        height: 80%;
+    }
+    .job-title h1 {
+        font-size: 2rem;
+    }
+    .job-title {
+        padding: 1em;
+    }
+    
+    .actions a {
+        font-size: medium;
+    }
+    main header .details {
+        gap: 0;
+    }
+    header {
+        position: relative;
+    }
+    .actions {
+        position: absolute;
+        top: 62%;
+        right: 4%;
+    }
+    #job-details {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 425px) {
+
+     .job-title h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    div.actions p {
+        font-size: small;
+    }
+    .actions a {
+        font-size: small;
+    }
+    .job-title ul {
+        font-size: small;
+        display: grid;
+        gap: 0;
+    }
+   main header {
+        height: 7%;
+        padding: 1rem;
+    }
+    main header .details {
+        display: grid;
+    }
+    main header .details img {
+        height: 45%;
+    }
+    .job-title {
+        margin-top: -3rem;
+     }
+     .actions {
+        position: absolute;
+        top: 73%;
+        right: 4%;
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .job-title ul {
+        gap: 0.5rem;
+    }
+    main header .details img {
+        height: 40%;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .job-title ul {
+        font-size: 10px;
+    }
+    div.icon {
+        display: none;
+    }
+    .job-title {
+        margin-top: 0;
+    }
+   
+}

@@ -56,7 +56,6 @@
         color: var(--primary-dark);
     }
 
-
     /** Animations for hamburger menu **/
     #toggle:checked+.hamburger .top-bun {
         transform: rotate(-45deg);
@@ -77,10 +76,49 @@
         top: 0;
         transform: scale(1);
     }
+}
 
+/* Main section */
+/* Hero banner */
+@media screen and (max-width: 750px) {
+    section.banner .content h1 {
+        font-size: 2.5rem;
+    }
 
+    section.banner .content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    /* Hero banner */
+    section.banner .content h1 {
+        font-size: 2rem;
+    }
+
+    section.banner .content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 
 }
+
+@media screen and (max-width: 430px) {
+
+    /* Hero banner */
+    section.banner .content h1 {
+        font-size: 1.5rem;
+    }
+
+    section.banner .content p {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+}
+
 
 /* Main section */
 /* Hero banner */

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- LINKS -->
-        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="../assets/css/base.css"/>
-        <link rel="stylesheet" href="../assets/css/team.css">
+        <title>チーム</title>
+        <!-- links -->
+        <!-- <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer> -->
+        <link rel="stylesheet" href="../assets/css/base.css">
         <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css" />
-        
-        <title>Document</title>
+       <link rel="stylesheet" href="../assets/css/team.css">
+       <link rel="stylesheet" href="../assets/css/mediaqueries/team-media.css">
     </head>
 
     <body>
-
-        <!-- ************* Header ************* -->
-        <header id="header">
+        <!--======== Header ======== -->
+        <header>
             <div class="top">
                 <section class="left">
                     <div class="phone">
@@ -45,270 +44,672 @@
                     </div>
                 </section>
             </div>
-            <div class="bottom">
+    <div class="bottom">
                 <div class="brand-logo">
                     <img src="../assets/img/SVG/logo.svg" alt="">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <h3>ASTER<span>ONE</span></h3>
                     </a>
                 </div>
-                <!-- =======TESTING======== -->
-                <input id="toggle" type="checkbox" hidden></input>
-                <label for="toggle" class="hamburger">
-                    <div class="top-bun"></div>
-                    <div class="meat"></div>
-                    <div class="bottom-bun"></div>
-                </label>
 
-                <!-- =========TESTING ENDS========== -->
+                    <!-- =======TESTING======== --> 
+           <input id="toggle" type="checkbox" hidden></input>
+           <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </label>
+
+        <!-- =========TESTING ENDS========== -->
                 <nav>
                     <ul>
-                        <li><a href="./pages/about.html">会社について</a></li>
-                        <li><a href="./pages/services/services.html">サービス</a></li>
-                        <li><a href="./pages/team.html">チーム</a></li>
-                        <li><a href="./pages/recruitment/recruitment.html">採用情報</a></li>
-                        <li><a href="./pages/contact.html">お問い合わせ</a></li>
+                        <li><a href="./about.html">会社について</a></li>
+                        <li><a href="./services/services.html">サービス</a></li>
+                        <li><a href="./team.html">チーム</a></li>
+                        <li><a href="./recruitment/recruitment.html">採用情報</a></li>
+                        <li><a href="./contact.html">お問い合わせ</a></li>
                     </ul>
                 </nav>
-                <!-- </div> -->
-            </div>
+    </div>
         </header>
-        <section class="team">
-
-            <h1>アスタワンのチーム</h1>
-            <div class="tabs">
-
-                <input type="radio" id="new-biz" name="tab-control">
-                <input type="radio" id="sys-en" name="tab-control" checked>
-                <input type="radio" id="sol-en" name="tab-control">
-                <input type="radio" id="manage" name="tab-control">
-                <ul id='tab-ul'>
-                    <li title="新規事業部">
-                        <label tabindex='0' for="new-biz" role="button">
-                            <i class="fas fa-briefcase"></i>
-                            <span>新規事業部</span>
-                        </label>
-                    </li>
-                    <li title="システム開発部">
-                        <label tabindex='0' for="sys-en" role="button">
-                            <i class="fas fa-cogs"></i>
-                            <span>システム開発部</span>
-                        </label>
-                    </li>
-                    <li title="ソリューションエンジニアリング部">
-                        <label tabindex='0' for="sol-en" role="button">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>SE部</span>
-                        </label>
-                    </li>
-                    <li title="総務">
-                        <label tabindex='0' for="manage" role="button">
-                            <i class="fas fa-calculator"></i>
-                            <span>総務</span>
-                        </label>
-                    </li>
-                </ul>
-
-                <div class="slider">
-                    <div class="indicator"></div>
+        <!-- ======== Main ========= -->
+        <main>
+            <!--             <section class="team full-page">
+                <div class="intro ">
+                    <div class="intro-title ">
+                        <h2>システム開発部</h2>
+                    </div>
+                    <div class="intro-description ">
+                        <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
+                        </p>
+                    </div>
                 </div>
-                <div class="content">
-                    <section id='newbiz-team'>
-                        <h2 class="mobile-title">新規事業部</h2>
-                        <div class="meet">
-                            <ul id='individuals'>
-                                <li class='img-box active'>
-                                    <img tabindex='0' id='beki' src="../assets/img/individuals/beki_face@4x-100.jpg"
-                                        alt="">
-                                </li>
-                                <li class='img-box'>
-                                    <img tabindex='0' id='okuda' src="../assets/img/individuals/okuda_kento.png" alt="">
-                                </li>
-                                <li class='img-box'>
-                                    <img tabindex='0' id='yui' src="../assets/img/individuals/yui_face@4x-100.jpg"
-                                        alt="">
-                                </li>
-                                <li class='img-box'>
-                                    <img tabindex='0' id='ito' src="../assets/img/individuals/ito_face@4x-100.jpg"
-                                        alt="">
-                                </li>
-                                <li class='img-box'>
-                                    <img tabindex='0' id='musha' src="../assets/img/individuals/musha_face@4x-100.jpg"
-                                        alt="">
-                                </li>
-                            </ul>
-                            <ul class="descriptions">
-                                <li id="_okuda">
-                                    <h2>Okuda Kento</h2>
-                                    <h3>ソフトウェアエンジニア</h3>
-                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                                </li>
-                                <li id="_beki" class='active'>
-                                    <h2>Otaev Bekhruz</h2>
-                                    <h3>ソフトウェアエンジニア</h3>
-                                    <p>日中はWebスペシャリストで、夜間に星を見詰める人です。チェスに夢中であります。</p>
-                                </li>
-                                <li id="_yui">
-                                    <h2>Yui Kuzuya</h2>
-                                    <h3>ソフトウェアエンジニア</h3>
-                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                                </li>
-                                <li id="_ito">
-                                    <h2>Hideaki Ito</h2>
-                                    <h3>ソフトウェアエンジニア</h3>
-                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                                </li>
-                                <li id="_musha">
-                                    <h2>Musha Makhmudova</h2>
-                                    <h3>ソフトウェアエンジニア</h3>
-                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="team-card">
+                    <figure class="fancy-card red hover">
+                        <figcaption>
+                            <h2>愛美 <span>富山</span></h2>
+                            <p>次世代の製品およびサービスを同時にグローバル展開し、次世代の製品およびサービスを同時にグローバル展開し</p>
+                        </figcaption>
+                        <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg"
+                                alt="sample4" /></div>
+                        <div class="position">Developer</div>
+                    </figure>
+                    <figure class="fancy-card blue">
+                        <figcaption>
+                            <h2>佐藤 <span>西村</span></h2>
+                            <p>次世代の製品およびサービスを同時にグローバル展開し、次世代の製品およびサービスを同時にグローバル展開し</p>
+                        </figcaption>
+                        <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg"
+                                alt="sample3" /></div>
+                        <div class="position">Software Engineer</div>
+                    </figure>
+                    <figure class="fancy-card red hover">
+                        <figcaption>
+                            <h2>太郎 <span>古郷</span></h2>
+                            <p>次世代の製品およびサービスを同時にグローバル展開し、次世代の製品およびサービスを同時にグローバル展開し</p>
+                        </figcaption>
+                        <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg"
+                                alt="sample4" /></div>
+                        <div class="position">App Developer</div>
+                    </figure>
+                </div>
+            </section>
 
-                        <div class="group-container">
+            <section class="team full-page">
+                <div class="intro ">
+                    <div class="intro-title ">
+                        <h2>新規事業部</h2>
+                    </div>
+                    <div class="intro-description ">
+                        <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
+                        </p>
+                    </div>
+                </div>
 
-                            <div class="group">
-                                <div class="left">
-                                    <img src="../assets/img/newbiz/20220113_113804.jpg" alt="" srcset="">
-                                </div>
-                                <div class="right">
-                                    <img src="../assets/img/newbiz/20220113_115104.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="about">
-                                <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
+                <div class="container-cards">
+                    <div class="card">
+                        <figure class="card__thumb">
+                            <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg"
+                                alt="Picture by Kyle Cottrell" class="card__image" width="50%">
+                            <figcaption class="card__caption">
+                                <h2 class="card__title">Otaev Bekhruz</h2>
+                                <p class="card__subtitle">Software Engineer</p>
+                                <p class="card__snippet">日中はWebスペシャリストで、夜間に星を見詰める人です。チェスに夢中である。</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="card">
+                        <figure class="card__thumb">
+                            <img src="../assets/img/avatars/sean-s-V16fvLUU35s-unsplash.jpg"
+                                alt="Picture by Nathan Dumlao" class="card__image" width="50%">
+                            <figcaption class="card__caption">
+                                <h2 class="card__title">奥田健人</h2>
+                                <p class="card__subtitle">Software Engineer</p>
+                                <p class="card__snippet">
+                                    すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
                                 </p>
-                            </div>
-                        </div>
-                    </section>
+                            </figcaption>
+                        </figure>
+                    </div>
 
-                    <section id='system-team' total="10">
-                        <h2 class="mobile-title">システム開発部</h2>
-                        <div id='hive' style="--n-rows: 3; --n-cols: 8">
-                            <style>
-                                .hex-cell:nth-of-type(7n + 1) {
-                                    grid-column-start: 2
-                                }
-
-                            </style>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--t:10%;--le:0;'>
-                                <h2>石津征司</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--le:0;'>
-                                <h2>金原功幸</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--t:10%;--r:0;'>
-                                <h2>小林雄平</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--le:0%;'>
-                                <h2>中田康夫</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--t:10%;--le:0%;'>
-                                <h2>鈴木大介</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--t:10%;--r:0;'>
-                                <h2>中山敏希</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--r:0;'>
-                                <h2>長倉天星</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--le:0%;'>
-                                <h2>バルバジェラタマリビ</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--le:0%;'>
-                                <h2>鈴木瑛太</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-                            <div class="hex-cell">
-                                <img src="../assets/img/avatars/wes-hicks-4-EeTnaC1S4-unsplash.jpg" />
-                            </div>
-                            <div class='member-info' style='--b:10%;--r:0;'>
-                                <h2>加藤篤生</h2>
-                                <h3>ソフトウェアエンジニア</h3>
-                                <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
-                            </div>
-
-                        </div>
-                    </section>
-                    <section id='se-team' total="9">
-                        <h2 class="mobile-title">SE部</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error
-                        quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam,
-                        quia in eum.
-                    </section>
-                    <section id='soumu-team' total="2">
-                        <h2 class="mobile-title">総務</h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque
-                        repudiandae
-                        architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim
-                        deserunt necessitatibus eaque quidem incidunt.
-                    </section>
-                    <!-- git clone ssh://beki@180.33.213.159:322/home/git/inf.shizuoka.ac.jp/nftfif.git -->
+                    <div class="card">
+                        <figure class="card__thumb">
+                            <img src="../assets/img/avatars/mitsuo-jr-vH-yydPOv38-unsplash.jpg"
+                                alt="Picture by Daniel Lincoln" class="card__image" width="50%">
+                            <figcaption class="card__caption">
+                                <h2 class="card__title">るろうに剣心</h2>
+                                <p class="card__subtitle">Software Engineer</p>
+                                <p class="card__snippet">
+                                    すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class='work-with-us'>
-            <header>
-                <h1>Join our Team</h1>
-                <p>優れたソフトウェアをさらに優れたものにするための私たちの探求にご協力ください</p>
-                <a class='button' href="./recruitment/recruitment.html#positions">求人票を見る</a>
-            </header>
-            <div class="bg">
-                <img src="../assets/img/team/join_us_img.svg" alt="" srcset="">
-            </div>
-        </section>
-           <!-- ************* Footer ************* -->
-           <footer data-aos="fade-up">
+            </section>
+ -->
+
+
+            <section class="team">
+
+                <!-- <h1>アスタワンのチーム</h1> -->
+                <div class="tabs">
+
+                    <input type="radio" id="new-biz" name="tab-control" checked>
+                    <input type="radio" id="sys-en" name="tab-control" >
+                    <input type="radio" id="sol-en" name="tab-control">
+                    <input type="radio" id="manage" name="tab-control">
+                    <ul id='tab-ul'>
+                        <li title="新規事業部">
+                            <label tabindex='0' for="new-biz" role="button">
+                                <i class="fas fa-briefcase"></i>
+                                <span>新規事業部</span>
+                            </label>
+                        </li>
+                        <li title="システム開発部">
+                            <label tabindex='0' for="sys-en" role="button">
+                                <i class="fas fa-cogs"></i>
+                                <span>システム開発部</span>
+                            </label>
+                        </li>
+                        <li title="ソリューションエンジニアリング部">
+                            <label tabindex='0' for="sol-en" role="button">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>ソリューションエンジニアリング部</span>
+                            </label>
+                        </li>
+                        <li title="情報システム部">
+                            <label tabindex='0' for="manage" role="button">
+                                <i class="fas fa-calculator"></i>
+                                <span>情報システム部</span>
+                            </label>
+                        </li>
+                        <!-- <li title="総務">
+                            <label tabindex='0' for="manage" role="button">
+                                <i class="fas fa-calculator"></i>
+                                <span>総務</span>
+                            </label>
+                        </li> -->
+                    </ul>
+
+                    <div id="slider">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="content">
+                        <section id='newbiz-team'>
+                            <h2 class="mobile-title">新規事業部</h2>
+                            <div class="meet">
+                                <ul id='individuals'>
+                                    <li class='img-box active'>
+                                        <img tabindex='0' id='beki' src="../assets/img/individuals/beki_face@4x-100.jpg"
+                                            alt="">
+                                    </li>
+                                    <li class='img-box'>
+                                        <img tabindex='0' id='okuda' src="../assets/img/individuals/okuda_kento.png"
+                                            alt="">
+                                    </li>
+                                    <li class='img-box'>
+                                        <img tabindex='0' id='yui' src="../assets/img/individuals/kuzuyasan.png"
+                                            alt="">
+                                    </li>
+                                    <li class='img-box'>
+                                        <img tabindex='0' id='ito' src="../assets/img/individuals/ito_face@4x-100.jpg"
+                                            alt="">
+                                    </li>
+                                    <li class='img-box'>
+                                        <img tabindex='0' id='musha'
+                                            src="../assets/img/individuals/musha3.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <ul class="descriptions">
+                                    <li id="_okuda">
+                                        <h2>Okuda Kento</h2>
+                                        <h3>ソフトウェアエンジニア</h3>
+                                        <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li id="_beki" class='active'>
+                                        <h2>Otaev Bekhruz</h2>
+                                        <h3>ソフトウェアエンジニア</h3>
+                                        <p>日中はWebスペシャリストで、夜間に星を見詰める人です。チェスに夢中であります。</p>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li id="_yui">
+                                        <h2>Yui Kuzuya</h2>
+                                        <h3>ソフトウェアエンジニア</h3>
+                                        <p>web開発（フロントエンド周り）の業務に携わっています。趣味は読書と散歩です。</p>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li id="_ito">
+                                        <h2>Hideaki Ito</h2>
+                                        <h3>新規事業開発部　部長</h3>
+                                        <p>営業とプロジェクト管理が主な仕事。たまに無性にプログラムが書きたくなる。休日はゲーム（RPG）をのんびりやってます。</p>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li id="_musha">
+                                        <h2>Musha Makhmudova</h2>
+                                        <h3>ソフトウェアエンジニア</h3>
+                                        <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="blob">
+                                            <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="translate(300,300)">
+                                                    <path
+                                                        d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="group-container">
+
+                                <div class="group">
+                                    <div class="left">
+                                        <img src="../assets/img/newbiz/20220113_113804.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="right">
+                                        <img src="../assets/img/newbiz/20220113_115104.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="about">
+                                   
+            
+                                    <p> <b>新規事業開発部</b> は「新規(新たに)」に「事業(仕事)」を「開発(作る)」することを目指す部署です。</p> 
+                                       <p> つまりどんな形であれ仕事を広げることを目的とし、以下の三つの項目を主体に活動しています。</p>
+                                      <div class="newbiz-text">
+                                       <p>1. 自社新製品（アプリ・製品・サービス）を作る </p>
+                                      <p>2. 未経験の技術を習得し、新しい技術を増やす。</p>
+                                      <p>3. 新たな顧客を確保する。</p> 
+                                      <p>  「１」が一番の目標でもあり会社としての夢です。→自社新製品（アプリ・サービス・製品）を作るために部として時間を割いて、挑戦していきます。</p>
+                                      <p>  「２」では業務の幅を広げて、新たな業務を増やしていきます。→未経験や実績がないことは安定して仕事を受注することは難しいです。積極的に技術獲得をして対応の幅を広げていきます。</p>
+                                      <p>  「３」は会社を知ってもらい、顧客を増やすことです。→新規事業開発部は新製品のマーケティングや展示会での情報収集及び出展等を行い、自社製品及び自社技術をアピールし顧客獲得を目指します。</p>
+                                      </div>
+                                      <p> 内容からもわかると思いますが、基本的に新しいことにチャレンジすることが多くなる部署です。</p> 
+                                        
+                                       
+                                 
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id='system-team' total="10">
+                            <h2 class="mobile-title">システム開発部</h2>
+                            <div id='hive' style="--n-rows: 3; --n-cols: 8">
+                                <style>
+                                    .hex-cell:nth-of-type(7n + 1) {
+                                        grid-column-start: 2
+                                    }
+
+                                </style>
+                                <div class="hex-cell" id="name1">
+                                    <img src="https://picsum.photos/300.webp?random=2" />
+                                </div>
+                                <div class="hex-cell" id="name2">
+                                    <img src="https://picsum.photos/300.webp?random=3" />
+                                </div>
+                                <div class="hex-cell" id="name3">
+                                    <img src="https://picsum.photos/300.webp?random=4" />
+                                </div>
+                                <div class="hex-cell" id="name4">
+                                    <img src="https://picsum.photos/300.webp?random=5" />
+                                </div>
+                                <div class="hex-cell" id="name5">
+                                    <img src="https://picsum.photos/300.webp?random=6" />
+                                </div>
+                                <div class="hex-cell" id="name6">
+                                    <img src="https://picsum.photos/300.webp?random=7" />
+                                </div>
+                                <div class="hex-cell" id="name7">
+                                    <img src="https://picsum.photos/300.webp?random=8" />
+                                </div>
+                                <div class="hex-cell" id="name8">
+                                    <img src="https://picsum.photos/300.webp?random=9" />
+                                </div>
+                                <div class="hex-cell" id="name9">
+                                    <img src="https://picsum.photos/300.webp?random=10" />
+                                </div>
+                                <div class="hex-cell" id="name10">
+                                    <img src="https://picsum.photos/300.webp?random=11" />
+                                </div>
+                            </div>
+                            <div class="hive_description">
+                                <div class='member-info' id="_name1" style='--t:10%;'>
+                                    <h2>石津征司</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name2" style='--b:10%;'>
+                                    <h2>金原功幸</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name3" style='--t:10%;--r:5%;'>
+                                    <h2>小林雄平</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name4" style='--b:10%;'>
+                                    <h2>中田康夫</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name5" style='--t:10%;'>
+                                    <h2>鈴木大介</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name6" style='--t:10%;--r:5%;'>
+                                    <h2>中山敏希</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name7" style='--b:10%;--r:5%;'>
+                                    <h2>長倉天星</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name8" style='--b:10%;'>
+                                    <h2>バルバジェラタ <br> マリビ</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name9" style='--b:10%;'>
+                                    <h2>鈴木瑛太</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='member-info' id="_name10" style='--b:10%;--r:5%;'>
+                                    <h2>加藤篤生</h2>
+                                    <h3>ソフトウェアエンジニア</h3>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    <div class="blob">
+                                        <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <g transform="translate(250,250)">
+                                                <path
+                                                    d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <section id='se-team' total="9">
+                            <!-- ================= TESTING ================ https://codepen.io/Kikeztw/pen/mKvjdL -->
+                          
+                            <ul class="list-members">
+                                <li class="member">
+                                  <div class="member-image">
+                                    <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/1.png">
+                                  </div>
+                                  <div class="se-team-member-info">
+                                    <h3 class="se-team-member-name">小田山本</h3>
+                                    <p>ソフトウェアエンジニア</p>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                  </div>
+                                </li>
+                                <li class="member">
+                                  <div class="member-image">
+                                    <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/2.png">
+                                  </div>
+                                  <div class="se-team-member-info">
+                                    <h3 class="se-team-member-name">松本西原</h3>
+                                    <p>ソフトウェアエンジニア</p>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                  </div>
+                                </li>
+                                <li class="member">
+                                  <div class="member-image">
+                                    <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/3.png">
+                                  </div>
+                                  <div class="se-team-member-info">
+                                    <h3 class="se-team-member-name">西峻希</h3>
+                                    <p>ソフトウェアエンジニア</p>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                  </div>
+                                </li>
+                                <li class="member">
+                                  <div class="member-image">
+                                    <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                  </div>
+                                  <div class="se-team-member-info">
+                                    <h3 class="se-team-member-name">高橋江口</h3>
+                                    <p>ソフトウェアエンジニア</p>
+                                    <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                  </div>
+                                </li>
+                                <li class="member">
+                                    <div class="member-image">
+                                      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                    </div>
+                                    <div class="se-team-member-info">
+                                      <h3 class="se-team-member-name">水本由香里</h3>
+                                      <p>ソフトウェアエンジニア</p>
+                                      <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    </div>
+                                  </li>
+                                <li class="member">
+                                    <div class="member-image">
+                                      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                    </div>
+                                    <div class="se-team-member-info">
+                                      <h3 class="se-team-member-name">阿部与助</h3>
+                                      <p>ソフトウェアエンジニア</p>
+                                      <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    </div>
+                                  </li>
+                                <li class="member">
+                                    <div class="member-image">
+                                      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                    </div>
+                                    <div class="se-team-member-info">
+                                      <h3 class="se-team-member-name">鳴門内原</h3>
+                                      <p>ソフトウェアエンジニア</p>
+                                      <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    </div>
+                                  </li>
+                                <li class="member">
+                                    <div class="member-image">
+                                      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                    </div>
+                                    <div class="se-team-member-info">
+                                      <h3 class="se-team-member-name">千紘永田</h3>
+                                      <p>ソフトウェアエンジニア</p>
+                                      <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    </div>
+                                  </li>
+                                <li class="member">
+                                    <div class="member-image">
+                                      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                                    </div>
+                                    <div class="se-team-member-info">
+                                      <h3 class="se-team-member-name">高木鈴木</h3>
+                                      <p>ソフトウェアエンジニア</p>
+                                      <p>趣味で得たアイデアから新規事業「自転車仲間が見つかるWEBサービス」の企画・開発・マーケティングを行っています。生活の7割が自転車</p>
+                                    </div>
+                                  </li>
+                            </ul>
+
+
+
+
+
+
+
+
+
+
+                              <!-- ======================= TESTING ENDS ========================== -->
+                        </section>
+                        <section id='soumu-team' total="2">
+                            <div class="smoothSlideContainer">
+                                <div class="bar" id="bar1"></div>
+                                <div class="bar"  id="bar2"></div>
+                                <div class="bar" id="bar3"></div>
+                                <div class="bar" id="bar4"></div>
+                                <div class="bar2" id="bar5"></div>
+                                <div class="bar" id="bar6"></div>
+                                <div class="bar2" id="bar7"></div>
+                                <div class="bar2" id="bar8"></div>
+                                <div id="soumu-person"><img id="imgModule" src="https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"></div>
+                              </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section class='work-with-us'>
+                <header>
+                    <!-- https://shortcut.com/careers -->
+                    <h1>Join our Team</h1>
+                    <p>新しいことなので、やり方も自分で調べて一歩一歩進む形となります。</p>  
+                    <p>大変なことは多いですが、面白さも多くあると思います。</p> 
+                    <p> 私たちと一緒にチャレンジしてみませんか？ </p>
+                    <a class='button' href="./recruitment/recruitment.html#positions">求人票を見る</a>
+                </header>
+                <div class="bg">
+                    <img src="../assets/img/team/join_us_img.svg" alt="" srcset="">
+                </div>
+            </section>
+
+            <script>
+                const images = document.querySelectorAll('#individuals img');
+                const descriptions = document.querySelector('.descriptions');
+                const show_description = (e) => {
+                    const id = e.target.id;
+                    const description = document.querySelector(`#_${id}`);
+
+                    document.querySelectorAll('#individuals .active')?.forEach(e => e.classList.remove('active'));
+                    descriptions.querySelectorAll('.active').forEach(e => e.classList.remove('active'));
+
+                    e.target.closest('li').classList.add('active');
+                    description.classList.add('active');
+                }
+
+
+                const hide_description = (e) => {
+                    e.target.classList.remove('active');
+                }
+
+                images.forEach(individual => {
+                    individual.onmouseover = show_description;
+                    individual.onclick = show_description;
+                    individual.onfocus = show_description;
+                });
+            </script>
+        </main>
+        <!-- ========= Footer ========== -->
+        <footer>
             <div class="footer-container ">
-                <div class="sec about-us " data-aos-delay="1000" data-aos="fade-right">
+                <div class="sec about-us ">
                     <div class="brand-logo">
                         <img src="../assets/img/SVG/logo.svg" alt="">
-                        <a href="index.html">
+                        <a href="../index.html">
                             <h3>ASTER<span>ONE</span></h3>
                         </a>
                     </div>
@@ -320,26 +721,26 @@
                         <li><a href="# "><i class="fab fa-line "></i></i></a></li>
                     </ul>
                 </div>
-                <div class="links" data-aos-delay="500" data-aos="fade-up">
+                <div class="links">
                     <ul>
                         <li>
-                            <a href="./pages/sustainability.html">サステナビリティ</a>
+                            <a href="./sustainability.html">サステナビリティ</a>
                         </li>
                         <li>
-                            <a href="./pages/our_products.html">自社商品開発</a>
+                            <a href="./our_products.html">自社商品開発</a>
                         </li>
                         <li>
-                            <a href="./pages/privacy.html">プライバシーポリシー</a>
+                            <a href="./privacy.html">プライバシーポリシー</a>
                         </li>
                         <li>
-                            <a href="./pages/faq.html">FAQ</a>
+                            <a href="./faq.html">FAQ</a>
                         </li>
                         <li>
-                            <a href="./pages/sitemap.html">サイトマップ</a>
+                            <a href="./sitemap.html">サイトマップ</a>
                         </li>
                     </ul>
                 </div>
-                <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
+                <div class="sec contact ">
                     <h2>お問合せ</h2>
                     <ul class="info ">
                         <li>
@@ -361,34 +762,60 @@
                 </div>
             </div>
             <div class="copyright-text ">
-                <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE Co., Ltd. All Rights Reserved.</p>
+                <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE co.,ltd. All Rights Reserved.</p>
             </div>
         </footer>
-
         <script>
-            const images = document.querySelectorAll('#individuals img');
-            const descriptions = document.querySelector('.descriptions');
-            const show_description = (e) => {
-                const id = e.target.id;
-                const description = document.querySelector(`#_${id}`);
+            const hex_cells = document.querySelectorAll('.hex-cell');
 
-                document.querySelectorAll('#individuals .active')?.forEach(e => e.classList.remove('active'));
-                descriptions.querySelectorAll('.active').forEach(e => e.classList.remove('active'));
-
-                e.target.closest('li').classList.add('active');
-                description.classList.add('active');
-            }
+            // get random int from 1 to hex_cells.length
+            const random_int = Math.floor(Math.random() * hex_cells.length) + 1;
+            hex_cells[random_int].classList.add('active');
+            document.getElementById(`_${hex_cells[random_int].id}`).classList.add('active');
 
 
-            const hide_description = (e) => {
-                e.target.classList.remove('active');
-            }
+            hex_cells.forEach(cell => {
+                cell.onmouseover = () => {
+                    document.querySelectorAll('.member-info.active').forEach(e => e.classList.remove('active'));
+                    hex_cells.forEach(e => e.classList.remove('active'));
 
-            images.forEach(individual => {
-                individual.onmouseover = show_description;
-                individual.onclick = show_description;
-                individual.onfocus = show_description;
+                    document.getElementById(`_${cell.id}`).classList.add('active');
+                    cell.classList.toggle('active');
+                };
+                // cell.onmouseout = () => {
+                //     document.getElementById(`_${cell.id}`).classList.remove('active');
+                // };
+                // cell.addEventListener('mouseout', () => {
+                //     const name = cell.id.replace('_name', '');
+                //     const member_info = document.getElementById(`_name${name}`);
+                //     member_info.style.opacity = 0;
+                // });
             });
+
+        </script>
+        <script>
+            var peopleList = [
+  "https://goj2.com/wp-content/uploads/2019/01/zacSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/hughSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/jimmySlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/melanieSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/mSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/troySlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/chelseaSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/erikSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/hannahSlider.png",
+  "https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"
+]
+var indexLength = peopleList.length;
+var currIndex = 0;
+document.getElementById("soumu-person").addEventListener("animationiteration", function() {
+  document.getElementById("imgModule").src=peopleList[currIndex];
+  if(currIndex < indexLength-1){
+    currIndex++;
+  }else{
+    currIndex = 0;
+  }
+}, false);
         </script>
     </body>
 

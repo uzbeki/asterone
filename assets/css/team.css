@@ -1,33 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400";
 
-/* colors */
-/* tab setting */
-/* breakpoints */
-/* selectors relative to radio inputs */
-/* html {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-body {
-    background: #efefef;
-    color: #333;
-    font-family: "Raleway";
-    height: 100%;
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-*/
 body h1 {
     text-align: center;
     color: #428bff;
@@ -649,6 +621,10 @@ a.button {
 }
 
 /* ================ TESTING =============== */
+#se-team {
+    padding: 0 var(--content-start);
+}
+
 h3.se-team-member-name {
     color: var(--secondary-blue);
     font-weight: bold;
@@ -1135,4 +1111,11 @@ section#soumu-team {
     100% {
         right: -100%;
     }
+}
+
+div.bg img {
+    width: 68%;
+    position: absolute;
+    right: 16%;
+    top: 27%;
 }

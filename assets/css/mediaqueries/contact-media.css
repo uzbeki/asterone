@@ -1,0 +1,111 @@
+@media screen and (max-width: 1536px) {
+    /* .bg-element svg */
+    div.bg-element {
+        transform: translate(240%, -35%);
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    /* SVG */
+    .bg-element svg {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 1325px) {
+    div.bg-element {
+        transform: translate(147%, 90%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.bg-element {
+        transform: translate(112%, 33%);
+    }
+}
+
+@media (max-width: 768px) {
+    /* title */
+    h2.margin {
+        padding: 0 var(--content-start);
+    }
+    /* svg */
+    div.bg-element {
+        transform: translate(70%, 44%);
+    }
+
+    /* Contact form */
+    section.test-section::before {
+        transform: translate(-200px, -180px);
+    }
+    section.test-section::after {
+        transform: translate(60px, 180px);
+    }
+    .container-test {
+        padding: 20px;
+    }
+
+    /* map */
+    div.mapouter {
+        height: 672px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    p.margin-p {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    /* SVG */
+    .bg-element svg {
+        width: 15rem;
+    }
+    div.bg-element {
+        transform: translate(76%, -124%);
+    }
+    /* title */
+    h2.margin {
+        font-size: 1.2em;
+    }
+    p.margin-p {
+        font-size: small;
+    }
+    /* form btn */
+    .field button  {
+        width: 197%;
+    }
+
+    /* map */
+    div.mapouter {
+        height: 638px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* form circle */
+    section.test-section::after {
+        transform: translate(18px, 182px);
+    }
+    /* svg */
+    div.bg-element {
+        transform: translate(1%, -43%)
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section.test-section {
+        padding: 1em;
+    }
+    p.margin-p {
+        font-size: x-small;
+    }
+    /* title */
+    h2.margin {
+        font-size: 0.8em;
+    }
+    /* map */
+    div.mapouter {
+        height: 631px;
+    }
+}
