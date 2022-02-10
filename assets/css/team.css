@@ -298,7 +298,7 @@ ul#tab-ul li label:active {
 ul#individuals {
     max-width: fit-content;
     display: grid;
-    grid-template-columns: repeat(3, minmax(18rem, 1fr));
+    grid-template-columns: repeat(2, minmax(18rem, 1fr));
     gap: 2rem;
     user-select: none;
 }
@@ -340,19 +340,19 @@ ul#individuals {
 }
 
 .content ul#individuals li:nth-child(2) img {
-    border-radius: 50% 50% 0 0;
-}
-
-.content ul#individuals li:nth-child(3) img {
     border-radius: 50% 50% 50% 0;
 }
 
-.content ul#individuals li:nth-child(4) img {
+.content ul#individuals li:nth-child(3) img {
     border-radius: 50% 0% 50% 50%;
 }
 
+.content ul#individuals li:nth-child(4) img {
+    border-radius: 0% 50% 50% 50%;
+}
+
 .content ul#individuals li:nth-child(5) img {
-    border-radius: 0 0% 50% 50%;
+    border-radius: 50% 0% 50% 0%;
 }
 
 ul.descriptions {
