@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Asterone</title>
-
+        <title>ASTERONE株式会社</title>
+        <meta name="description" content="あなたの夢に色を付けます。">
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" defer>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/mediaqueries/base-media.css">
         <link rel="stylesheet" href="./assets/css/index.css">
         <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css" />
         <link rel="stylesheet" href="./assets/css/mediaqueries/index-media.css">
@@ -32,7 +33,7 @@
                 <section class="right">
                     <div class="working-hours">
                         <i class="far fa-clock"></i>
-                        <span>
+                        <span aria-label='Working hours'>
                             <span>Mon-Fri:</span>
                             <span>9:00-18:00</span>
                         </span>
@@ -61,7 +62,7 @@
                 </label>
 
                 <!-- =========TESTING ENDS========== -->
-            
+
                 <nav>
                     <ul>
                         <li><a href="./pages/about.html">会社について</a></li>
@@ -71,7 +72,7 @@
                         <li><a href="./pages/contact.html">お問い合わせ</a></li>
                     </ul>
                 </nav>
-               
+
             </div>
         </header>
 
@@ -151,7 +152,7 @@
                 <div class="intro" data-aos-delay="1000" data-aos="fade-down">
                     <div class="intro-title">
                         <p>Services</p>
-                        <h2>サービスの紹介</h2>
+                        <h2>サービス紹介</h2>
                     </div>
                     <div class="intro-description ">
                         <p>いいからさっき盗ったモを、カバンの中から出しなさい。 いやあ、見事に晴れ渡った秋の日になったね。これが台風一過というやつかね。「はい」と「いいえ」しか言わない人と会話を続けるのは難しい。
@@ -540,7 +541,7 @@
                         </a>
                     </div>
                     <p>インフレを抑制しようとして金融政策に偏重すると、金融、したがって景気を必要以上に締め付けることになりかねない、８時に空港に到着する予定です。</p>
-                    <ul class="sci ">
+                    <ul class="social-links ">
                         <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
                         <li><a href="# "><i class="fab fa-twitter "></i></a></li>
                         <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
@@ -568,27 +569,29 @@
                 </div>
                 <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
                     <h2>お問合せ</h2>
-                    <ul class="info ">
+                    <ul class="info" aria-label='Contact Information'>
                         <li>
-                            <span><i class="fas fa-map-marker-alt "></i></span>
-                            <span>本社: <br> 〒435-0042 <br>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span aria-label='Headquarter'>本社: <br> 〒435-0042 <br>
                                 静岡県浜松市東区篠ケ瀬町1368-2</span>
                         </li>
                         <li>
                             <span><i class="fas fa-phone-alt "></i></span>
-                            <p> <a href="# ">070-3833-1513</a><br>
-                                <a href="# ">053-488-4427</a>
+                            <p aria-label='Phone number'>
+                                <a href="tel:07038331513">070-3833-1513</a><br>
+                                <a href="tel:0534884427">053-488-4427</a>
                             </p>
                         </li>
                         <li>
-                            <span><i class="fas fa-envelope "></i></span>
-                            <p><a href="# ">contact@asterone.co.jp</a></p>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <p><a aria-label='Email address'
+                                    href="mailto:contact@asterone.co.jp">contact@asterone.co.jp</a></p>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="copyright-text ">
-                <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE Co., Ltd. All Rights Reserved.</p>
+                <p>Copyright <i class="far fa-copyright "></i> ASTERONE Co., Ltd. <wbr/> All Rights Reserved.</p>
             </div>
         </footer>
 
@@ -607,7 +610,7 @@
                 spaceBetween: 50,
                 speed: 2000,
                 autoplay: {
-                    delay: 2000,
+                    delay: 12000,
                 },
             })
             const swiper2 = new Swiper('.swiper2', {
@@ -620,7 +623,7 @@
                 spaceBetween: 30,
                 speed: 1000,
                 autoplay: {
-                    delay: 3000,
+                    delay: 13000,
                 },
             })
 
