@@ -1,61 +1,197 @@
-@media screen and (max-width: 1440px) {
-    /* bottom svg */
-    .backdrop {
-        right: 16%;
-        bottom: -10%;
+/* About company */
+@media screen and (max-width: 1200px) {
+    .description h1 {
+        font-size: 2rem;
     }
-}
-@media screen  and (max-width: 1024px){
-    section.value1 {
-        flex-direction: column-reverse;
-        align-items: center;
+
+    section.about-company .emphasis {
+        --size: 3rem;
     }
-    .vision {
-        width: 80%;
+
+    .about-company .info {
+        --size: 10rem;
     }
-    .about {
-        width: 50rem;
-    }
-    section.company-data .map {
-        transform: scale(1.5);
+
+    .about-company .info h2 {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .backdrop {
-        right: 16%;
-        bottom: -10%;
+    .description h1 {
+        font-size: 1.5rem;
     }
-    section.company-data .map {
-        transform: translate(-242px, 304px) scale(2);
-    }
-    .backdrop {
-        right: 34%;
-        bottom: -17%;
-    }
-    section.company-data .map {
 
-        transform: scale(2);
-        position: absolute;
-        top: 0;
-        bottom: 17%;
-        right: 20%;
+    section.about-company .emphasis {
+        --size: 2rem;
+    }
+
+    .word {
+        transform: translate(-50%, 0%);
+    }
+
+    .about-company .info {
+        --size: 8rem;
+    }
+
+    .about-company .info h2 {
+        font-size: 1rem;
+    }
+
+    .info.right {
+        right: var(--size);
+        bottom: var(--size);
+    }
+
+    .info.top {
+        top: var(--size);
+        right: var(--size);
+    }
+
+    .info.bottom {
+        bottom: var(--size);
+        left: calc(var(--size) * .6);
     }
 }
 
-@media screen and (max-width: 425px) {
-    /* title */
+@media screen and (max-width: 540px) {
     .description h1 {
+        font-size: 1.5rem;
+    }
+
+    section.about-company .emphasis {
+        --size: 2rem;
+    }
+
+    .word {
+        transform: translate(-50%, 0%);
+    }
+
+    .about-company .info {
+        --size: 6rem;
+    }
+
+    .about-company .info h2 {
+        font-size: small;
+    }
+
+    .info.right {
+        right: calc(var(--size) * .5);
+        bottom: calc(var(--size) * .5);
+    }
+
+    .info.top {
+        top: calc(var(--size) * .5);
+        right: calc(var(--size) * .5);
+    }
+
+    .info.bottom {
+        bottom: calc(var(--size) * .5);
+        left: calc(var(--size) * .6);
+    }
+}
+
+
+/* Vision-Mission */
+
+@media screen and (max-width: 1300px) {
+    .title {
         font-size: 2rem;
     }
-    section.about-company .emphasis {
-        font-size: 3rem;
+
+    .about h2 {
+        font-size: 1.3rem;
     }
-    /* svg */
-    section.company-data .map {
+
+    .about p,
+    .about li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    section.vision-mission {
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 1rem;
+    }
+
+    .about p,
+    .about li {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section.vision-mission {
+        grid-template-columns: 1fr;
+    }
+
+    .lines {
+        transform: translate(-70%, -60%);
+    }
+
+    .group-image {
         display: none;
     }
-    .backdrop {
-        display: none;
+}
+
+
+/* Company data */
+@media screen and (max-width: 1100px) {
+    section.company-data {
+        display: block;
+    }
+
+    .map {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .map svg g {
+        stroke: #00000030;
+        fill: #eeeeee42;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    /* .backdrop {
+        bottom: unset;
+        top: 0;
+    } */
+    .backdrop svg {
+        width: 6rem;
+        max-width: 100%;
+    }
+
+    .responsive-table li.row {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .backdrop svg {
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        padding: 0;
+    }
+
+    .responsive-table li.row {
+        gap: 1rem;
+        padding: 1rem 0;
+        flex-wrap: nowrap;
     }
 }
