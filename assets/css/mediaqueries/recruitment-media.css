@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1347px) {
     /* title */
     section.catch-phrase h1 {
         font-size: 3rem;
@@ -9,6 +9,48 @@
     /* title */
     section.catch-phrase h1 {
         font-size: 2.2rem;
+    }
+    
+}
+@media screen and (max-width: 1006px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 2.8rem;
+    }
+    
+}
+@media screen and (max-width: 936px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 2.5rem;
+    }
+    
+}
+@media screen and (max-width: 839px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width: 672px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 1.7rem;
+    }
+    
+}
+@media screen and (max-width: 579px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 1.4rem;
+    }
+    
+}
+@media screen and (max-width: 471px) {
+    /* title */
+    section.catch-phrase h1 {
+        font-size: 1rem;
     }
     
 }
