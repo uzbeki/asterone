@@ -9,9 +9,10 @@
         <!-- links -->
         <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css" defer>
         <link rel="stylesheet" href="../../assets/css/base.css">
-        <link rel="stylesheet" href="../../assets/css/index.css">
+        <link rel="stylesheet" href="../../assets/css/mediaqueries/base-media.css">
         <link rel="stylesheet" href="../../assets/fonts/font-awesome/css/all.min.css">
         <link rel="stylesheet" href="../../assets/css/services.css">
+        <link rel="stylesheet" href="../../assets/css/mediaqueries/services-media.css">
     </head>
 
     <body>
@@ -53,62 +54,84 @@
                         <h3>ASTER<span>ONE</span></h3>
                     </a>
                 </div>
+                  <!-- =======TESTING======== -->
+                  <input id="toggle" type="checkbox" hidden></input>
+                  <label for="toggle" class="hamburger">
+                      <div class="top-bun"></div>
+                      <div class="meat"></div>
+                      <div class="bottom-bun"></div>
+                  </label>
+  
+                  <!-- =========TESTING ENDS========== -->
+  
                 <nav>
                     <ul>
                         <li><a href="../../pages/about.html">会社について</a></li>
                         <li><a href="./services.html">サービス</a></li>
                         <li><a href="../../pages/team.html">チーム</a></li>
                         <li><a href="../../pages/recruitment/recruitment.html">採用情報</a></li>
-                        <li><a href="../../test.html">お問い合わせ</a></li>
+                        <li><a href="../../pages/contact.html">お問い合わせ</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section class="services full-page banner-section">
+            <section class="services banner-section">
                 <div class="services-container">
-                    <div class="img-wrapper">
-                        <img src="../../assets/img/services/newbiz_caricature@4x-100.jpg" alt="">
-                    </div>
-                    <div class="services-title">
-                        <h2>8年以上のITサービスを提供しています</h2>
-                        <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。
-                        </p>
-                    </div>
-                </div>
-                <div class="backdrop" data-aos="slide-right" data-aos-delay="1000">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
-                        <defs>
-                            <style>
-                                .asterisk {
-                                    fill: #fabe00;
-                                }
-
-                                .triangle {
-                                    fill: #fff;
-                                }
-
-                            </style>
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="レイヤー_1" data-name="レイヤー 1">
-                                <polygon class="asterisk"
-                                    points="75.67 24.94 70.31 15.66 43.19 31.32 43.19 0 32.48 0 32.48 31.32 5.36 15.66 0 24.94 27.13 40.6 0 56.26 5.36 65.53 32.48 49.87 32.48 81.19 43.19 81.19 43.19 49.87 70.31 65.53 75.67 56.26 48.55 40.6 75.67 24.94" />
-                                <polygon class="triangle" points="32.48 31.32 32.48 49.87 48.55 40.6 32.48 31.32" />
+                    <div class="backdrop" data-aos="slide-right" data-aos-delay="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
+                            <defs>
+                                <style>
+                                    .asterisk {
+                                        fill: #fabe00;
+                                    }
+    
+                                    .triangle {
+                                        fill: #fff;
+                                    }
+    
+                                </style>
+                            </defs>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="レイヤー_1" data-name="レイヤー 1">
+                                    <polygon class="asterisk"
+                                        points="75.67 24.94 70.31 15.66 43.19 31.32 43.19 0 32.48 0 32.48 31.32 5.36 15.66 0 24.94 27.13 40.6 0 56.26 5.36 65.53 32.48 49.87 32.48 81.19 43.19 81.19 43.19 49.87 70.31 65.53 75.67 56.26 48.55 40.6 75.67 24.94" />
+                                    <polygon class="triangle" points="32.48 31.32 32.48 49.87 48.55 40.6 32.48 31.32" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                </div>
+                        </svg>
+                    </div>
+                    <div class="bg-element" id="svg-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #d7e5f0;
+                                    }
+    
+                                    .cls-2 {
+                                        fill: hsl(206, 80%, 95%);
+                                    }
+    
+                                </style>
+                            </defs>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="レイヤー_1" data-name="レイヤー 1">
+                                    <polygon class="cls-1"
+                                        points="75.67 24.94 70.31 15.66 43.19 31.32 43.19 0 32.48 0 32.48 31.32 5.36 15.66 0 24.94 27.13 40.6 0 56.26 5.36 65.53 32.48 49.87 32.48 81.19 43.19 81.19 43.19 49.87 70.31 65.53 75.67 56.26 48.55 40.6 75.67 24.94" />
+                                    <polygon class="cls-2" points="32.48 31.32 32.48 49.87 48.55 40.6 32.48 31.32" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                            <h2>8年以上のITサービスを提供しています</h2>
+                            <p>次世代の製品およびサービスを同時にグローバル展開し、すべての地域のあらゆる機能を効率よく実行するためにコンピュート（データ処理を行う仮想マシン）を醸成および実装する。エコロジーのために堪え忍ぶのではなく、自然と調和した住環境の快適性が必要である。</p>
+                </div> 
             </section>
 
             <section class="card-section services full-page">
-                <div class="bg-img">
-                    <h2>
-                        私たちはあなたのビジネスに独占的なサービスを提供します</h2>
-                    <img src="../../assets/img/services/services-bg.png" alt="">
-                    <img class="bg" src="../../assets/img/services/services-bg2.png" alt="">
-                </div>
+                
                 <ul class="cards ">
                     <li class="card ">
                         <div class="card-image ">
@@ -320,39 +343,11 @@
                         </div>
                     </li>
                 </ul>
-
-                
-                <div class="bg-element">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: rgb(240, 240, 240);
-                                }
-
-                                .cls-2 {
-                                    fill: #fff;
-                                }
-
-                            </style>
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="レイヤー_1" data-name="レイヤー 1">
-                                <polygon class="cls-1"
-                                    points="75.67 24.94 70.31 15.66 43.19 31.32 43.19 0 32.48 0 32.48 31.32 5.36 15.66 0 24.94 27.13 40.6 0 56.26 5.36 65.53 32.48 49.87 32.48 81.19 43.19 81.19 43.19 49.87 70.31 65.53 75.67 56.26 48.55 40.6 75.67 24.94" />
-                                <polygon class="cls-2" points="32.48 31.32 32.48 49.87 48.55 40.6 32.48 31.32" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <a id='goTop' href="#header">
+                <a id='goTop' href="#header" style="opacity: 1; visibility: visible; transform: translateY(0px);">
                     <!-- <i class="fas fa-angle-double-up"></i> -->
                     <i class="fas fa-arrow-up"></i>
                 </a>
-                <div>
-                    <img class="bg4" src="../../assets/img/services/services-bg4.png" alt="">
-                </div>
-                <!-- <img class="services-bg3" src="../../assets/img/services/services-bg3.png" alt=""> -->
+              
             </section>
 
         </main>
@@ -368,7 +363,7 @@
                         </a>
                     </div>
                     <p>インフレを抑制しようとして金融政策に偏重すると、金融、したがって景気を必要以上に締め付けることになりかねない、８時に空港に到着する予定です。</p>
-                    <ul class="sci ">
+                    <ul class="social-links ">
                         <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
                         <li><a href="# "><i class="fab fa-twitter "></i></a></li>
                         <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>

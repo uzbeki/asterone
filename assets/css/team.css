@@ -293,6 +293,7 @@ ul#tab-ul li label:active {
     align-items: center;
     justify-content: space-between;
     margin: 3rem var(--content-start);
+    gap: 4rem;
 }
 
 ul#individuals {
@@ -488,18 +489,13 @@ ul.descriptions li p,
     flex: 3;
 }
 
-.content .group-container .about {
-    margin: 1rem var(--content-start);
-}
-
-.content .group-container .about p {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 1.2rem;
+#newbiz-team .about {
+    min-width: 44%;
+    display: grid;
+    place-self: baseline;
+    margin-top: 3rem;
     line-height: 2;
-}
-.content .group-container .about div.newbiz-text {
-    border: 1px solid #000;
-    padding: 2rem;
+    font-size: 1.1em;
 }
 
 /* WORK WITH US */
