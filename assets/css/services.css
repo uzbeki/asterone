@@ -4,7 +4,6 @@ section.services .cards {
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     gap: 2em;
     width: 100%;
-    /* justify-content: space-between; */
     place-content: center space-between;
     margin-top: -13rem;
 }
