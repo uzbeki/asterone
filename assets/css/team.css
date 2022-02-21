@@ -506,7 +506,7 @@ ul.descriptions li p,
     flex: 3;
 }
 
-#newbiz-team .about-container {
+.about-container {
     min-height: 100vh;
     position: relative;
     display: grid;
@@ -514,7 +514,7 @@ ul.descriptions li p,
     margin: 8rem var(--content-start);
 }
 
-#newbiz-team .about-container img {
+.about-container img {
     width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -525,7 +525,7 @@ ul.descriptions li p,
     filter: grayscale(100%) blur(10px);
 }
 
-#newbiz-team .about {
+.about {
     font-size: 1.1em;
     background-color: transparent;
     width: 900px;
@@ -617,7 +617,7 @@ ul.descriptions li p,
 
 /* WORK WITH US */
 .work-with-us {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     position: relative;
     padding-top: 15vh;
     margin: 0 var(--content-start);
@@ -677,7 +677,7 @@ a.button {
 }
 
 .work-with-us .bg img {
-    width: 95%;
+    /* width: 95%; */
 }
 
 /* SYSTEM Kaihatsu team */
