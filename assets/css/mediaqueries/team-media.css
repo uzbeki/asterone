@@ -1,0 +1,122 @@
+/* =================== NEWBIZ team =================== */
+
+
+
+@media screen and (max-width: 1492px) {
+    /* JOIN US H1 */
+    .work-with-us header h1 {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+    .work-with-us header p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1426px) {
+    /* JOIN US H1 */
+    .work-with-us header p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1393px) {
+    /* JOIN US H1 */
+    .work-with-us header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .work-with-us header {
+        position: absolute;
+        top: 20%;
+    }
+}
+@media screen and (max-width: 1180px) {
+    /* JOIN US H1 */
+    .work-with-us header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .work-with-us header {
+        position: absolute;
+        top: 18%;
+    }
+    /* SVG join us */
+    .work-with-us .bg img {
+        width: 100%;
+    }
+    /* join us p  */
+    .work-with-us header p {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 1166px) {
+    /* join us p */
+    .work-with-us header p {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 1048px) {
+    .work-with-us header {
+        position: absolute;
+        top: 16%;
+    }
+    /* join us p */
+    .work-with-us header p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 777px) {
+    /* join us p */
+    .work-with-us header p {
+        font-size: 0.8em;
+    }
+    .work-with-us header h1 {
+        margin-bottom: 0.5em;
+    }
+}
+@media screen and (max-width: 613px) {
+    .work-with-us header {
+        position: absolute;
+        top: 17%;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    /* top members img */
+    ul#individuals {
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    }
+}
+@media screen and (max-width: 1309px) {
+    /* top members img */
+    ul#individuals {
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+}
+@media screen and (max-width: 1423px) {
+    /* top members img */
+    ul#individuals {
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    }
+}
+@media screen and (max-width: 1351px) {
+    /* top members img */
+    ul#individuals {
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* about container */
+    #newbiz-team .about-container img {
+        display: none;
+    }
+}
+
+     /*================== SYS TEAM  ================= */
+@media screen and (max-width: 1170px) {
+    ul.descriptions li p, .member-info p {
+        font-size: 0rem;
+    }
+}
+
+

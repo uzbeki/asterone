@@ -209,7 +209,7 @@ header .bottom nav ul li {
     position: relative;
 }
 
-header .bottom nav ul li.active {}
+/* header .bottom nav ul li.active {} */
 
 header .bottom nav ul li::after {
     content: "";
@@ -308,9 +308,8 @@ footer p {
     font-size: 1.5rem;
 }
 
-div.links {
+/* div.links {} */
     /* margin-top: 25px; */
-}
 
 div.links li {
     color: #999;
