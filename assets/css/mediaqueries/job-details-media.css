@@ -1,88 +1,127 @@
-@media screen and (max-width: 768px) {
-    main header .details img {
-        height: 80%;
+@media screen and (max-width: 983px) {
+    #job-details {
+        display: grid;
+        grid-template-columns: 3fr 2.5fr;
     }
+}
+@media screen and (max-width: 976px) {
+    main header .details {
+        height: 5rem;
+    }
+}
+@media screen and (max-width: 919px) {
+    main header .details {
+        height: 3rem;
+    }
+}
+@media screen and (max-width: 882px) {
     .job-title h1 {
         font-size: 2rem;
     }
-    .job-title {
-        padding: 1em;
+    .job-title ul {
+        display: flex;
+        gap: 1rem;
     }
-    
+}
+
+@media screen and (max-width: 856px) {
+    .actions {
+        margin-top: -2em;
+    }
+}
+@media screen and (max-width: 854px) {
+    main header .details {
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 836px) {
+    main header .details {
+        height: 1.5rem;
+    }
+    main header .details img {
+        display: none;
+    }
+}
+@media screen and (max-width: 790px) {
+    #job-details {
+        display: block;
+    }
+}
+@media screen and (max-width: 779px) {
+    main header {
+        padding: 3rem 5vw;
+    }
+}
+@media screen and (max-width: 748px) {
     .actions a {
         font-size: medium;
     }
-    main header .details {
-        gap: 0;
-    }
-    header {
-        position: relative;
-    }
-    .actions {
-        position: absolute;
-        top: 62%;
-        right: 4%;
-    }
-    #job-details {
-        display: inline-block;
+    main header {
+        padding: 3rem 3vw;
     }
 }
-@media screen and (max-width: 425px) {
-
-     .job-title h1 {
-        font-size: 1.3rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    div.actions p {
-        font-size: small;
+@media screen and (max-width: 713px) {
+    .job-title h1 {
+        font-size: 1.5rem;
     }
     .actions a {
         font-size: small;
     }
-    .job-title ul {
-        font-size: small;
-        display: grid;
-        gap: 0;
-    }
-   main header {
-        height: 7%;
-        padding: 1rem;
-    }
     main header .details {
-        display: grid;
+        height: 2.5rem;
     }
-    main header .details img {
-        height: 45%;
-    }
-    .job-title {
-        margin-top: -3rem;
-     }
-     .actions {
-        position: absolute;
-        top: 73%;
-        right: 4%;
-
-    }
-}
-@media screen and (max-width: 375px) {
     .job-title ul {
         gap: 0.5rem;
     }
-    main header .details img {
-        height: 40%;
-    }
-    
+
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 684px) {
+    .actions p {
+        font-size: small;
+    }
     .job-title ul {
-        font-size: 10px;
+        font-size: small;
     }
-    div.icon {
-        display: none;
+
+}
+@media screen and (max-width: 567px) {
+    .job-title ul {
+        display: block;
     }
-    .job-title {
+    main header .details {
+        height: 10rem;
+    }
+    main header {
+        padding: 1rem var(--content-start);
+    }
+}
+@media screen and (max-width: 456px) {
+    .job-title h1 {
+        font-size: 1rem;
+    }
+    .job-contents h2 {
+        font-size: 1.3rem;
+    }
+} 
+@media screen and (max-width: 375px) {
+    .job-title h1 {
+        font-size: 0.7rem;
+    }
+    .job-title ul {
+        font-size: 0.7rem;
+    }
+    .actions {
         margin-top: 0;
     }
-   
+} 
+@media screen and (max-width: 325px) {
+    .actions p {
+        font-size: 0.5rem;
+    }
+    .actions a {
+        font-size: 0.5rem;
+    }
+    .tags span {
+        font-size: 0.5rem;
+    }
 }

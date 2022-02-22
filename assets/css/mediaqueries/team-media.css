@@ -1,122 +1,297 @@
-/* =================== NEWBIZ team =================== */
+/* ================= TOP input LAbel =================== */
 
-
-
-@media screen and (max-width: 1492px) {
-    /* JOIN US H1 */
-    .work-with-us header h1 {
-        margin-top: 1em;
-        margin-bottom: 0;
-    }
-    .work-with-us header p {
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 1426px) {
-    /* JOIN US H1 */
-    .work-with-us header p {
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 1393px) {
-    /* JOIN US H1 */
-    .work-with-us header h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .work-with-us header {
-        position: absolute;
-        top: 20%;
-    }
-}
-@media screen and (max-width: 1180px) {
-    /* JOIN US H1 */
-    .work-with-us header h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .work-with-us header {
-        position: absolute;
-        top: 18%;
-    }
-    /* SVG join us */
-    .work-with-us .bg img {
-        width: 100%;
-    }
-    /* join us p  */
-    .work-with-us header p {
-        font-size: 0.9em;
-    }
-}
-@media screen and (max-width: 1166px) {
-    /* join us p */
-    .work-with-us header p {
-        font-size: 0.9em;
-    }
-}
-@media screen and (max-width: 1048px) {
-    .work-with-us header {
-        position: absolute;
-        top: 16%;
-    }
-    /* join us p */
-    .work-with-us header p {
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 777px) {
-    /* join us p */
-    .work-with-us header p {
-        font-size: 0.8em;
-    }
-    .work-with-us header h1 {
-        margin-bottom: 0.5em;
-    }
-}
-@media screen and (max-width: 613px) {
-    .work-with-us header {
-        position: absolute;
-        top: 17%;
+@media (max-width: 600px) {
+    .tabs input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+        background: rgba(0, 0, 0, 0.08);
     }
 }
 
-@media screen and (max-width: 1078px) {
-    /* top members img */
+.tabs input[name="tab-control"]:nth-of-type(1):checked ~ #slider {
+    transform: translateX(0%);
+}
+
+.tabs input[name="tab-control"]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
+    display: block;
+}
+
+.tabs input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+    cursor: default;
+    color: #428bff;
+}
+
+@media (max-width: 600px) {
+    .tabs input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+@media (max-width: 600px) {
+    .tabs input[name="tab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.tabs input[name="tab-control"]:nth-of-type(3):checked ~ #slider {
+    transform: translateX(200%);
+}
+
+.tabs input[name="tab-control"]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
+    display: block;
+}
+
+.tabs input[name="tab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+    cursor: default;
+    color: #428bff;
+}
+
+@media (max-width: 600px) {
+    .tabs input[name="tab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+@media (max-width: 1000px) {
+    .tabs ul li label {
+        white-space: initial;
+    }
+
+    .tabs ul li label br {
+        display: initial;
+    }
+}
+
+@media (max-width: 600px) {
+    .tabs ul li label {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .tabs ul li label span {
+        display: none;
+    }
+
+    .tabs #slider {
+        display: none;
+    }
+
+    .tabs .content {
+        margin-top: 20px;
+    }
+
+    .tabs .content section h2 {
+        display: block;
+    }
+}
+
+/* =================== NEWBIZ TEAM =================== */
+@media screen and (max-width: 1440px) {
     ul#individuals {
         grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     }
 }
-@media screen and (max-width: 1309px) {
-    /* top members img */
+@media screen and (max-width: 1085px) {
+    /* newbiz members img */
     ul#individuals {
         grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     }
 }
-@media screen and (max-width: 1423px) {
-    /* top members img */
+@media screen and (max-width: 475px) {
     ul#individuals {
-        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    }
-}
-@media screen and (max-width: 1351px) {
-    /* top members img */
-    ul#individuals {
-        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* about container */
-    #newbiz-team .about-container img {
+@media screen and (max-width: 995px) {
+    /* about background img */
+    .about-container img {
         display: none;
     }
 }
-
-     /*================== SYS TEAM  ================= */
-@media screen and (max-width: 1170px) {
-    ul.descriptions li p, .member-info p {
-        font-size: 0rem;
+@media screen and (max-width: 970px) {
+    /* join us btn */
+    .work-with-us header .button {
+        top: 2.5rem;
     }
 }
 
+@media screen and (max-width: 1432px) {
+    /* join us text */
+    .work-with-us header {
+        top: 9%;
+    }
+    /* join us btn */
+    .work-with-us header .button {
+        top: 6.5rem;
+    }
+}
+@media screen and (max-width: 1423px) {
+    .work-with-us header h1 {
+        margin-bottom: 0.4em;
+    }
+}
+@media screen and (max-width: 1270px) {
+    .work-with-us header .button {
+        top: 4.5rem;
+    }
+}
+@media screen and (max-width: 1198px) {
+    /* join us text */
+    .work-with-us header {
+        top: 4%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    /* join us btn */
+    .work-with-us header .button {
+        top: 4.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* join us btn */
+    .work-with-us header .button {
+        top: 2.5rem;
+    }
+}
+/*================== SYSTEM TEAM  ================= */
+@media screen and (max-width: 1000px) {
+    .member-info h2 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 810px) {
+    .member-info h2 {
+        font-size: 1rem;
+    }
+    .member-info h3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 449px) {
+    .member-info h2 {
+        font-size: 0.5rem;
+    }
+    .about {
+        width: 805px;
+        height: 582px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .about {
+        width: 760px;
+    }
+}
+@media screen and (max-width: 997px) {
+    .about {
+        width: 764px;
+    }
+}
 
+@media screen and (max-width: 1170px) {
+    ul.descriptions li p,
+    .member-info p {
+        font-size: 0rem;
+    }
+    /* join us p */
+    .work-with-us header p {
+        font-size: 0.8em;
+    }
+    .work-with-us header h1 {
+        margin-bottom: 0;
+    }
+    .work-with-us header {
+        position: absolute;
+        top: 13%;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .member:nth-child(4n + 3) .se-team-member-info,
+    .member:nth-child(4n + 4) .se-team-member-info {
+        order: 1;
+    }
+
+    .member:nth-child(4n + 3) .member-image,
+    .member:nth-child(4n + 4) .member-image {
+        order: 2;
+    }
+
+    .member:nth-child(4n + 3) .member-image::after,
+    .member:nth-child(4n + 4) .member-image::after {
+        left: 0;
+        right: auto;
+        transform: translateY(-50%) rotateZ(180deg);
+    }
+}
+
+/* ==================== SOLUTUON TEAM ===================== */
+@media screen and (max-width: 770px) {
+    .list-members {
+        width: 95%;
+    }
+
+    .member {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .social-link .fab {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .member:nth-child(even) .se-team-member-info {
+        order: 1;
+    }
+
+    .member:nth-child(even) .member-image {
+        order: 2;
+    }
+
+    .member:nth-child(even) .member-image::after {
+        left: 0;
+        right: auto;
+        transform: translateY(-50%) rotateZ(180deg);
+    }
+}
+@media screen and (max-width: 425px) {
+    .member-image img {
+        height: 90%;
+    }
+}
+@media screen and (max-width: 1210px) {
+    #se-team {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 471px) {
+    .work-with-us header .button {
+        top: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    .member {
+        flex-basis: 50%;
+    }
+    h2.se-team-member-name {
+        font-size: 1.2rem;
+    }
+    .se-team-member-info h3 {
+        display: none;
+    }
+    
+}
+
+
+/* ================== JOHOSYSTEM TEAM ================== */
+@media screen and (max-width: 995px) {
+    .js-card h3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .js-card h2 {
+        font-size: 1.2em;
+    } 
+}
