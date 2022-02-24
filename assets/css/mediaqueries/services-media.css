@@ -1,7 +1,14 @@
+@media screen and (max-width: 1460px) {
+    /* SVG */
+    .backdrop {
+        right: 10%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     /* SVG */
     .backdrop svg {
-        width: 10rem;
+        width: 7rem;
     }
 }
 @media screen and (max-width: 1025px) {
@@ -15,7 +22,7 @@
     div.services-container h2 {
         font-size: 2.3em;
     }
-  
+
     div.services-container p {
         padding: 1rem 14%;
     }
@@ -24,9 +31,14 @@
     div.services-container h2 {
         font-size: 2em;
     }
-  
+
     div.services-container p {
         padding: 1rem 8%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .backdrop {
+        display: none;
     }
 }
 @media screen and (max-width: 661px) {
@@ -37,19 +49,16 @@
     div.services-container h2 {
         font-size: 1.8em;
     }
-  
 }
 @media screen and (max-width: 593px) {
     div.services-container h2 {
         font-size: 1.6em;
     }
-  
 }
 @media screen and (max-width: 529px) {
     div.services-container h2 {
         font-size: 1.4em;
     }
-  
 }
 @media screen and (max-width: 465px) {
     .bg-element {
@@ -58,7 +67,7 @@
     .backdrop {
         display: none;
     }
-   
+
     div.services-container p {
         padding: 1rem 6%;
         font-size: 0.9em;
@@ -68,10 +77,8 @@
     div.services-container h2 {
         font-size: 1em;
     }
-  
 }
 @media screen and (max-width: 377px) {
-    
     div.services-container p {
         padding: 1rem 4%;
     }

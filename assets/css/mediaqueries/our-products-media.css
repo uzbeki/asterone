@@ -1,0 +1,110 @@
+@media screen and (max-width: 1176px) {
+    .pobi-right {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1168px) {
+    .pobi-right {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1102px) {
+    .pobi-right {
+        width: 110%;
+    }
+}
+@media screen and (max-width: 1055px) {
+    .card {
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 1022px) {
+    div.pobi-right h1 {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 865px) {
+    div.pobi-right h1 {
+        font-size: 2em;
+    }
+    div.pobi-right h3 {
+        padding: 0.4rem 0;
+    }
+}
+@media screen and (max-width: 867px) {
+    section.second-card-section h5.small-title {
+        left: 6%;
+    }
+    img.left {
+        width: 112%;
+    }
+}
+@media screen and (max-width: 834px) {
+    h5.small-title {
+        position: absolute;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .full-height {
+        min-height: 56vh;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .pobi-right {
+        width: 100%;
+    }
+    h5.small-title {
+        bottom: -5rem;
+    }
+    img.left {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 403px) {
+    h5.small-title {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    div.pobi-right h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .checkbox:not(:checked) + label {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .checkbox:checked + label,
+    .checkbox:not(:checked) + label {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-height-padding {
+        padding-top: 340px;
+    }
+    ul.pobi-ul li {
+        height: 300px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575px) {
+    .slider-height-padding {
+        padding-top: 240px;
+    }
+    ul.pobi-ul li {
+        height: 200px;
+    }
+}
