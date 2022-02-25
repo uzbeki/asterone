@@ -1,0 +1,115 @@
+@media screen and (max-width: 1440px) {
+    /* svg minions */
+    img.faq-img {
+        top: 26%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    /* svg minions */
+    img.faq-img {
+       width: 45%;
+    }
+}
+
+@media screen and (max-width: 1003px) {
+    .banner-section {
+        padding: 4rem var(--content-start);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* svg minions */
+    img.faq-img {
+        width: 45%;
+    }
+    .banner-section {
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 866px) {
+    /* svg minions */
+    img.faq-img {
+        top: 29%;
+    }
+}
+@media screen and (max-width: 812px) {
+    /* svg minions */
+    img.faq-img {
+        top: 31%;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* svg minions */
+    img.faq-img {
+        top: 30%;
+    }
+    .Accordion__tab {
+        width: 100%;
+    }
+    .Accordion__tab__headline h4 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 746px) {
+    /* svg minions */
+    img.faq-img {
+        top: 27%;
+    }
+}
+@media screen and (max-width: 666px) {
+    .banner-section {
+        height: 47vh;
+    }
+}
+@media screen and (max-width: 599px) {
+    .banner-section {
+        height: 44vh;
+    }
+}
+@media screen and (max-width: 520px) {
+    /* svg minions */
+    img.faq-img {
+        top: 31%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    /* svg minions */
+    img.faq-img {
+        top: 32%;
+    }
+    .Accordion__tab__headline h4 {
+        font-size: 0.8rem;
+    }
+    .banner-section h2 {
+        font-size: 1.5em;
+    }
+    .banner-section p {
+        font-size: small;
+    } 
+    .banner-section h2::after, .banner-section h2::before {
+        width: 2.5rem;
+    }
+}
+@media screen and (max-width: 405px) {
+    .Accordion__tab__headline{
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    .backdrop {
+        top: 7%;
+        right: 17%;
+    }
+    .banner-section {
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 327px) {
+    .banner-section {
+        height: 37vh;
+    }
+}
+
+

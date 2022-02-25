@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    main div.intro-title h1 {
+        padding: 0;
+    }    
+}
+@media screen and (max-width: 790px) {
+    main div.intro-title h1 {
+        font-size: 2em;
+    }    
+}
+@media screen and (max-width: 463px) {
+    main div.intro-title h1 {
+        font-size: 1.8em;
+    }    
+}
+@media screen and (max-width: 410px) {
+    main img {
+        width: 30%;
+    }   
+}
+@media screen and (max-width: 430px) {
+    main div.intro-title h1 {
+        padding: 0.8em;
+    }  
+}

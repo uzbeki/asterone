@@ -8,6 +8,10 @@ body h1 {
     margin: 0;
 }
 
+
+
+
+
 .tabs {
     position: relative;
     margin-top: 2rem;
@@ -96,15 +100,10 @@ ul#tab-ul li label:active {
 
 .tabs .content section {
     display: none;
-    -webkit-animation-name: content;
     animation-name: content;
-    -webkit-animation-direction: normal;
     animation-direction: normal;
-    -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
-    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     line-height: 1.4;
 }
@@ -165,6 +164,13 @@ ul#tab-ul li label:active {
 .content .meet {
     margin: 3rem var(--content-start);
 }
+
+h2.top-title-newbiz {
+    text-align: center;
+    padding: 3em 5em;
+    color: #929daf;
+    font-size: 2em;
+} 
 
 ul#individuals {
     display: grid;
@@ -464,25 +470,23 @@ ul.descriptions li p,
     color: var(--secondary-blue);
 }
 
-.about:hover {
+/* .about:hover {
     transform: rotateY(-20deg) skewY(3deg);
 }
 
 .about:hover .about-text {
     transform: rotateY(20deg) skewY(-3deg);
-}
+} */
 
-/* WORK WITH US */
+/* SECTION WORK WITH US */
 .work-with-us {
-    position: relative;
-    padding-top: 15vh;
-    margin: 0 var(--content-start);
+    margin: 4rem var(--content-start);
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
 }
 
 .work-with-us header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     z-index: 1;
 }
@@ -495,7 +499,7 @@ ul.descriptions li p,
 }
 
 .work-with-us header p {
-    color: var(--asterone-black);
+    color: #2f2e41;
     margin-bottom: 0.2rem;
     font-size: 1.2em;
 }
@@ -506,8 +510,7 @@ a.button {
 
 .work-with-us header .button {
     position: relative;
-    top: 4.5rem;
-    text-decoration: none;
+    top: 2.5rem;
     background: #428bff;
     border: none;
     outline: none;
@@ -521,11 +524,6 @@ a.button {
 
 .work-with-us header .button:hover {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-}
-
-.work-with-us .bg {
-    max-width: 100%;
-    padding: 0 var(--content-start);
 }
 
 /* SYSTEM Kaihatsu team */
@@ -627,7 +625,7 @@ h2.se-team-member-name {
     font-size: 1.8rem;
 }
 .se-team-member-info h3 {
-    color:#afafaf;
+    color: #afafaf;
 }
 /* style member component */
 .list-members {
@@ -714,30 +712,29 @@ h2.se-team-member-name {
     border-radius: 10px;
     opacity: 0.7;
     transition: all 0.5s linear;
-  }
-  .js-card:hover {
+}
+.js-card:hover {
     opacity: 1;
     border: 3px solid var(--secondary-blue);
-  }
- 
-  .js-card img {
+}
+
+.js-card img {
     width: 100%;
-  }
-  .js-card h2 {
-      color: var(--secondary-blue);
-  }
-  .js-card h3 {
+}
+.js-card h2 {
+    color: var(--secondary-blue);
+}
+.js-card h3 {
     color: #afafaf;
 }
-  .js-card p {
+.js-card p {
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
     line-height: 23px;
     color: #666;
     transition: all 0.5s linear;
-  }
-  .js-card:hover p {
+}
+.js-card:hover p {
     color: black;
-  }
-  
+}

@@ -402,7 +402,7 @@ section.testimonials ul.testimonial-cards {}
 
 .testimonial .content {
     box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 15%);
-    padding: 3em;
+    padding: 2em;
     position: relative;
     background-color: var(--white);
     margin-bottom: 2rem;

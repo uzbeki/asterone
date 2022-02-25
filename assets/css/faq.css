@@ -1,20 +1,63 @@
-main {
-    display: flex;
-    margin: 4rem var(--content-start);
-    gap: 2rem;
+
+.banner-section {
+    position: relative;
+    background: #bbb6;
+    height: 60vh;
+    padding: 6rem var(--content-start);
+}
+.backdrop {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transition: all 0.5s ease-in-out;
+    animation: rotate-backdrop 20s linear infinite;
+    width: 12%;
+}
+@keyframes rotate-backdrop {
+    0% {
+        transform: translateX(50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(50%) rotate(100deg);
+    }
+}
+.banner-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #d49534;
+}
+.banner-section h2::after,
+.banner-section h2::before {
+    display: inline-block;
+    content: "";
+    border-top: 3px solid #d49534;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.4rem);
+}
+.banner-section p {
+    text-align: center;
+    opacity: 0.5;
+    padding-top: 0.5em;
+}
+img.faq-img {
+    position: absolute;
+    top: 28%;
+    left: 4rem;
 }
 
-
 .Accordion {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin: var(--content-start);
+    display: grid;
+    justify-content: center;
 }
 .Accordion__tabs {
     max-width: 600px;
     list-style: none;
 }
 .Accordion__tab {
-    width: 100%;
+    width: 110%;
 }
 .Accordion__tab__headline {
     display: flex;
@@ -25,14 +68,20 @@ main {
     padding: 20px 15px;
     cursor: pointer;
 }
-.Accordion__tab__headline:hover {
-    background-color: #607bba;
+.Accordion__tab__headline h4 {
+    font-size: 1.3rem;
+    color: #000000b8;
 }
+.Accordion__tab__headline:hover {
+    background-color: #f8f8f8;
+    border-radius: 13px;
+}
+
 .Accordion__tab__headline .icon {
     display: inline-block;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #d49534;
     border-radius: 22px;
     position: relative;
 }
@@ -42,9 +91,9 @@ main {
     content: "";
     top: 10px;
     left: 6px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
+    width: 11px;
+    height: 3px;
+    background: #d49534;
 }
 .Accordion__tab__headline .icon::after {
     display: block;
@@ -52,9 +101,9 @@ main {
     content: "";
     top: 6px;
     left: 10px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
+    width: 3px;
+    height: 11px;
+    background: #d49534;
     transition: 0.2s ease all;
 }
 .Accordion__tab__content {
@@ -63,6 +112,7 @@ main {
     box-sizing: border-box;
     height: 100%;
     max-height: 0;
+    opacity: 0.8;
     transition: 0.4s ease all;
 }
 .Accordion__tab--open .Accordion__tab__headline .icon::after {

@@ -107,23 +107,11 @@
         display: none;
     }
 }
-@media screen and (max-width: 970px) {
-    /* join us btn */
-    .work-with-us header .button {
-        top: 2.5rem;
-    }
-}
 
-@media screen and (max-width: 1432px) {
-    /* join us text */
-    .work-with-us header {
-        top: 9%;
-    }
-    /* join us btn */
-    .work-with-us header .button {
-        top: 6.5rem;
-    }
-}
+
+
+
+
 @media screen and (max-width: 1423px) {
     .work-with-us header h1 {
         margin-bottom: 0.4em;
@@ -134,24 +122,7 @@
         top: 4.5rem;
     }
 }
-@media screen and (max-width: 1198px) {
-    /* join us text */
-    .work-with-us header {
-        top: 4%;
-    }
-}
-@media screen and (max-width: 1024px) {
-    /* join us btn */
-    .work-with-us header .button {
-        top: 4.5rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    /* join us btn */
-    .work-with-us header .button {
-        top: 2.5rem;
-    }
-}
+
 /*================== SYSTEM TEAM  ================= */
 @media screen and (max-width: 1000px) {
     .member-info h2 {
@@ -198,10 +169,7 @@
     .work-with-us header h1 {
         margin-bottom: 0;
     }
-    .work-with-us header {
-        position: absolute;
-        top: 13%;
-    }
+   
 }
 
 @media screen and (min-width: 771px) {
