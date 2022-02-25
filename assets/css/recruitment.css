@@ -474,6 +474,7 @@ section.atmosphere {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 11;
 }
 
 [id^=lightbox-]:target {
@@ -509,7 +510,7 @@ section.atmosphere {
   transition: all 450ms ease-in-out;
 }
 
-[id^=lightbox-] .title {
+/* [id^=lightbox-] .title {
   display: block;
   margin: 0;
   padding: 1em;
@@ -519,7 +520,7 @@ section.atmosphere {
   transform: translateY(50%);
   font-size: 1.5em;
   opacity: 0;
-}
+} */
 
 [id^=lightbox-] .title::after {
   content: " ";
