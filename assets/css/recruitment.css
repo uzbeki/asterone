@@ -491,10 +491,10 @@ section.atmosphere {
   color: #fff;
 }
 
-[id^=lightbox-] .content:hover>a.close {
+/* [id^=lightbox-] .content:hover>a.close {
   opacity: 1;
   transform: scale(1, 1);
-}
+} */
 
 [id^=lightbox-] .content:hover>.title {
   opacity: 1;
@@ -544,8 +544,8 @@ section.atmosphere {
 }
 
 [id^=lightbox-] a.close {
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   position: absolute;
   right: 0;
   top: 0;
@@ -553,11 +553,12 @@ section.atmosphere {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0, 0);
-  opacity: 0;
+  /* transform: scale(0, 0); */
+  /* opacity: 0; */
   transform-origin: right top;
   text-decoration: none;
-  color: #fff;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 [id^=lightbox-] a.close::after {
