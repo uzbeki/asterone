@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+
     /* title */
     h2.margin {
         padding: 0 var(--content-start);
@@ -6,19 +7,18 @@
 
     /* Contact form */
     section.test-section::before {
-       display: none;
+        display: none;
     }
+
     section.test-section::after {
-       display: none;
+        display: none;
     }
+
     .container-test {
         padding: 20px;
     }
 
-    /* map */
-    div.mapouter {
-        height: 672px;
-    }
+
 }
 
 @media screen and (max-width: 734px) {
@@ -26,30 +26,33 @@
         margin-bottom: 2rem;
     }
 }
+
 @media screen and (max-width: 425px) {
+
     /* SVG */
     .bg-element svg {
         width: 15rem;
     }
+
     /* title */
     h2.margin {
         font-size: 1.2em;
     }
+
     p.margin-p {
         font-size: small;
     }
+
     /* form btn */
     .field button {
         width: 197%;
     }
 
-    /* map */
-    div.mapouter {
-        height: 638px;
-    }
+
 }
 
 @media screen and (max-width: 375px) {
+
     /* form circle */
     section.test-section::after {
         transform: translate(18px, 182px);
@@ -60,78 +63,73 @@
     section.test-section {
         padding: 1em;
     }
+
     p.margin-p {
         font-size: x-small;
     }
+
     /* title */
     h2.margin {
         font-size: 0.8em;
     }
-    /* map */
-    div.mapouter {
-        height: 631px;
-    }
+
+
 }
 
 @media screen and (max-width: 1004px) {
     h2.margin {
         font-size: 1.8em;
     }
-    /* map */
-    div.mapouter {
-        height: 694px;
-    }
+
+
 }
+
 @media screen and (max-width: 900px) {
     h2.margin {
         font-size: 1.5em;
     }
-    /* map */
-    div.mapouter {
-        height: 680px;
-    }
+
+
 }
-@media screen and (max-width: 808px) {
-    /* map */
-    div.mapouter {
-        height: 670px;
-    }
-}
+
+@media screen and (max-width: 808px) {}
+
 @media screen and (max-width: 770px) {
     h2.margin {
         font-size: 1.2em;
     }
 }
+
 @media screen and (max-width: 758px) {
     .bg-element {
         transform: translateX(-20%);
     }
 }
-@media screen and (max-width: 699px) {
-    /* map */
-    div.mapouter {
-        height: 650px;
-    }
-}
+
+@media screen and (max-width: 699px) {}
+
 @media screen and (max-width: 500px) {
-    /* map */
-    div.mapouter {
-        height: 640px;
-    }
+
+
+
     h2.margin {
         font-size: 1em;
     }
+
     p.margin-p {
         font-size: x-small;
     }
+
     section.container-box {
         padding: 0 var(--content-start);
     }
+
     /* SVG */
     .bg-element svg {
         width: 66%;
         transform: translateY(-62%);
     }
+
     .blob svg {
         width: 72%;
         transform: translateX(52%);
