@@ -450,14 +450,13 @@ div.test-page {
   }
   
 
-
  #gmap_canvas {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: 10%;
 }
 div.mapouter {
-    height: 703px;
+    height: 626px;
 }
 
 #goTop {

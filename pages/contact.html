@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <!-- LINKS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../assets/css/contact.css" />
         <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="../assets/css/base.css" />
@@ -40,8 +41,8 @@
                     </div>
                     <div class="social-icons">
                         <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/asterone.co.jp/" class="social-icons"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/asterone_co" class="social-icons"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/asterone.co.jp/" class="social-icons" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/asterone_co" class="social-icons" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </section>
             </div>
@@ -74,8 +75,8 @@
                    </nav>
             </div>
         </header>
-    <section class="top-part-contact-page"> 
-        <div class="blob">
+    <section class="top-part-contact-page" data-aos="fade-down"> 
+        <div class="blob" data-aos="fade-up" data-aos-delay="650" data-aos-easing="ease-out-back">
             <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(300,300)">
                     <path
@@ -83,7 +84,7 @@
                 </g>
             </svg>
         </div>
-        <div class="blob">
+        <div class="blob" data-aos="fade-right" data-aos-delay="1300" data-aos-easing="ease-in-out-cubic">
             <svg class="" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(300,300)">
                     <path
@@ -91,7 +92,7 @@
                 </g>
             </svg>
         </div>
-        <div class="bg-element">
+        <div class="bg-element" data-aos="fade-up">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
                 <defs>
                     <style>
@@ -114,13 +115,13 @@
                 </g>
             </svg>
         </div>
-        <h2 class="margin">弊社へのお問い合わせは下記フォームよりご連絡ください。<br> 後日担当者よりご連絡をさしあげます。
-        <p class="margin-p">※会社や団体からの営業目的のメールはご遠慮願います。</p></h2> 
+        <h2 class="margin" data-aos="fade-up" data-aos-delay="600">弊社へのお問い合わせは下記フォームよりご連絡ください。<br> 後日担当者よりご連絡をさしあげます。
+        <p class="margin-p" data-aos="fade-down">※会社や団体からの営業目的のメールはご遠慮願います。</p></h2> 
     </section>
        
-        <section class="container-box">
+        <section class="container-box" data-aos="fade-up" data-aos-delay="1000">
         
-            <div class="box holidays">
+            <div class="box holidays" data-aos="fade-down" data-aos-delay="1000">
                 <span class="icon-container">
                     <i class="fas fa-clock"></i>
                 </span>
@@ -133,7 +134,7 @@
      
            
 
-            <div class="box head-office">
+            <div class="box head-office" data-aos="fade-down" data-aos-delay="1000">
                 <span class="icon-container">
                     <i class="fas fa-map-marked-alt"></i>
                 </span>
@@ -143,7 +144,7 @@
                     <p>東京オフィス：東京都豊島区東池袋 4丁目 26-13 池袋東栄ビル 4階</p>
                 </div>
             </div>
-            <div class="box office-hours">
+            <div class="box office-hours" data-aos="fade-down" data-aos-delay="1000" >
                 <span class="icon-container">
                     <i class="fas fa-phone-alt"></i>
                 </span>
@@ -153,7 +154,7 @@
                     <p>東京オフィス：03-5843-3913</p>
                 </div>
             </div>
-            <div class="box email-contact">
+            <div class="box email-contact" data-aos="fade-down" data-aos-delay="1000">
                 <span class="icon-container">
                     <i class="fas fa-envelope"></i>
                 </span>
@@ -165,7 +166,7 @@
             </div>
         </section>
 
-        <section class="test-section">
+        <section class="test-section" data-aos="fade-up" data-aos-delay="500">
             <div class="container-test">
                
 
@@ -275,8 +276,8 @@
                 </div>
                 <p>インフレを抑制しようとして金融政策に偏重すると、金融、したがって景気を必要以上に締め付けることになりかねない、８時に空港に到着する予定です。</p>
                 <ul class="social-links ">
-                    <li><a href="https://www.facebook.com/asterone.co.jp/"><i class="fab fa-facebook-f "></i></a></li>
-                    <li><a href="https://twitter.com/asterone_co"><i class="fab fa-twitter "></i></a></li>
+                    <li><a href="https://www.facebook.com/asterone.co.jp/" target="_blank"><i class="fab fa-facebook-f "></i></a></li>
+                    <li><a href="https://twitter.com/asterone_co" target="_blank"><i class="fab fa-twitter "></i></a></li>
                     <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
                 </ul>
             </div>
@@ -324,6 +325,45 @@
             <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+          
+           // if window is scrolled for more than 200px, show #goTop button
+           window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
+          AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 700, // values from 0 to 3000, with step 50ms
+                easing: 'ease-in-out', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: true, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+    </script>
     </body>
 
       
