@@ -36,7 +36,7 @@ prevBtns.forEach((btn, index) => {
 
 submitBtn.addEventListener("click", e => {
     e.preventDefault();
-    if(form.checkValidity()){
+    if (form.checkValidity()) {
         steps[steps.length - 1].classList.add("active");
         setTimeout(() => {
             form.submit();
@@ -48,10 +48,70 @@ submitBtn.addEventListener("click", e => {
 const inputs = document.querySelectorAll(".field input");
 
 inputs.forEach(input => {
-    input.onchange = e => {
-        className = e.target.id;
-        inputConfirmation = document.getElementById(`_${className}`);
-        console.log(inputConfirmation);
-        inputConfirmation.textContent = e.target.value;
-    };
+    input.onchange = updateInputConfirmation;
 });
+
+// Interesting, arrow function does not work here
+function updateInputConfirmation({ target }) {
+    className = target.id;
+    inputConfirmation = document.getElementById(`_${className}`);
+    inputConfirmation.textContent = target.value;
+
+    if (!target.files.length) {
+        noFileSelected(target.closest(".drag-drop-area"));
+    }
+}
+
+/*************** Drag & Drop ***************/
+const dragDropAreas = document.querySelectorAll(".drag-drop-area");
+const permitted_file_types = [
+    "application/pdf",
+    "doc",
+    "docx",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
+dragDropAreas.forEach(area => {
+    area.addEventListener("dragover", e => {
+        e.preventDefault();
+        area.classList.add("drag-over");
+        area.classList.remove("dropped");
+        area.querySelector("i").className = "fas fa-paperclip";
+        area.querySelector("p").textContent = "こちらにドロップしてください。";
+    });
+
+    area.addEventListener("dragleave", e => {
+        e.preventDefault();
+        noFileSelected(area);
+    });
+
+    area.addEventListener("drop", e => {
+        e.preventDefault();
+        const file = e.dataTransfer.files[0];
+        if (!permitted_file_types.includes(file.type)) {
+            area.querySelector("p").textContent = "ファイル形式が正しくありません。";
+            return;
+        }
+        console.log("dropped");
+        area.querySelector("p").textContent = file.name;
+        area.classList.add("dropped");
+        area.classList.remove("drag-over");
+        area.querySelector('input[type="file"]').files = e.dataTransfer.files;
+        console.log("files", area.querySelector('input[type="file"]').files);
+        updateInputConfirmation({ target: area.querySelector('input[type="file"]') });
+    });
+
+    area.querySelector('input[type="file"]').addEventListener("change", e => {
+        const file = e.target.files[0];
+        area.querySelector("p").textContent = file.name;
+        area.classList.add("dropped");
+        area.classList.remove("drag-over");
+    });
+});
+
+const noFileSelected = area => {
+    area.classList.remove("drag-over");
+    area.classList.remove("dropped");
+    area.querySelector("i").className = "fas fa-cloud-upload-alt";
+    area.querySelector("p").textContent = "ファイルをこちらにドラッグ・ドロップするか、クリックで選択してください。";
+};
