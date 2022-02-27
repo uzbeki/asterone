@@ -1,3 +1,41 @@
+.banner-section {
+    position: relative; 
+    height: 60vh;
+    padding: 6rem var(--content-start);
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+.banner-section img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    filter: blur(1rem) brightness(0.8);
+    z-index: -1;
+}
+
+div.services-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+div.services-container h2 {
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
+}
+
+div.services-container p {
+    margin: 1rem 0;
+    text-shadow: 1px 1px 5px black;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+
 section.services .cards {
     --border-radius: 20px;
     display: grid;
@@ -9,20 +47,13 @@ section.services .cards {
     margin-bottom: 5rem;
 }
 
-.banner-section {
-    position: relative;
-    background: var(--secondary-blue-bg);
-    height: 60vh;
-    padding: 6rem var(--content-start);
-}
-
 section.services .cards li.card {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 20%);
     border-radius: var(--border-radius);
-    
+
 }
 
 section.services .cards li.card .card-image {
@@ -143,19 +174,7 @@ section.card-section {
     display: flex;
 }
 
-div.services-container {
-    text-align: center;
-}
 
-div.services-container h2 {
-    font-size: 2.5em;
-    font-weight: 900;
-    color: var(--secondary-blue);
-}
-div.services-container p {
-    padding: 2rem 24%;
-    line-height: 2;
-}
 section.card-section {
     padding: 4rem var(--content-start);
     z-index: -1;
@@ -170,13 +189,18 @@ img.bg4 {
 
 /* SVG  */
 .bg-element {
-    z-index: -1;
+    /* z-index: -1; */
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translateX(-50%);
     transition: all 0.5s ease-in-out;
 }
+
+.bg-element svg {
+    width: 16rem;
+}
+
 .backdrop {
     position: absolute;
     top: 0;
@@ -217,6 +241,7 @@ img.bg4 {
 #svg-bg {
     z-index: 0;
 }
+
 #svg-bg svg {
     width: 60%;
 }
