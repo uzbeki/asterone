@@ -17,7 +17,8 @@ let minusMargins = [0, ...margins];
 nextBtns.forEach((btn, index) => {
     btn.addEventListener("click", e => {
         // form validation check
-        // if (!form.checkValidity()) return;
+        const isValid = [...btn.closest(".page").querySelectorAll("input")].every(input => input.reportValidity());
+        if (!isValid) return;
 
         slidePage.style.marginLeft = `-${margins[index]}%`;
         // bullet[index].classList.add("active");
@@ -35,11 +36,12 @@ prevBtns.forEach((btn, index) => {
 
 submitBtn.addEventListener("click", e => {
     e.preventDefault();
-    steps[steps.length - 1].classList.add("active");
-    form.checkValidity();
-    setTimeout(() => {
-        form.submit();
-    }, 500);
+    if(form.checkValidity()){
+        steps[steps.length - 1].classList.add("active");
+        setTimeout(() => {
+            form.submit();
+        }, 500);
+    }
 });
 
 /* Input handling */

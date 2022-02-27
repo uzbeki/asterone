@@ -75,10 +75,10 @@
         <!-- ========= Main ======== -->
         <main>
             <section class="recruitment-form">
-                <div class="img">
+                <div class="img" data-aos="fade-left">
                     <img src="../../assets/img/recruitment/newbiz_done_shadow.png" alt="" srcset="">
                 </div>
-                <div class=''>
+                <div class='' data-aos="fade-right">
                     <div class="form-container">
                         <header>求人募集フォーム</header>
                         <div class="progress-bar">
@@ -132,7 +132,7 @@
                                             <label for='gender'>性別 <span>*</span></label>
                                             <div class="input-container">
                                                 <span class="icon-case"><i class="fas fa-venus-mars"></i></span>
-                                                <input id='gender' name='gender' list='genders'>
+                                                <input id='gender' name='gender' list='genders' required>
                                                 <datalist id='genders'>
                                                     <option value="男性">
                                                     <option value="女性">
@@ -155,9 +155,9 @@
                                         <label for='phone'>電話番号 <span>*</span></label>
                                         <div class="input-container">
                                             <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                            <input required type="tel" name="phone" id="phone" data-rule="maxlen:10" />
+                                            <input required type="tel" name="phone" id="phone" data-rule="maxlen:10" pattern='^[0-9+]{5,15}$' oninvalid="this.setCustomValidity('Please provide your phone number in a correct format')"/>
                                         </div>
-                                        <div class="validation">正しい電話番号を入力してください</div>
+                                        <div class="validation"></div>
                                     </div>
                                     <div class="field">
                                         <label for='email'>メールアドレス <span>*</span></label>
@@ -198,7 +198,7 @@
                                         <label for='resume'>履歴書 <span>*</span>
                                             <div class="drag-drop-area">
                                                 <input type="file" name="resume" id="resume" hidden
-                                                    accept='.pdf, .doc, .docx' />
+                                                    accept='.pdf, .doc, .docx' required/>
                                                 <i class="fas fa-cloud-upload-alt"></i>
                                                 <p>ファイルをこちらにドラッグ・ドロップするか、クリックで選択してください。</p>
                                             </div>
@@ -206,7 +206,7 @@
                                         <div class="validation"></div>
                                     </div>
                                     <div class="field">
-                                        <label for='cv'>職務経歴書 <span>*</span>
+                                        <label for='cv'>職務経歴書
                                             <div class="drag-drop-area">
                                                 <input type="file" name="cv" id="cv" hidden accept='.pdf, .doc, .docx'>
                                                 <i class="fas fa-cloud-upload-alt"></i>
@@ -219,14 +219,14 @@
                                         <label for="github_url">Githubアカウント</label>
                                         <div class="input-container">
                                             <span class="icon-case"><i class="fab fa-github"></i></span>
-                                            <input type="url" name="github_url" id="github_url">
+                                            <input type="url" name="github_url" id="github_url" value='https://github.com/'>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <label for="portfolio_url">ポートフォリオ</label>
                                         <div class="input-container">
                                             <span class="icon-case"><i class="fas fa-link"></i></span>
-                                            <input type="url" name="portfolio_url" id="portfolio_url">
+                                            <input type="url" name="portfolio_url" id="portfolio_url" value='https://'>
                                         </div>
                                     </div>
 
