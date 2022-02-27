@@ -451,11 +451,16 @@
                     </div>
                 </div>
                 <div class="team__content" data-aos-delay="800" data-aos="zoom-in">
-                    <video muted autoplay preload='auto'>
-                        <source src="./assets/video/we-are2.mp4" type="video/mp4">
-                        <p>Your browser doesn't support HTML5 video. Here is a <a href="./assets/video/we-are2.mp4">link
-                                to the video</a> instead.</p>
-                    </video>
+                    <!-- for popup effect https://codepen.io/RileyB/pen/XQyaXy -->
+                    <img src="./assets/img/team/20220210_104344.jpg" alt="" srcset="">
+                    <img src="./assets/img/team/20220113_120024.jpg" alt="" srcset="">
+                    <img src="./assets/img/team/20220209_154504.jpg" alt="" srcset="">
+                    <img src="./assets/img/team/20220209_155138.jpg" alt="" srcset="">
+                    <img src="./assets/img/team/20220210_103932(0).jpg" alt="" srcset="">
+                    <img src="./assets/img/team/20220113_105635.jpg" alt="" srcset="">
+                </div>
+                <div class="team__popup">
+                    <img src="./assets/img/team/20220113_105635.jpg" alt="" srcset="">
                 </div>
             </section>
 
@@ -713,7 +718,26 @@
                 // swiper1.disable;
                 swiper1.destroy();
             }
+
+            // team image modal
+            const teamImages = document.querySelectorAll('.team__content img');
+            const teamPopup = document.querySelector('.team__popup');
+            teamImages.forEach(image => {
+                image.addEventListener('click', () => {
+                    teamPopup.classList.add('show');
+                    teamPopup.querySelector('img').src = image.src;
+                });
+            });
+            teamPopup.addEventListener('click', () => {
+                teamPopup.classList.contains('show') && teamPopup.classList.remove('show');
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.keyCode === 27) {
+                    teamPopup.classList.contains('show') && teamPopup.classList.remove('show');
+                }
+            });
         </script>
+
     </body>
 
 </html>
