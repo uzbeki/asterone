@@ -1,8 +1,10 @@
 section.recruitment-form {
   display: grid;
+  gap: 2em;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
+  padding: 3rem var(--content-start);
 }
 
 .img img {
@@ -233,7 +235,7 @@ form .fields {
   outline: none;
 }
 
-.field button[type="submit"] {
+.field button[type="submit"] { 
   background: var(--primary-dark);
   color: #fff;
   border-color: var(--primary-dark);
