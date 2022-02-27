@@ -8,10 +8,6 @@ body h1 {
     margin: 0;
 }
 
-
-
-
-
 .tabs {
     position: relative;
     margin-top: 2rem;
@@ -527,9 +523,7 @@ a.button {
 }
 
 /* SYSTEM Kaihatsu team */
-#system-team {
-    margin: 0 var(--content-start);
-}
+
 
 /* HIVE styles */
 #hive {

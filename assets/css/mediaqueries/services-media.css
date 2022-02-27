@@ -1,94 +1,90 @@
-@media screen and (max-width: 1460px) {
-    /* SVG */
-    .backdrop {
-        right: 10%;
-    }
-}
 
-@media screen and (max-width: 1024px) {
-    /* SVG */
-    .backdrop svg {
-        width: 7rem;
-    }
-}
-@media screen and (max-width: 1025px) {
-    /* title p */
-    div.services-container p {
-        padding: 1rem 15%;
-    }
-}
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 866px) {
+
     /* title h2 */
-    div.services-container h2 {
-        font-size: 2.3em;
-    }
-
-    div.services-container p {
-        padding: 1rem 14%;
-    }
-}
-@media screen and (max-width: 762px) {
     div.services-container h2 {
         font-size: 2em;
     }
 
-    div.services-container p {
-        padding: 1rem 8%;
-    }
 }
+
 @media screen and (max-width: 768px) {
-    .backdrop {
-        display: none;
+    div.services-container {
+        margin-bottom: 26%;
     }
-}
-@media screen and (max-width: 661px) {
+
+    div.services-container h2 {
+        font-size: 2em;
+    }
+
     .banner-section {
         padding: 3rem var(--content-start);
     }
+}
+
+@media screen and (max-width: 661px) {
 
     div.services-container h2 {
         font-size: 1.8em;
     }
 }
-@media screen and (max-width: 593px) {
+
+@media screen and (max-width: 613px) {
+
     div.services-container h2 {
-        font-size: 1.6em;
-    }
-}
-@media screen and (max-width: 529px) {
-    div.services-container h2 {
-        font-size: 1.4em;
-    }
-}
-@media screen and (max-width: 465px) {
-    .bg-element {
-        display: none;
-    }
-    .backdrop {
-        display: none;
+        font-size: 1.5em;
     }
 
     div.services-container p {
-        padding: 1rem 6%;
-        font-size: 0.9em;
+        font-size: 1rem;
+    }
+
+    div.services-container {
+        margin-bottom: 48%;
     }
 }
+
+@media screen and (max-width: 541px) {
+    div.services-container h2 {
+        font-size: 1.2em;
+    }
+
+    div.services-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .banner-section {
+        height: 25vh;
+    }
+
+    div.services-container {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 455px) {
     div.services-container h2 {
         font-size: 1em;
     }
 }
-@media screen and (max-width: 377px) {
+
+@media screen and (max-width: 387px) {
     div.services-container p {
-        padding: 1rem 4%;
+        font-size: 0.6rem;
     }
 }
-@media screen and (max-width: 342px) {
+
+@media screen and (max-width: 347px) {
+    .banner-section {
+        height: 23vh;
+    }
     div.services-container h2 {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
     div.services-container p {
-        padding: 1rem 1rem;
-        font-size: 0.8em;
+        font-size: 0.5rem;
     }
+
 }
