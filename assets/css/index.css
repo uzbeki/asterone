@@ -15,7 +15,7 @@ section.full-page {
 
 /* ************* Hero Banner ************* */
 section.banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
