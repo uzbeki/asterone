@@ -726,7 +726,9 @@
             teamImages.forEach(image => {
                 image.addEventListener('click', () => {
                     teamPopup.classList.add('show');
-                    teamPopup.querySelector('img').src = image.src;
+                    teamPopup.querySelector('img').src = image.src;  // does not work offline,
+                    // put image src as base64 data in srcset attribute
+
                 });
             });
             teamPopup.addEventListener('click', () => {
@@ -734,6 +736,7 @@
             });
             document.addEventListener('keydown', (e) => {
                 if (e.keyCode === 27) {
+                    teamPopup.querySelector('img').src = '';
                     teamPopup.classList.contains('show') && teamPopup.classList.remove('show');
                 }
             });
