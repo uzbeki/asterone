@@ -196,28 +196,6 @@ div.sidenav a:hover {
   flex-basis: 59%;
 }
 
-@media all and (max-width: 767px) {
-  .table-header {
-    display: none;
-  }
-
-  li {
-    display: block;
-  }
-
-  .col {
-
-    flex-basis: 100%;
-
-  }
-
-  .col {
-    display: flex;
-    padding: 10px 0;
-
-  }
-}
-
 section.facilities {
   background-color: #eee;
 }
@@ -320,8 +298,6 @@ div.circles4 {
 
 }
 
-
-
 /* Benefits　section */
 .benefits {
   margin: 2rem var(--content-start);
@@ -392,26 +368,6 @@ section.atmosphere {
   height: calc(100vh - 10px);
   grid-template: repeat(6, 1fr)/repeat(6, 1fr);
   grid-gap: 0.5em;
-}
-
-@media (max-width: 800px) {
-  #gallery {
-    /* display: flex; */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #gallery>div {
-    width: 48%;
-    margin: 1%;
-  }
-}
-
-@media (max-width: 800px) and (max-width: 350px) {
-  #gallery>div {
-    width: 98%;
-  }
 }
 
 #gallery>div:nth-child(6n+1) {
@@ -766,4 +722,13 @@ section.recruitment-flow {
 .multi-steps>li.is-active~li:before {
   background-color: var(--inactive-color);
   border-color: var(--inactive-color);
+}
+
+/* マイナビリンク */
+.mynavi-link h3 {
+  text-align: center;
+  margin-top: 2em;
+}
+li.mynavi-link {
+  border: 1px solid var(--secondary-blue);
 }
