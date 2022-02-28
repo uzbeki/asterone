@@ -18,7 +18,6 @@ h2.margin {
     text-align: center;
     font-size: 2em;
     color: #929daf;
-    margin-top: -15rem;
 }
 h2.top-title {
     font-size: 3em;
@@ -40,10 +39,6 @@ p.margin-p {
 }
 
 /* ======= Cards ======= */
-section.container-box {
-    min-height: 100vh;
-    margin: 0 var(--content-start);
-}
 
 section.container-box div.head-office {
     position: relative;
@@ -58,6 +53,7 @@ section.container-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
+    margin: 4rem var(--content-start);
     justify-items: center;
     align-items: center;
 }
