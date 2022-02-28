@@ -1,0 +1,84 @@
+@media screen and (max-width: 1600px) {
+    section.container-box > div {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1506px) {
+    section.container-box > div {
+        width: 74%;
+    }
+    section.container-box div.email-contact {
+        top: -32%;
+    }
+    section.container-box div.head-office {
+        top: -32%;
+    }
+}
+@media screen and (max-width: 1360px) {
+    section.container-box > div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1240px) {
+    section.container-box > div {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1176px) {
+    section.container-box > div {
+        width: 90%;
+    }
+    section.contact-us-section svg {
+        width: 95%;
+    }
+    .form-outer {
+        width: 777px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    section.container-box > div {
+        width: 65%;
+    }
+    .form-outer {
+        width: 890px;
+    }
+}
+@media screen and (max-width: 710px) {
+    section.container-box div.email-contact {
+        top: 0;
+    }
+    section.container-box div.head-office {
+        top: 0;
+    }
+    section.container-box > div {
+        top: 0;
+    }
+    section.contact-us-section svg {
+        display: none;
+    }
+    section.contact-us-section {
+        display: block;
+    }
+    .form-outer {
+        width: 630px;
+    }
+    h2.margin {
+        font-size: 1em;
+    }
+    section.container-box > div {
+        border-radius: 10px;
+        height: 230px;
+    }
+    section.top-part-contact-page {
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 471px) {
+    section.top-part-contact-page {
+        background-size: cover;
+    }
+    section.contact-us-section {
+        margin: 0;
+    }
+}
