@@ -21,19 +21,11 @@ div.top-section-content {
   max-width: 55rem;
 }
 
-/* div.top-section-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: .8;
-} */
 
 div.top-section-content h1 {
   font-size: 6em;
   z-index: 2;
-  /* color: var(--primary); */
   color: var(--white);
-  /* text-shadow: var(--primary-dark) 0px 0px 5px; */
   text-shadow: 0 1px 0 black;
 }
 
@@ -43,10 +35,6 @@ div.top-section-content p {
   line-height: 2;
   font-weight: bold;
   color: var(--white);
-  /* text-shadow: 0 1px 0 black; */
-  /* background: var(--primary); */
-  /* display: inline; */
-  /* padding: 0; */
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }

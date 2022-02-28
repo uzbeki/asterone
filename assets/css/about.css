@@ -41,7 +41,6 @@ section.about-company .emphasis {
 
 .letter {
     display: inline-block;
-    /* position: absolute; */
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
 }
@@ -85,7 +84,6 @@ section.about-company .emphasis {
 }
 
 .info.right {
-    /* 4rem */
     right: calc(var(--size) * .3);
     bottom: calc(var(--size) * .3);
     animation-delay: 1s;
@@ -94,9 +92,7 @@ section.about-company .emphasis {
 }
 
 .info.top {
-    /* 8rem */
     right: calc(var(--size) * .66);
-    /* 5rem */
     top: calc(var(--size) * .42);
     animation-delay: .5s;
 }
@@ -129,8 +125,6 @@ section.about-company .emphasis {
         transform: translate(0, 0);
     }
 }
-
-
 
 section.mission {
     display: flex;
@@ -231,7 +225,6 @@ section.vision-mission {
     gap: 2rem;
     margin: 4rem var(--content-start);
     position: relative;
-    /* padding: 2rem; */
 }
 
 .lines {
@@ -240,15 +233,6 @@ section.vision-mission {
     left: 0;
     transform: translate(-80%, -50%);
     z-index: -1;
-}
-
-.about {
-    /* width: 40rem; */
-    /* max-width: 100%; */
-}
-
-.group-image {
-    /* width: 50%; */
 }
 
 .group-image img {
@@ -296,7 +280,6 @@ section.vision-mission {
 }
 
 .responsive-table li.row {
-    /* border-radius: 13px; */
     padding: 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -357,10 +340,7 @@ section.company-data {
 
 section.company-data .map {
     width: 100%;
-    /* padding: 2rem; */
     display: flex;
-    /* gap: 2rem; */
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 }

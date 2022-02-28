@@ -702,21 +702,3 @@ div.img-ceo img {
     }
 }
 
-#goTop {
-    position: fixed;
-    bottom: 4rem;
-    right: 5rem;
-    z-index: 10;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 50%;
-    background: var(--primary);
-    color: var(--black);
-    font-size: 1.3rem;
-    padding: 1rem 1.3rem;
-    box-shadow: 1px 2px 15px 8px rgb(0 0 0 / 10%);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(2rem);
-}
-
