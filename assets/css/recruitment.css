@@ -39,9 +39,21 @@ section.full-page {
   height: 100%;
   bottom: -1px;
   /* background-image: linear-gradient(to top, #c0a425 20%, #ecc74a 80%); */
-  background-image: url(../img/recruitment/recruitment.jpg);
+  background-image: url(../img/recruitment/recruitment-min.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.waveTop {
+  background-image: url('../../assets/img/recruitment/wave-top.png')
+}
+
+.waveMiddle {
+  background-image: url('../../assets/img/recruitment/wave-mid.png')
+}
+
+.waveBottom {
+  background-image: url('../../assets/img/recruitment/wave-bot.png')
 }
 
 .bgTop {
