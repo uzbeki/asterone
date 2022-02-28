@@ -16,7 +16,6 @@ section.recruitment-form {
 .form-container {
   width: 650px;
   padding: 1em;
-  /* border: 1px solid #ccc; */
   font-size: 17px;
   margin: 0 auto;
 }
@@ -189,11 +188,6 @@ form .fields {
   outline: none;
   font-size: 1em;
 }
-
-/* validation check */
-/* .field input:invalid {
-  border: 1px solid red;
-} */
 
 .icon-case {
   width: 35px;
