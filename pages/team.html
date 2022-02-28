@@ -902,9 +902,29 @@
                             transform="translate(138.24358 850.95341) rotate(-89.56675)" fill="#3f3d56" />
                     </svg>
                 </div>
+
+                <a id='goTop' href="#header">
+                    <!-- <i class="fas fa-angle-double-up"></i> -->
+                    <i class="fas fa-arrow-up"></i>
+                </a>
             </section>
 
             <script>
+
+                // if window is scrolled for more than 200px, show #goTop button
+               window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
+
                 const images = document.querySelectorAll('#individuals img');
                 // const descriptions = document.querySelector('.descriptions');
                 const show_description = (e) => {

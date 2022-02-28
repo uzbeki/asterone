@@ -4,7 +4,6 @@ main {
 
 main header {
     padding: 3rem var(--content-start);
-    /* background: hsl(43, 93%, 80%); */
     background: var(--secondary-blue-bg);
     display: flex;
     justify-content: space-between;
@@ -43,8 +42,6 @@ main header .details img {
 .asides {
     grid-area: aside;
 }
-
-
 
 #map iframe {
     margin-top: 1rem;
@@ -106,8 +103,6 @@ main header .details img {
 
 .tags span {
     border: 1px solid var(--secondary-violet);
-    /* background-color: var(--secondary-blue); */
-    /* color: var(--white); */
     color: var(--secondary-violet);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -157,3 +152,21 @@ aside ul li i {
     color: rgba(0, 0, 0, .6);
     flex-shrink: 0;
 }
+/* Icon top */
+#goTop {
+    position: fixed;
+    bottom: 4rem;
+    right: 5rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--black);
+    font-size: 1.3rem;
+    padding: 1rem 1.3rem;
+    box-shadow: 1px 2px 15px 8px rgb(0 0 0 / 10%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(2rem);
+  }

@@ -246,6 +246,10 @@
                             width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </aside>
                 </div>
+                   
+                <a id='goTop' href="#header">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
 
             </section>
 
@@ -363,6 +367,20 @@
         <!-- ************* Scripts ************* -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
+
+               // if window is scrolled for more than 200px, show #goTop button
+               window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
 
             AOS.init({
                 // Global settings:

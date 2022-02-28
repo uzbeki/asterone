@@ -8,11 +8,8 @@
 
 }
 
-@media screen and (max-width: 768px) {
-    div.services-container {
-        margin-bottom: 26%;
-    }
-
+@media screen and (max-width: 767px) {
+  
     div.services-container h2 {
         font-size: 2em;
     }
@@ -39,9 +36,6 @@
         font-size: 1rem;
     }
 
-    div.services-container {
-        margin-bottom: 48%;
-    }
 }
 
 @media screen and (max-width: 541px) {
@@ -54,9 +48,9 @@
     }
 }
 
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 490px) {
     .banner-section {
-        height: 25vh;
+        height: 40vh;
     }
 
     div.services-container {
@@ -78,7 +72,7 @@
 
 @media screen and (max-width: 347px) {
     .banner-section {
-        height: 23vh;
+        height: 30vh;
     }
     div.services-container h2 {
         font-size: 0.5em;

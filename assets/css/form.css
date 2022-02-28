@@ -1,8 +1,10 @@
 section.recruitment-form {
   display: grid;
+  gap: 2em;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
+  padding: 3rem var(--content-start);
 }
 
 .img img {
@@ -14,7 +16,6 @@ section.recruitment-form {
 .form-container {
   width: 650px;
   padding: 1em;
-  /* border: 1px solid #ccc; */
   font-size: 17px;
   margin: 0 auto;
 }
@@ -188,11 +189,6 @@ form .fields {
   font-size: 1em;
 }
 
-/* validation check */
-/* .field input:invalid {
-  border: 1px solid red;
-} */
-
 .icon-case {
   width: 35px;
   background: #eeeeee;
@@ -233,7 +229,7 @@ form .fields {
   outline: none;
 }
 
-.field button[type="submit"] {
+.field button[type="submit"] { 
   background: var(--primary-dark);
   color: #fff;
   border-color: var(--primary-dark);

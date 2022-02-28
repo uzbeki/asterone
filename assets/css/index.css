@@ -617,7 +617,7 @@ section.testimonials .swiper .swiper-slide {
 /* ************* CEO Message ************* */
 section.message-ceo {
     position: relative;
-    padding: 0 var(--content-start);
+    padding: var(--content-start);
 }
 
 section.message-ceo div.container-card {
@@ -656,7 +656,6 @@ div.message .signature {
 }
 
 div.message .signature img {
-    /* align-self: flex-end; */
     width: 100%;
     object-fit: contain;
 }
@@ -672,7 +671,6 @@ div.img-ceo img {
     color: var(--);
     top: 0;
     right: 0;
-    /* transform: translateX(50%); */
     transition: all 0.5s ease-in-out;
     animation: rotate-backdrop 20s linear infinite;
 }
@@ -688,7 +686,6 @@ div.img-ceo img {
     left: 0;
     transform: translateX(-50%);
     transition: all 0.5s ease-in-out;
-    /* animation: rotate-backdrop 15s ease infinite; */
 }
 
 .bg-element svg {
@@ -713,7 +710,6 @@ div.img-ceo img {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
-    /* background: linear-gradient(to right, var(--primary) 0%, var(--primary-light) 100%); */
     background: var(--primary);
     color: var(--black);
     font-size: 1.3rem;
@@ -722,5 +718,5 @@ div.img-ceo img {
     opacity: 0;
     visibility: hidden;
     transform: translateY(2rem);
-
 }
+

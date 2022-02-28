@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 882px) {
     .job-title h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .job-title ul {
         display: flex;
@@ -112,6 +112,9 @@
     }
     .actions {
         margin-top: 0;
+    }
+    .actions a {
+        padding: 11px;
     }
 } 
 @media screen and (max-width: 325px) {
