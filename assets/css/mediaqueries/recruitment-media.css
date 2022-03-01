@@ -11,6 +11,45 @@
         font-size: 2.2rem;
     }
 }
+
+@media all and (max-width: 767px) {
+    .table-header {
+        display: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col {
+        display: flex;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+        /* display: flex; */
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #gallery > div {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 800px) and (max-width: 350px) {
+    #gallery > div {
+        width: 98%;
+    }
+}
 @media screen and (max-width: 1006px) {
     /* title */
     section.catch-phrase h1 {
