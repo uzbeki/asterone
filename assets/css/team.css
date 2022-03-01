@@ -164,7 +164,7 @@ ul#tab-ul li label:active {
 
 h2.top-title-newbiz {
     text-align: center;
-    padding: 3em 5em;
+    margin: 3em var(--content-start);
     color: #929daf;
     font-size: 2em;
 }
@@ -360,12 +360,12 @@ ul.descriptions li p,
     flex: 3;
 }
 
-.about-container {
+/* .about-container {
     min-height: 100vh;
     position: relative;
     display: grid;
     place-content: center;
-    margin: 8rem var(--content-start);
+    margin: 2rem var(--content-start);
 }
 
 .about-container img {
@@ -459,7 +459,7 @@ ul.descriptions li p,
     font-size: 2em;
     margin-bottom: 3rem;
     color: var(--secondary-blue);
-}
+} */
 
 /* .about:hover {
     transform: rotateY(-20deg) skewY(3deg);
@@ -468,6 +468,30 @@ ul.descriptions li p,
 .about:hover .about-text {
     transform: rotateY(20deg) skewY(-3deg);
 } */
+div.about-container {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-content: center;
+    margin: 2rem var(--content-start);
+}
+
+div.newbiz-text {
+    text-align: start;
+    padding: 4em var(--content-start);
+    line-height: 1.5;
+}
+div.newbiz-text h3 {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 3em;
+    color: #a2a4b0;
+}
+div.newbiz-text p {
+    line-height: 2;
+    font-size: 1.2em;
+}
+
 
 /* SECTION WORK WITH US */
 .work-with-us {

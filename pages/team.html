@@ -9,6 +9,7 @@
         <!-- links -->
         <!-- <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer> -->
         <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/aos.css" />
         <link rel="stylesheet" href="../assets/css/mediaqueries/base-media.css">
         <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css" />
         <link rel="stylesheet" href="../assets/css/team.css">
@@ -71,7 +72,7 @@
         </header>
         <!-- ======== Main ========= -->
         <main>
-            <section class="team">
+            <section class="team" data-aos="fade-down">
                 <div class="tabs">
 
                     <input type="radio" id="new-biz" name="tab-control" checked>
@@ -109,18 +110,18 @@
                         <div class="indicator"></div>
                     </div>
                     <div class="content">
-                        <section id='newbiz-team'>
-                            <h2 class="top-title-newbiz">新規事業開発部はアスタワンに蓄積した技術を活かした新事業の開発と
+                        <section id='newbiz-team' data-aos="fade-up">
+                            <h2 data-aos="fade-down" class="top-title-newbiz">新規事業開発部はアスタワンに蓄積した技術を活かした新事業の開発と
                                 パートナー企業様の新たな挑戦のサポートを行っています。</h2>
 
                             <h2 class="mobile-title">新規事業開発部</h2>
                             <div class="meet">
 
                                 <ul id='individuals'>
-                                    <li class='img-box active'>
+                                    <li class='img-box active' data-aos="fade-right" data-aos-delay="800">
                                         <img tabindex='0' id='ito' src="../assets/img/individuals/itousan_face.jpg"
                                             alt="">
-                                        <div id="_ito" class='active member-info'>
+                                        <div id="_ito" class='active member-info' >
                                             <h2>Hideaki Ito</h2>
                                             <h3>部長 新規事業開発部</h3>
                                             <p>営業とプロジェクト管理が主な仕事。たまに無性にプログラムが書きたくなる。休日はゲーム（RPG）をのんびりやってます。</p>
@@ -134,7 +135,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class='img-box'>
+                                    <li class='img-box' data-aos="fade-left" data-aos-delay="1000">
                                         <img tabindex='0' id='okuda' src="../assets/img/individuals/okuda_kento.png"
                                             alt="">
                                         <div id="_okuda" class='member-info'>
@@ -151,7 +152,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class='img-box'>
+                                    <li class='img-box' data-aos="fade-right" data-aos-delay="1200">
                                         <img tabindex='0' id='beki' src="../assets/img/individuals/beki_face@4x-100.jpg"
                                             alt="">
                                         <div id="_beki" class='member-info'>
@@ -176,7 +177,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class='img-box'>
+                                    <li class='img-box' data-aos="fade-left" data-aos-delay="800">
                                         <img tabindex='0' id='yui' src="../assets/img/individuals/kuzuyasan.png" alt="">
                                         <div id="_yui" class='member-info'>
                                             <h2>Yui Kuzuya</h2>
@@ -192,7 +193,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class='img-box'>
+                                    <li class='img-box' data-aos="zoom-in" data-aos-delay="200">
                                         <img tabindex='0' id='musha' src="../assets/img/individuals/musha3.jpg" alt="">
                                         <div id="_musha" class='member-info'>
                                             <h2>Musha Makhmudova</h2>
@@ -309,43 +310,30 @@
                                     </li>
                                 </ul> -->
                             </div>
-                            <div class="about-container">
-                                <img src="../assets/img/newbiz/20220113_115104.jpg" alt="" srcset="">
-                                <div class="about"><i class="fas fa-quote-left fa2"></i>
-                                    <div class="about-text"><i class="fas fa-quote-right fa1"></i>
-                                        <div class='newbiz-text'>
+                            <div class="about-container" data-aos="fade-up">
+                                <!-- <img src="../assets/img/newbiz/20220113_115104.jpg" alt="" srcset=""> -->
+                                <!-- <div class="about"><i class="fas fa-quote-left fa2"></i> -->
+                                    <!-- <div class="about-text"><i class="fas fa-quote-right fa1"></i> -->
+                                        <div class='newbiz-text' data-aos="fade-down">
                                             <h3>新規事業開発部</h3>
-                                            <p> ・新事業の開発
-                                                　社員1人1人の発想から始まる新たな事業の創出を担っています。
-                                                　新サービス・新製品の企画から、市場調査・プロトタイプ開発・市場投入のサイクルを回し、
-                                                　アスタワンの長期的な事業領域の開拓を行っています。
-                                                　事例
+                                            <p> 新事業の開発 社員1人1人の発想から始まる新たな事業の創出を担っています。新サービス・新製品の企画から、市場調査・プロトタイプ開発・市場投入のサイクルを回し、アスタワンの長期的な事業領域の開拓を行っています。事例
                                                 <a href="#">pobicle</a>
-                                                <a href="https://ehonkuru.com/" target="_blank">ehonkuru</a>
-                                                　etc.
-                                                ・パートナー企業様の挑戦をサポート
-                                                　アスタワンの技術力×新規事業開発力を活かし、
-                                                　パートナー企業様の新たなビジネスモデルの構築から
-                                                　ホームページ開設や新製品のプロトタイプ開発、
-                                                　さらに市場投入やマーケティングまで、
-                                                　新たな価値を生む0⇒１の挑戦を幅広くサポートさせていただきます。
-                                                　事例
+                                                <a href="https://ehonkuru.com/" target="_blank">ehonkuru</a> etc。パートナー企業様の挑戦をサポートアスタワンの技術力×新規事業開発力を活かし、パートナー企業様の新たなビジネスモデルの構築からホームページ開設や新製品のプロトタイプ開発、さらに市場投入やマーケティングまで、新たな価値を生む0⇒１の挑戦を幅広くサポートさせていただきます。事例
                                                 <a href="#">SSP</a> (ビジネスモデルの構築サポートからサービスページ開設)
-                                                <a href="#">疑似対話システム</a> (お客様の企画からシステムへの落とし込みや技術的なサポート)
-                                                　etc
+                                                <a href="#">疑似対話システム</a> (お客様の企画からシステムへの落とし込みや技術的なサポート) etc
                                             </p>
-                                        </div>
+                                        <!-- </div> -->
 
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
 
                             <div class="group-container">
                                 <div class="group">
-                                    <div class="left">
+                                    <div class="left" data-aos="zoom-in-right">
                                         <img src="../assets/img/newbiz/20220113_113804.jpg" alt="" srcset="">
                                     </div>
-                                    <div class="right">
+                                    <div class="right" data-aos="zoom-in-left">
                                         <img src="../assets/img/newbiz/20220113_115104.jpg" alt="">
                                     </div>
                                 </div>
@@ -526,7 +514,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="about-container">
+                            <!-- <div class="about-container">
                                 <img src="../assets/img/sys_en/20220210_102953.jpg" alt="" srcset="">
                                 <div class="about"><i class="fas fa-quote-left fa2"></i>
                                     <div class="about-text"><i class="fas fa-quote-right fa1"></i>
@@ -549,7 +537,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="group-container">
                                 <div class="group">
@@ -670,7 +658,7 @@
                             </ul>
 
 
-                            <div class="about-container">
+                            <!-- <div class="about-container">
                                 <img src="../assets/img/sys_en/20220210_102953.jpg" alt="">
                                 <div class="about"><i class="fas fa-quote-left fa2"></i>
                                     <div class="about-text"><i class="fas fa-quote-right fa1"></i>
@@ -693,7 +681,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="group-container">
                                 <div class="group">
@@ -744,7 +732,7 @@
 
 
 
-                            <div class="about-container">
+                            <!-- <div class="about-container">
                                 <img src="../assets/img/sys_en/20220210_102953.jpg" alt="">
                                 <div class="about"><i class="fas fa-quote-left fa2"></i>
                                     <div class="about-text"><i class="fas fa-quote-right fa1"></i>
@@ -767,7 +755,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="group-container">
                                 <div class="group">
@@ -791,7 +779,7 @@
 
             </section>
             <section class='work-with-us'>
-                <header>
+                <header data-aos="fade-left">
                     <!-- https://shortcut.com/careers -->
                     <h1>Join our Team</h1>
                     <p>挑戦していくことが多い部署のため、前例に従うのではなく自分で調べて一歩一歩進んでいくことが多くなります。</p>
@@ -799,7 +787,7 @@
                     <p> 私たちと一緒にチャレンジしてみませんか？ </p>
                     <a class="button" href="./recruitment/recruitment.html">求人票を見る</a>
                 </header>
-                <div class="bg">
+                <div class="bg" data-aos="fade-right">
                     <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="613.35286" height="700.56123"
                         viewBox="0 0 613.35286 700.56123" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path
@@ -952,8 +940,8 @@
         </main>
         <!-- ========= Footer ========== -->
         <footer>
-            <div class="footer-container ">
-                <div class="sec about-us ">
+            <div class="footer-container " data-aos="fade-up">
+                <div class="sec about-us " data-aos-delay="1000" data-aos="fade-right">
                     <div class="brand-logo">
                         <a href="../index.html">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -1014,7 +1002,7 @@
                         <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links" data-aos-delay="500" data-aos="fade-up">
                     <ul>
                         <li>
                             <a href="./sustainability.html">サステナビリティ</a>
@@ -1033,7 +1021,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sec contact ">
+                <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
                     <h2>お問合せ</h2>
                     <ul class="info ">
                         <li>
@@ -1058,6 +1046,7 @@
                 <p>Copyright <i class="far fa-copyright "></i> 2022 ASTERONE Co., Ltd. All Rights Reserved.</p>
             </div>
         </footer>
+        <script src="../../assets/js/aos.js"></script>
         <script>
             const hex_cells = document.querySelectorAll('.hex-cell');
 
@@ -1083,6 +1072,29 @@
                 //     const member_info = document.getElementById(`_name${name}`);
                 //     member_info.style.opacity = 0;
                 // });
+            });
+
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 700, // values from 0 to 3000, with step 50ms
+                easing: 'ease-in-out', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: true, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
             });
 
         </script>

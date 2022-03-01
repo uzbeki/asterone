@@ -729,6 +729,6 @@ section.recruitment-flow {
   text-align: center;
   margin-top: 2em;
 }
-li.mynavi-link {
+li.mynavi-link:hover {
   border: 1px solid var(--secondary-blue);
 }

@@ -8,6 +8,7 @@
     <title>FAQ</title>
     <!-- links -->
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer>
+    <link rel="stylesheet" href="../assets/css/aos.css" />
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/mediaqueries/base-media.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css">
@@ -72,7 +73,7 @@
       <section class="banner-section">
         <div class="faq-container">
           <div class="backdrop" data-aos="slide-right" data-aos-delay="1000">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
+            <svg data-aos="fade-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.67 81.19">
               <defs>
                 <style>
                   .asterisk {
@@ -95,15 +96,15 @@
             </svg>
           </div>
 
-          <h2>FAQ</h2>
-          <p>よくあるご質問</p>
+          <h2 data-aos="fade-down">FAQ</h2>
+          <p data-aos="fade-down">よくあるご質問</p>
         </div>
       </section>
 
 
       <img class="faq-img" src="../assets/img/SVG/faq.svg" alt="">
 
-      <section class="Accordion">
+      <section class="Accordion" data-aos="zoom-in">
 
         <ul class="Accordion__tabs">
           <li class="Accordion__tab" onclick="toggleAccordion(this)">
@@ -177,10 +178,10 @@
       </section>
 
     </main>
-    <footer>
+    <footer data-aos="fade-up">
 
       <div class="footer-container ">
-        <div class="sec about-us ">
+        <div class="sec about-us "  data-aos-delay="1000" data-aos="fade-right">
           <div class="brand-logo">
             <a href="../index.html">
               <?xml version="1.0" encoding="utf-8"?>
@@ -236,7 +237,7 @@ C122,15.1,123.1,14.2,123.1,12.4z M113.6,9.3h4.3c1.5,0,2,0.4,2,1.5v0.5c0,1-0.3,1.
             <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
           </ul>
         </div>
-        <div class="links">
+        <div class="links"  data-aos-delay="500" data-aos="fade-up">
           <ul>
             <li>
               <a href="./sustainability.html">サステナビリティ</a>
@@ -255,7 +256,7 @@ C122,15.1,123.1,14.2,123.1,12.4z M113.6,9.3h4.3c1.5,0,2,0.4,2,1.5v0.5c0,1-0.3,1.
             </li>
           </ul>
         </div>
-        <div class="sec contact ">
+        <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
           <h2>お問合せ</h2>
           <ul class="info ">
             <li>
@@ -304,6 +305,33 @@ C122,15.1,123.1,14.2,123.1,12.4z M113.6,9.3h4.3c1.5,0,2,0.4,2,1.5v0.5c0,1-0.3,1.
         }
       }
     </script>
+       <script src="../../assets/js/aos.js"></script>
+       <script>
+                      AOS.init({
+               // Global settings:
+               disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+               startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+               initClassName: 'aos-init', // class applied after initialization
+               animatedClassName: 'aos-animate', // class applied on animation
+               useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+               disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+               debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+               throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+               // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+               offset: 120, // offset (in px) from the original trigger point
+               delay: 0, // values from 0 to 3000, with step 50ms
+               duration: 700, // values from 0 to 3000, with step 50ms
+               easing: 'ease-in-out', // default easing for AOS animations
+               once: true, // whether animation should happen only once - while scrolling down
+               mirror: true, // whether elements should animate out while scrolling past them
+               anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+           });
+
+       </script>
+
 
   </body>
 

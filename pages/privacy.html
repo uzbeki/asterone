@@ -8,6 +8,7 @@
         <title>Privacy Policy</title>
         <!-- links -->
         <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" defer>
+        <link rel="stylesheet" href="../assets/css/aos.css" />
         <link rel="stylesheet" href="../assets/css/base.css">
         <link rel="stylesheet" href="../assets/css/mediaqueries/base-media.css">
         <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css">
@@ -69,7 +70,8 @@
                 </nav>
             </div>
         </header>
-        <main id="main">
+        <main id="main" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <div class="intro-title">
                 <img src="../assets/img/SVG/security.svg" alt="">
                 <h1>プライバシーポリシー</h1>
@@ -106,9 +108,9 @@
             </div>
         </main>
 
-        <footer>
+        <footer data-aos="fade-up">
             <div class="footer-container ">
-                <div class="sec about-us ">
+                <div class="sec about-us " data-aos-delay="1000" data-aos="fade-right">
                     <div class="brand-logo">
                         <a href="../index.html">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -168,7 +170,7 @@
                         <li><a href="# "><i class="fab fa-linkedin-in "></i></a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links" data-aos-delay="500" data-aos="fade-up">
                     <ul>
                         <li>
                             <a href="./sustainability.html">サステナビリティ</a>
@@ -187,7 +189,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sec contact ">
+                <div class="sec contact " data-aos-delay="1000" data-aos="fade-left">
                     <h2>お問合せ</h2>
                     <ul class="info ">
                         <li>
@@ -212,6 +214,33 @@
                 <p>Copyright <i class="far fa-copyright "></i> 2021 ASTERONE Co., Ltd. All Rights Reserved.</p>
             </div>
         </footer>
+
+        <script src="../../assets/js/aos.js"></script>
+        <script>
+                       AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 700, // values from 0 to 3000, with step 50ms
+                easing: 'ease-in-out', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: true, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+
+        </script>
 
 
 

@@ -1,3 +1,12 @@
+@media screen and (max-width: 2560px) {
+    section.container-box > div {
+        width: 60%;
+    }
+    .form-outer {
+        width: 780px;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     section.container-box > div {
         width: 95%;
