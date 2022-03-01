@@ -116,6 +116,11 @@
     }
 }
 
+@media screen and (max-width: 969px) {
+    .newbiz-bg-img {
+        display: none;
+    }
+}
 /* @media screen and (max-width: 995px) { */
 /* about background img */
 /* .about-container img {

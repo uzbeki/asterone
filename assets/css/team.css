@@ -56,10 +56,6 @@ ul#tab-ul li label {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     white-space: nowrap;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
@@ -326,6 +322,13 @@ ul.descriptions li p,
             );
     }
 }
+/* BG IMG */
+.newbiz-bg-img {
+    position: absolute;
+    right: 0;
+    opacity: 0.2;
+    top: 46%;
+}
 
 .content .group {
     width: 110%;
@@ -469,7 +472,6 @@ ul.descriptions li p,
     transform: rotateY(20deg) skewY(-3deg);
 } */
 div.about-container {
-    min-height: 100vh;
     position: relative;
     display: grid;
     place-content: center;
