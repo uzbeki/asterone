@@ -192,10 +192,9 @@ ul#individuals {
     transform: scale(1.05);
 }
 
-.content ul li {}
-
 .content ul li img {
-    border: 0.5rem solid transparent;
+    border: 0.8rem solid transparent;
+    border-radius: 2em;
     outline: none;
 }
 
@@ -363,114 +362,6 @@ ul.descriptions li p,
     flex: 3;
 }
 
-/* .about-container {
-    min-height: 100vh;
-    position: relative;
-    display: grid;
-    place-content: center;
-    margin: 2rem var(--content-start);
-}
-
-.about-container img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: grayscale(100%) blur(10px);
-}
-
-.about {
-    font-size: 1.1em;
-    background-color: transparent;
-    width: 900px;
-    height: 600px;
-    transform-style: preserve-3d;
-    perspective: 2000px;
-    transition: 0.4s;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0 auto;
-}
-
-.about:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border-top: 20px solid var(--primary-dark);
-    border-left: 20px solid var(--primary-dark);
-    box-sizing: border-box;
-}
-
-.about:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom: 20px solid var(--primary-dark);
-    border-right: 20px solid var(--primary-dark);
-}
-
-.about .fas {
-    font-size: 25px;
-    height: 50px;
-    width: 50px;
-    line-height: 50px !important;
-    background-color: var(--primary-dark);
-    color: #fff;
-}
-
-.about .fa2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.about .about-text {
-    position: absolute;
-    top: 30px;
-    left: -30px;
-    width: calc(100% + 60px);
-    height: calc(100% - 60px);
-    background-color: #eee;
-    border-radius: 3px;
-    transition: 0.4s;
-}
-
-.about .about-text .fa1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.about .about-text .newbiz-text {
-    text-align: start;
-    padding: 30px 60px;
-    line-height: 1.5;
-}
-
-.about .about-text .newbiz-text h3 {
-    font-size: 2em;
-    margin-bottom: 3rem;
-    color: var(--secondary-blue);
-} */
-
-/* .about:hover {
-    transform: rotateY(-20deg) skewY(3deg);
-}
-
-.about:hover .about-text {
-    transform: rotateY(20deg) skewY(-3deg);
-} */
 div.about-container {
     position: relative;
     display: grid;
@@ -577,14 +468,8 @@ a.button {
     height: 100%;
     object-fit: cover;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    /* transform: scale(calc(1 + 0.2 * var(--hl))); */
-    /* filter: brightness(calc(0.6 * (1 + var(--hl)))); */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     transition: all 0.7s;
-    /* position: absolute;
-    width: 100%;
-    height: 100%; */
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -631,35 +516,28 @@ a.button {
     --hl: 1;
 }
 
-#se-team {
-    padding: 0 var(--content-start);
-}
 
+/* ============== Solution team ================ */
 h2.se-team-member-name {
     color: var(--secondary-blue);
     font-weight: bold;
     font-size: 1.8rem;
 }
-
 .se-team-member-info h3 {
     color: #afafaf;
 }
 
-/* style member component */
 .list-members {
-    background: var(--secondary-blue-bg);
-    margin: 4% auto;
+    padding: 0 var(--content-start);
     display: flex;
     flex-wrap: wrap;
 }
-
 .member {
     flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .member-image {
     width: 50%;
     height: 100%;
@@ -667,7 +545,6 @@ h2.se-team-member-name {
     overflow: hidden;
     position: relative;
 }
-
 .member-image img {
     width: 100%;
     height: 100%;
@@ -709,7 +586,7 @@ h2.se-team-member-name {
     content: "";
     border-top: 34px solid transparent;
     border-bottom: 34px solid transparent;
-    border-right: 27px solid var(--secondary-blue-bg);
+    border-right: 27px solid #fff;
     position: absolute;
     top: 50%;
     right: 0;
@@ -717,50 +594,3 @@ h2.se-team-member-name {
 }
 
 /* =================== JOHOSYSTEM TEAM ======================= */
-#johosystem-team {
-    margin: 0 var(--content-start);
-}
-
-.js-container {
-    display: flex;
-    gap: 2rem;
-}
-
-.js-card {
-    border: 3px solid rgba(0, 0, 0, 0.125);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    opacity: 0.7;
-    transition: all 0.5s linear;
-}
-
-.js-card:hover {
-    opacity: 1;
-    border: 3px solid var(--secondary-blue);
-}
-
-.js-card img {
-    width: 100%;
-}
-
-.js-card h2 {
-    color: var(--secondary-blue);
-}
-
-.js-card h3 {
-    color: #afafaf;
-}
-
-.js-card p {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 23px;
-    color: #666;
-    transition: all 0.5s linear;
-}
-
-.js-card:hover p {
-    color: black;
-}

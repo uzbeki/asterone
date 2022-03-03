@@ -121,12 +121,6 @@
         display: none;
     }
 }
-/* @media screen and (max-width: 995px) { */
-/* about background img */
-/* .about-container img {
-        display: none;
-    }
-} */
 
 @media screen and (max-width: 1423px) {
     .work-with-us header h1 {
@@ -264,13 +258,3 @@
 }
 
 /* ================== JOHOSYSTEM TEAM ================== */
-@media screen and (max-width: 995px) {
-    .js-card h3 {
-        display: none;
-    }
-}
-@media screen and (max-width: 500px) {
-    .js-card h2 {
-        font-size: 1.2em;
-    }
-}
