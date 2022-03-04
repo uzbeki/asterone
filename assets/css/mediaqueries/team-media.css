@@ -99,11 +99,18 @@
 }
 
 /* =================== NEWBIZ TEAM =================== */
+
 @media screen and (max-width: 1440px) {
     ul#individuals {
         grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     }
 }
+@media screen and (max-width: 1170px) {
+    #johosystem-team p {
+        font-size: 1em;
+    }
+}
+
 @media screen and (max-width: 1085px) {
     /* newbiz members img */
     ul#individuals {
@@ -204,6 +211,24 @@
 }
 
 /* ==================== SOLUTUON TEAM ===================== */
+@media screen and (max-width: 1024px) {
+    .member-image {
+        height: 90%;
+    }
+    .member {
+        margin-bottom: 2em;
+    }
+}
+@media screen and (max-width: 962px) {
+    .member-image {
+        height: 83%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .member-image {
+        height: 100%;
+    }
+}
 @media screen and (max-width: 770px) {
     .list-members {
         width: 95%;
@@ -234,9 +259,10 @@
         transform: translateY(-50%) rotateZ(180deg);
     }
 }
-@media screen and (max-width: 425px) {
-    .member-image img {
-        height: 90%;
+@media screen and (max-width: 429px) {
+    .se-team-member-info p {
+        margin: 0%;
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 1210px) {
@@ -246,9 +272,6 @@
 }
 
 @media screen and (max-width: 433px) {
-    .member {
-        flex-basis: 50%;
-    }
     h2.se-team-member-name {
         font-size: 1.2rem;
     }
@@ -258,3 +281,80 @@
 }
 
 /* ================== JOHOSYSTEM TEAM ================== */
+@media screen and (max-width: 1440px) {
+    #johosystem-team ul#individuals {
+        gap: 4rem 4rem;
+    }
+    #johosystem-team .up-circle2 {
+        position: absolute;
+        bottom: 12em;
+        right: -5em;
+    }
+    #johosystem-team .img-circle2 {
+        bottom: 24em;
+        right: -6em;
+    }
+}
+@media screen and (max-width: 1098px) {
+    #johosystem-team .up-circle2 {
+        right: 26em;
+    }
+    #johosystem-team .img-circle2 {
+        right: 27em;
+    }
+}
+@media screen and (max-width: 810px) {
+    #johosystem-team .member-info h2 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #johosystem-team .img-circle2 {
+        bottom: 9em;
+        right: 18em;
+    }
+    #johosystem-team .up-circle2 {
+        position: absolute;
+        bottom: 16em;
+        right: 17em;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    #johosystem-team .img-circle2 {
+        bottom: 9em;
+        right: -4em;
+    }
+    #johosystem-team .up-circle2 {
+        position: absolute;
+        bottom: 16em;
+        right: -3em;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    h2.top-title-newbiz {
+        font-size: 1em;
+    }
+    #johosystem-team .img-circle2 {
+        position: absolute;
+        bottom: 1em;
+        right: -1em;
+    }
+    #johosystem-team .up-circle2 {
+        position: absolute;
+        bottom: 12em;
+        right: -4em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #johosystem-team .up-circle2 {
+        bottom: 12em;
+        right: -5em;
+    }
+    #johosystem-team .img-circle2 {
+        bottom: 8em;
+        right: -3em;
+    }
+}

@@ -527,6 +527,7 @@ h2.se-team-member-name {
 }
 .se-team-member-info h3 {
     color: #afafaf;
+    margin-left: -12px;
 }
 
 .list-members {

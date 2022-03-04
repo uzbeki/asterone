@@ -162,6 +162,9 @@
                         </li>
                     </ul>
                 </div>
+                <a id='goTop' href="#header">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
             </section>
         </main>
     </body>
@@ -296,6 +299,19 @@
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
         });
+        window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
+
 
     </script>
 

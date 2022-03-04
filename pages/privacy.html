@@ -106,6 +106,9 @@
                     <p>株式会社アスタワン　代表取締役　久米　幹夫</p>
                 </div>
             </div>
+            <a id='goTop' href="#header">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </main>
 
         <footer data-aos="fade-up">
@@ -239,6 +242,18 @@
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
             });
+            window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
 
         </script>
 

@@ -171,10 +171,10 @@
               </div>
             </div>
           </li>
-
-
-
         </ul>
+        <a id='goTop' href="#header">
+          <i class="fas fa-arrow-up"></i>
+      </a>
       </section>
 
     </main>
@@ -329,6 +329,18 @@ C122,15.1,123.1,14.2,123.1,12.4z M113.6,9.3h4.3c1.5,0,2,0.4,2,1.5v0.5c0,1-0.3,1.
                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
            });
+           window.onscroll = function () {
+                const el = document.getElementById('goTop')
+                if (window.pageYOffset > 800) {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                    el.style.transform = 'translateY(0)';
+                } else {
+                    el.style.opacity = 0;
+                    el.style.visibility = 'hidden';
+                    el.style.transform = 'translateY(2rem)';
+                }
+            }
 
        </script>
 
