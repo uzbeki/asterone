@@ -119,18 +119,18 @@ svg.pobi-logo {
     background-size: cover;
     background-position: center;
     transition: all 0.2s ease;
-    background-image: url("../img/our-product-img/pobi\ \(1\).png");
+    background-image: url("../img/our-product-img/pobi\ \(1\)-min.jpg");
     animation: border-transform 6s linear infinite alternate forwards;
     animation-play-state: paused;
 }
 .checkbox.scnd + label {
-    background-image: url("../img/our-product-img/pobi\(2\).png");
+    background-image: url("../img/our-product-img/pobi\(2\)-min.jpg");
 }
 .checkbox.thrd + label {
-    background-image: url("../img/our-product-img/pobi\(3\).png");
+    background-image: url("../img/our-product-img/pobi\(3\)-min.jpg");
 }
 .checkbox.foth + label {
-    background-image: url("../img/our-product-img/pobi\(4\).png");
+    background-image: url("../img/our-product-img/pobi\(4\)-min.jpg");
 }
 
 .checkbox:checked + label {
@@ -186,7 +186,7 @@ ul.pobi-ul li {
     border: 5px solid #229771;
     background-size: cover;
     background-position: center;
-    background-image: url("../img/our-product-img/pobi\ \(1\).png");
+    background-image: url("../img/our-product-img/pobi\ \(1\)-min.jpg");
     border-radius: 50%;
     color: #343434;
     opacity: 0;
@@ -197,13 +197,13 @@ ul.pobi-ul li span {
     mix-blend-mode: difference;
 }
 ul.pobi-ul li:nth-child(2) {
-    background-image: url("../img/our-product-img/pobi\(2\).png");
+    background-image: url("../img/our-product-img/pobi\(2\)-min.jpg");
 }
 ul.pobi-ul li:nth-child(3) {
-    background-image: url("../img/our-product-img/pobi\(3\).png");
+    background-image: url("../img/our-product-img/pobi\(3\)-min.jpg");
 }
 ul.pobi-ul li:nth-child(4) {
-    background-image: url("../img/our-product-img/pobi\(4\).png");
+    background-image: url("../img/our-product-img/pobi\(4\)-min.jpg");
 }
 
 .checkbox.frst:checked ~ ul.pobi-ul li:nth-child(1) {
