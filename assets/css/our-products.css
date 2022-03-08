@@ -23,6 +23,7 @@ section.third-card-section {
 }
 .blue-thumbnail {
     box-shadow: rgb(25 157 255 / 11%) 0px 7px 29px 0px;
+    width: 50%;
 
 }
 
@@ -75,7 +76,8 @@ h5.bluish {
 }
 
 section.second-card-section h5.small-title {
-    left: 12%;
+    left: 4%;
+    bottom: -1.5em;
 }
 
 .second-card {
