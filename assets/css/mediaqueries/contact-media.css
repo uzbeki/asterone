@@ -100,12 +100,7 @@
         align-items: flex-start;
     }
 }
-@media screen and (max-width: 594px) {
-    section.top-part-contact-page {
-        background-color: inherit;
-    }
 
-}
 @media screen and (max-width: 471px) {
     section.top-part-contact-page {
         background-size: cover;
