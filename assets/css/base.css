@@ -224,6 +224,7 @@ header .bottom nav ul li::after {
 header .bottom nav ul li:hover::after,
 header .bottom nav ul li.active::after {
     width: 100%;
+    background-color: var(--asterone-yellow);
 }
 
 header .bottom nav ul li:hover {
