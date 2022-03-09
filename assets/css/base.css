@@ -189,10 +189,10 @@ footer .brand-logo h3 {
 .hamburger div {
     position: relative;
     width: 2em;
-    height: 0.2em;
+    height: 0.4em;
     border-radius: 3px;
     background-color: var(--primary-dark);
-    margin-top: 8px;
+    margin-top: 4px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -213,7 +213,6 @@ header .bottom nav ul li {
 
 header .bottom nav ul li::after {
     content: "";
-    background-color: var(--primary);
     position: absolute;
     left: 0;
     bottom: -3px;
