@@ -1,9 +1,17 @@
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
+    /* svg minions */
+    img.faq-img {
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 1536px) {
     /* svg minions */
     img.faq-img {
         top: 26%;
     }
 }
+
 @media screen and (max-width: 1024px) {
     /* svg minions */
     img.faq-img {

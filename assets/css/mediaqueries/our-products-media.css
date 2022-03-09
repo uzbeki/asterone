@@ -64,6 +64,9 @@
     img.left {
         width: 100%;
     }
+    .blue-thumbnail {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 403px) {
     h5.small-title {
