@@ -35,10 +35,8 @@ section.full-page {
 .waveWrapperInner {
   position: absolute;
   width: 100%;
-  /* overflow: hidden; */
   height: 100%;
   bottom: -1px;
-  /* background-image: linear-gradient(to top, #c0a425 20%, #ecc74a 80%); */
   background-image: url(../img/recruitment/recruitment-min.jpg);
   background-position: center;
   background-size: cover;
@@ -106,8 +104,6 @@ section.full-page {
 }
 
 /* SVG END */
-
-
 
 section.catch-phrase {
   padding: 0 var(--content-start);
@@ -356,13 +352,6 @@ section.atmosphere {
   justify-items: center;
 }
 
-
-/* .atmosphere img {
-  max-width: 70rem;
-  height: auto;
-} */
-
-
 #gallery {
   display: grid;
   height: calc(100vh - 10px);
@@ -460,11 +449,6 @@ section.atmosphere {
   color: #fff;
 }
 
-/* [id^=lightbox-] .content:hover>a.close {
-  opacity: 1;
-  transform: scale(1, 1);
-} */
-
 [id^=lightbox-] .content:hover>.title {
   opacity: 1;
   transform: translateY(-3px);
@@ -477,18 +461,6 @@ section.atmosphere {
 [id^=lightbox-] .content>* {
   transition: all 450ms ease-in-out;
 }
-
-/* [id^=lightbox-] .title {
-  display: block;
-  margin: 0;
-  padding: 1em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  transform: translateY(50%);
-  font-size: 1.5em;
-  opacity: 0;
-} */
 
 [id^=lightbox-] .title::after {
   content: " ";
@@ -522,8 +494,6 @@ section.atmosphere {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform: scale(0, 0); */
-  /* opacity: 0; */
   transform-origin: right top;
   text-decoration: none;
   color: var(--primary);
@@ -534,16 +504,8 @@ section.atmosphere {
   content: "X";
 }
 
-
-
-
-
-
-
 /* Positions */
 section.positions {
-  /* background-color: #eee; */
-  /* min-height: 100vh; */
   padding: 3rem var(--content-start);
 }
 

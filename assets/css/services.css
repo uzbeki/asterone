@@ -144,7 +144,6 @@ section.services .cards li.card .card-footer i {
     color: #f5f5f5;
     z-index: 1;
     transition: all 0.5s ease-in-out;
-    /* margin: 0 5px; */
 }
 
 /* Main > Services > Hover effects */
@@ -189,7 +188,6 @@ img.bg4 {
 
 /* SVG  */
 .bg-element {
-    /* z-index: -1; */
     position: absolute;
     bottom: 0;
     left: 0;
