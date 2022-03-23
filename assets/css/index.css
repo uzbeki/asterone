@@ -13,24 +13,38 @@ section.full-page {
     gap: 4em;
 }
 
-
-/* This is BG IMG Slider Testing */
-@keyframes animate {
-
-    100% {
-        background-image: url(../img/newbiz/20220113_115104-min.jpg);
-    }
-    50% {
-        background-image: url(/assets/img/about/company_building.jpg);
-    }
-    30% {
-        background-image: url(../img/about/about-page-img.jpg)
-    }
-    75% {
-        background-image: url(/assets/img/newbiz/20220113_115104-min.jpg);
-    }
+/* Swiper Testing */
+.swiper {
+    width: 100%;
+    height: 100%;
 }
-/* This is BG IMG Slider Testing ENDS */
+
+.swiper-slide {
+    text-align: center;
+    /* display: flex; */
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide .backdrop-bg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Swiper testing Ends */
 
 /* ************* Hero Banner ************* */
 section.banner {
@@ -42,9 +56,6 @@ section.banner {
     align-items: center;
     height: calc(100vh - var(--header-height));
     position: relative;
-/* This is BG IMG Slider Testing */
-    animation: animate 16s ease-out infinite;
-    background-size: cover;
 }
 
 section.banner::before {
@@ -60,6 +71,10 @@ section.banner .content {
     max-width: 40rem;
     margin-left: var(--content-start);
     margin-right: var(--content-start);
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: 22%;
 }
 
 section.banner .content h1 {
@@ -73,7 +88,6 @@ section.banner .content p {
     line-height: 2;
     font-size: 1rem;
 }
-
 
 section.banner .content a.btn {
     position: relative;
@@ -158,9 +172,6 @@ section.banner .content a.btn:hover .button-text {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
-
-
-
 /* ************* News ************* */
 section.news {
     position: relative;
@@ -176,6 +187,7 @@ section.news .news-container {
     background-color: var(--navbar-black);
     position: absolute;
     top: -50%;
+    z-index: 1;
     transform: translateY(-50%);
     box-shadow: 5px 20px 10px rgb(0 0 0 / 6%);
 }
@@ -232,14 +244,12 @@ section.news .news-container .intro-title .arrow img {
 #news-content div p {
     font-size: smaller;
     color: var(--primary-light);
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 #news-content div p i {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
-
-
 
 /* ************* Services ************* */
 section.services {
@@ -254,7 +264,7 @@ section.services {
     display: grid;
     grid-template-columns: 4fr 6fr;
     gap: 2em;
-    padding: 4em 0;
+    padding: 8em 0 4em 0;
     align-items: center;
 }
 
@@ -397,7 +407,6 @@ section.partners ul li img {
     animation: scroll 30s linear infinite reverse;
 }
 
-
 /* scroll animation */
 @keyframes scroll {
     0% {
@@ -409,14 +418,14 @@ section.partners ul li img {
     }
 }
 
-
 /* ************* Testimonials ************* */
 section.testimonials.full-page {
     padding: 4em var(--content-start);
     background-color: #f5f5f5;
 }
 
-section.testimonials ul.testimonial-cards {}
+section.testimonials ul.testimonial-cards {
+}
 
 .testimonial {
     width: 25rem;
@@ -517,7 +526,6 @@ section.testimonials ul.testimonial-cards {}
     text-align: center;
 }
 
-
 /* testimonial Swiper styles */
 section.testimonials .swiper {
     padding: 1em;
@@ -553,9 +561,6 @@ section.testimonials .swiper .swiper-slide {
     user-select: none;
 }
 
-
-
-
 /* ************* Team ************* */
 #team {
     padding: 0 var(--content-start);
@@ -565,7 +570,8 @@ section.testimonials .swiper .swiper-slide {
 .team__content {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-areas: "long short1 short2 long2"
+    grid-template-areas:
+        "long short1 short2 long2"
         "long short3 short4 long2";
     gap: 1rem;
     position: relative;
@@ -575,12 +581,11 @@ section.testimonials .swiper .swiper-slide {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-
 
 .team__content img:first-child {
     grid-area: long;
@@ -620,7 +625,6 @@ section.testimonials .swiper .swiper-slide {
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.2s ease-in-out;
-
 }
 
 .team__popup.show {
@@ -635,7 +639,6 @@ section.testimonials .swiper .swiper-slide {
     box-shadow: none;
     transition-delay: 200ms;
 }
-
 
 /* ************* CEO Message ************* */
 section.message-ceo {
@@ -724,4 +727,3 @@ div.img-ceo img {
         transform: translateX(50%) rotate(360deg);
     }
 }
-
